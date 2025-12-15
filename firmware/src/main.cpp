@@ -992,6 +992,11 @@ int wrapTextForFont(const String& text, int maxWidth, int fontSize, String* outL
  * Uses Inter or Playfair fonts based on poem.town preference
  */
 void renderPoemText(int zoneX, int zoneY, int zoneW, int zoneH, const String& strip) {
+    // Screen dimensions
+    const int SCREEN_W = 960;
+    const int SCREEN_H = 540;
+    const int MARGIN = 20;  // Minimum margin from screen edges
+
     // Scale zone coordinates (image is 480x270, display is 960x540)
     int displayX = zoneX * 2;
     int displayY = zoneY * 2;
@@ -1013,6 +1018,12 @@ void renderPoemText(int zoneX, int zoneY, int zoneW, int zoneH, const String& st
             displayH = 160;
         }
     }
+
+    // Clamp zone to screen boundaries with margin
+    if (displayX < MARGIN) displayX = MARGIN;
+    if (displayY < MARGIN) displayY = MARGIN;
+    if (displayX + displayW > SCREEN_W - MARGIN) displayW = SCREEN_W - MARGIN - displayX;
+    if (displayY + displayH > SCREEN_H - MARGIN) displayH = SCREEN_H - MARGIN - displayY;
 
     // Normalize poem text: replace " / " separator with space for re-wrapping
     String fullText = currentPoem;
@@ -1037,9 +1048,9 @@ void renderPoemText(int zoneX, int zoneY, int zoneW, int zoneH, const String& st
             String tempLines[6];
             int lineCount = wrapTextForFont(fullText, usableWidth, fontSize, tempLines, 6);
 
-            // Calculate total height
+            // Calculate total height: (lineCount-1) gaps + one fontSize
             int lineHeight = fontSize * 1.3;
-            int totalHeight = lineCount * lineHeight;
+            int totalHeight = (lineCount - 1) * lineHeight + fontSize;
 
             if (totalHeight <= usableHeight && lineCount <= 6) {
                 bestFontSize = fontSize;
@@ -1056,9 +1067,9 @@ void renderPoemText(int zoneX, int zoneY, int zoneW, int zoneH, const String& st
 
         // Calculate line positions
         int lineHeight = bestFontSize * 1.3;
-        int totalTextHeight = bestLineCount * lineHeight;
+        int totalTextHeight = (bestLineCount - 1) * lineHeight + bestFontSize;
         int centerX = displayX + displayW / 2;
-        int startY = displayY + (displayH - totalTextHeight) / 2 + bestFontSize / 2;
+        int startY = displayY + (displayH - totalTextHeight) / 2;
 
         // Draw each line centered
         for (int i = 0; i < bestLineCount; i++) {

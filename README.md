@@ -50,6 +50,17 @@ At 10:15, the device shows a photograph of a clock stopped at 10:15, with a poem
 
 ## Key Technical Details
 
+### Button Support (GPIO 2)
+
+**Important**: The physical button is on **GPIO 2**, not GPIO 38 as M5Stack documentation states. This was verified through GPIO scanning.
+
+| Action | Function |
+|--------|----------|
+| Single click | Show/dismiss notes from poem.town dashboard |
+| Double click | Like the current poem |
+
+Notes are displayed full-screen with dynamic font sizing (72→24px) to fit the content. When a note is displayed, the firmware automatically sends a "seen" receipt to the poem.town API.
+
 ### Custom Display Driver
 
 The M5PaperS3's GT911 touch controller doesn't respond on some units, which breaks M5GFX auto-detection. This firmware uses a custom `LGFX_M5PaperS3` class that directly initializes the display hardware:
@@ -113,6 +124,23 @@ Clock faces show 12-hour format without AM/PM. The matching algorithm:
 - Finds closest clock image (handles wraparound)
 - Treats 10:15 clock as valid for both 10:15 AM and 10:15 PM
 
+### Loading Screen
+
+The firmware displays an elegant loading screen during boot with:
+- **Vintage clock graphic** - Decorative bezel, dot hour markers, thick elegant hands at 07:07
+- **Large typography** - "Poem/1" title at 8x scale, "Stopped Clocks Mod" subtitle at 3x
+- **Asymmetric layout** - Clock on left, text on right with decorative separator line
+- **Status messages** - Shows "Loading fonts...", "Loading clock index...", etc.
+
+### Note Display
+
+Notes from the poem.town dashboard are displayed full-screen when the button is pressed:
+- **Dynamic font sizing** - Tries sizes 72→24px, picks largest that fits
+- **Proper text metrics** - Accounts for font ascender/descender space
+- **Vertical centering** - Text block centered within margins (30px top/bottom)
+- **Auto-dismiss** - Returns to clock view after 10 seconds or on button press
+- **Read receipts** - Automatically marks notes as "seen" via API
+
 ## File Structure
 
 ```
@@ -169,9 +197,33 @@ Content-Type: application/json
 { "screenId": "...", "time24": "09:30" }
 ```
 
-Returns time-specific rhyming poem with font preference ("INTER" or "PLAYFAIR").
+Returns time-specific rhyming poem with font preference ("INTER" or "PLAYFAIR"), plus any pending notes.
 
 **Note**: The `screenId` must be the device MAC address in reverse byte order to match the poem.town dashboard format.
+
+### poem.town Notes API
+
+```
+POST https://poem.town/api/v1/clock/notes/{noteId}/seen
+Authorization: Bearer <token>
+Content-Type: application/json
+
+{ "screenId": "..." }
+```
+
+Marks a note as seen. Called automatically when note is displayed on device.
+
+### poem.town Likes API
+
+```
+POST https://poem.town/api/v1/clock/likes/{poemId}/mark
+Authorization: Bearer <token>
+Content-Type: application/json
+
+{ "screenId": "..." }
+```
+
+Records a like for the current poem. Triggered by double-click on device button.
 
 ### Stopped Clocks Index
 

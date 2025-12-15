@@ -15,9 +15,12 @@
 #include <WiFi.h>
 #include <WiFiClientSecure.h>
 #include <HTTPClient.h>
+#include <M5Unified.h>
 #include <M5GFX.h>
 #include <lgfx/v1/platforms/esp32/Bus_EPD.h>
 #include <lgfx/v1/platforms/esp32/Panel_EPD.hpp>
+// GT911 touch disabled - doesn't respond on some M5PaperS3 units
+// #include <lgfx/v1/touch/Touch_GT911.hpp>
 #include <ArduinoJson.h>
 #include <time.h>
 #include <OpenFontRender.h>
@@ -73,16 +76,42 @@ int clockIndexCount = 0;
 String currentPoem;
 String currentFont;  // "INTER" or "PLAYFAIR"
 String loadedFont;   // Track which font is currently loaded to avoid reloading
+String currentNote;  // Note from poem.town dashboard
+String currentNoteId;  // Note ID for marking as seen
+String currentPoemId;  // Poem ID for liking
+bool showingNote = false;  // Whether note is currently displayed
+unsigned long noteDisplayTime = 0;  // When note was shown (for timeout)
 
-// Custom LGFX class for M5PaperS3
+// Physical button on GPIO 2 (INPUT_PULLUP, active LOW)
+// Verified via GPIO scanning - M5Stack docs incorrectly list GPIO 38
+#define BUTTON_PIN 2
+#define DEBOUNCE_MS 50
+#define DOUBLE_CLICK_MS 400
+
+// Button state machine
+bool buttonState = HIGH;           // Current debounced state
+bool lastButtonReading = HIGH;     // Last raw reading
+unsigned long lastDebounceTime = 0;
+unsigned long lastClickTime = 0;
+int clickCount = 0;
+bool waitingForDoubleClick = false;
+
+// Forward declarations
+void updateDisplay();
+void displayNoteFullScreen();
+
+// Custom LGFX class for M5PaperS3 (display only, no touch)
+// Touch is handled by M5Unified separately
 class LGFX_M5PaperS3 : public lgfx::LGFX_Device
 {
     lgfx::Bus_EPD _bus_instance;
     lgfx::Panel_EPD _panel_instance;
+    // Note: GT911 touch disabled - doesn't respond on some units and causes phantom touch
 
 public:
     LGFX_M5PaperS3(void)
     {
+        // EPD bus configuration
         {
             auto cfg = _bus_instance.config();
             cfg.bus_speed = 16000000;
@@ -105,6 +134,7 @@ public:
             _bus_instance.config(cfg);
             _panel_instance.setBus(&_bus_instance);
         }
+        // Panel configuration
         {
             auto cfg = _panel_instance.config_detail();
             cfg.line_padding = 8;
@@ -347,10 +377,186 @@ bool fetchPoem(const String& time24) {
         Serial.println("No font field found, defaulting to INTER");
     }
 
+    // Extract poem ID for liking
+    currentPoemId = "";
+    if (resDoc["poemId"].is<const char*>()) {
+        currentPoemId = resDoc["poemId"].as<String>();
+        Serial.printf("Poem ID: %s\n", currentPoemId.c_str());
+    } else if (resDoc["id"].is<const char*>()) {
+        currentPoemId = resDoc["id"].as<String>();
+        Serial.printf("Poem ID (from id): %s\n", currentPoemId.c_str());
+    }
+
+    // Extract note if present
+    currentNote = "";
+    currentNoteId = "";
+    if (resDoc["note"].is<JsonObject>()) {
+        JsonObject noteObj = resDoc["note"];
+        if (noteObj["body"].is<const char*>()) {
+            currentNote = noteObj["body"].as<String>();
+        }
+        if (noteObj["noteId"].is<const char*>()) {
+            currentNoteId = noteObj["noteId"].as<String>();
+        } else if (noteObj["noteId"].is<int>()) {
+            currentNoteId = String(noteObj["noteId"].as<int>());
+        }
+        Serial.printf("Note: \"%s\" (ID: %s)\n", currentNote.c_str(), currentNoteId.c_str());
+    }
+
     Serial.printf("Poem received: \"%s\"\n", currentPoem.c_str());
     Serial.printf("Font: %s\n", currentFont.c_str());
 
     return currentPoem.length() > 0;
+}
+
+/**
+ * Like the current poem via poem.town API
+ * POST /api/v1/clock/likes/{poemId}/mark
+ */
+bool likePoem() {
+    if (currentPoemId.length() == 0) {
+        Serial.println("No poem ID to like");
+        return false;
+    }
+
+    Serial.printf("Liking poem: %s\n", currentPoemId.c_str());
+
+    WiFiClientSecure client;
+    client.setInsecure();
+
+    String url = String("https://poem.town/api/v1/clock/likes/") + currentPoemId + "/mark";
+
+    HTTPClient http;
+    http.begin(client, url);
+    http.addHeader("Content-Type", "application/json");
+    http.addHeader("Authorization", "Bearer poem_HCWkTznfHFBN6H9KtQLCF9T");
+    http.setTimeout(15000);
+
+    // Build request
+    JsonDocument reqDoc;
+    reqDoc["screenId"] = screenId;
+
+    String payload;
+    serializeJson(reqDoc, payload);
+
+    int httpCode = http.POST(payload);
+    Serial.printf("Like response: %d\n", httpCode);
+
+    if (httpCode == HTTP_CODE_OK || httpCode == 201) {
+        String response = http.getString();
+        Serial.printf("Like success: %s\n", response.c_str());
+        http.end();
+        return true;
+    }
+
+    if (httpCode < 0) {
+        Serial.printf("HTTP error: %s\n", http.errorToString(httpCode).c_str());
+    } else {
+        String errorBody = http.getString();
+        Serial.printf("Error: %s\n", errorBody.c_str());
+    }
+
+    http.end();
+    return false;
+}
+
+/**
+ * Mark note as seen via poem.town API
+ * POST /api/v1/clock/notes/{noteId}/seen
+ */
+bool markNoteSeen() {
+    if (currentNoteId.length() == 0) {
+        Serial.println("No note ID to mark as seen");
+        return false;
+    }
+
+    Serial.printf("Marking note %s as seen\n", currentNoteId.c_str());
+
+    WiFiClientSecure client;
+    client.setInsecure();
+
+    String url = String("https://poem.town/api/v1/clock/notes/") + currentNoteId + "/seen";
+
+    HTTPClient http;
+    http.begin(client, url);
+    http.addHeader("Content-Type", "application/json");
+    http.addHeader("Authorization", "Bearer poem_HCWkTznfHFBN6H9KtQLCF9T");
+    http.setTimeout(10000);
+
+    // Build request
+    JsonDocument reqDoc;
+    reqDoc["screenId"] = screenId;
+
+    String payload;
+    serializeJson(reqDoc, payload);
+
+    int httpCode = http.POST(payload);
+    Serial.printf("Note seen response: %d\n", httpCode);
+
+    if (httpCode == HTTP_CODE_OK || httpCode == 201) {
+        String response = http.getString();
+        Serial.printf("Note marked seen: %s\n", response.c_str());
+        http.end();
+        return true;
+    }
+
+    if (httpCode < 0) {
+        Serial.printf("HTTP error: %s\n", http.errorToString(httpCode).c_str());
+    }
+
+    http.end();
+    return false;
+}
+
+/**
+ * Handle button click events
+ * Single click: Show note (or dismiss if showing)
+ * Double click: Like the current poem
+ */
+void handleButtonClick(int clicks) {
+    Serial.printf("Button: %d click(s)\n", clicks);
+
+    if (clicks == 1) {
+        // Single click: toggle note display
+        if (showingNote) {
+            Serial.println("Single click: hiding note, returning to clock");
+            showingNote = false;
+            lastDisplayedTime = -1;  // Force redraw
+            updateDisplay();
+        } else if (currentNote.length() > 0) {
+            Serial.println("Single click: showing note");
+            displayNoteFullScreen();
+            // Mark note as seen (fire and forget)
+            markNoteSeen();
+
+            // Check if button was pressed during blocking operations
+            // Reset debounce state so next press is detected cleanly
+            buttonState = HIGH;
+            lastButtonReading = HIGH;
+        } else {
+            Serial.println("Single click: no note available");
+        }
+    } else if (clicks >= 2) {
+        // Double click: like poem
+        Serial.println("Double click: liking poem");
+        if (likePoem()) {
+            // Brief visual feedback - flash display
+            display.fillScreen(TFT_WHITE);
+            display.setTextColor(TFT_BLACK);
+            display.setTextDatum(MC_DATUM);
+            display.setTextSize(4);
+            display.drawString("Liked!", 480, 270);
+            display.display();
+            delay(1000);
+            // Return to clock display
+            if (showingNote) {
+                displayNoteFullScreen();
+            } else {
+                lastDisplayedTime = -1;  // Force redraw
+                updateDisplay();
+            }
+        }
+    }
 }
 
 /**
@@ -898,6 +1104,99 @@ void renderPoemText(int zoneX, int zoneY, int zoneW, int zoneH, const String& st
 }
 
 /**
+ * Display note full-screen (triggered by button press)
+ */
+void displayNoteFullScreen() {
+    if (currentNote.length() == 0 || !fontsLoaded) {
+        Serial.println("No note to display");
+        return;
+    }
+
+    // Clear to white
+    display.fillScreen(TFT_WHITE);
+
+    // Screen and margin constants
+    const int SCREEN_WIDTH = 960;
+    const int SCREEN_HEIGHT = 540;
+    const int TOP_MARGIN = 30;      // Visual margin from top
+    const int BOTTOM_MARGIN = 30;   // Visual margin from bottom
+    const int SIDE_MARGIN = 60;     // Side margins
+
+    int usableWidth = SCREEN_WIDTH - (SIDE_MARGIN * 2);
+    int availableHeight = SCREEN_HEIGHT - TOP_MARGIN - BOTTOM_MARGIN;
+
+    // Try font sizes from 72 down to 24, find largest that fits
+    int bestFontSize = 24;
+    int bestLineCount = 1;
+    String bestLines[8];
+    bestLines[0] = currentNote;
+
+    for (int fontSize = 72; fontSize >= 24; fontSize -= 4) {
+        String tempLines[8];
+        int lineCount = wrapTextForFont(currentNote, usableWidth, fontSize, tempLines, 8);
+
+        // Calculate ACTUAL rendered height including font metrics
+        // Line height is spacing between line baselines
+        float lineHeight = fontSize * 1.3;
+        // Ascender: space above baseline (~25% of font size)
+        float ascender = fontSize * 0.25;
+        // Descender: space below baseline (~20% of font size)
+        float descender = fontSize * 0.20;
+
+        // Total height = from top of first char to bottom of last char
+        // = ascender + (lineCount-1)*lineHeight + fontSize-ascender + descender
+        // = (lineCount-1)*lineHeight + fontSize + descender
+        float totalRenderedHeight = (lineCount - 1) * lineHeight + fontSize + descender;
+
+        Serial.printf("  Trying %dpx: %d lines, lineH=%.0f, totalH=%.0f, avail=%d\n",
+                      fontSize, lineCount, lineHeight, totalRenderedHeight, availableHeight);
+
+        if (totalRenderedHeight <= availableHeight && lineCount <= 8) {
+            bestFontSize = fontSize;
+            bestLineCount = lineCount;
+            for (int i = 0; i < lineCount; i++) {
+                bestLines[i] = tempLines[i];
+            }
+            break;
+        }
+    }
+
+    fontRender.setFontSize(bestFontSize);
+    fontRender.setFontColor(TFT_BLACK);
+
+    // Calculate positioning with chosen font size
+    int lineHeight = bestFontSize * 1.3;
+    int ascender = bestFontSize * 0.25;
+    int descender = bestFontSize * 0.20;
+    int totalRenderedHeight = (bestLineCount - 1) * lineHeight + bestFontSize + descender;
+
+    // Center text block vertically within available space
+    // Then offset by ascender because TopCenter alignment includes ascender in positioning
+    int verticalOffset = (availableHeight - totalRenderedHeight) / 2;
+    int startY = TOP_MARGIN + verticalOffset - ascender;
+
+    for (int i = 0; i < bestLineCount; i++) {
+        int lineY = startY + i * lineHeight;
+        fontRender.setAlignment(Align::TopCenter);
+        fontRender.setCursor(480, lineY);
+        fontRender.printf("%s", bestLines[i].c_str());
+    }
+
+    int lastLineBottom = startY + ascender + (bestLineCount - 1) * lineHeight + bestFontSize + descender;
+    Serial.printf("Note layout: fontSize=%d, startY=%d, lineH=%d, lines=%d, lastBottom=%d (limit=%d)\n",
+                  bestFontSize, startY, lineHeight, bestLineCount, lastLineBottom, SCREEN_HEIGHT - BOTTOM_MARGIN);
+
+    display.display();
+    showingNote = true;
+    noteDisplayTime = millis();
+    Serial.printf("Note displayed: \"%s\" (%d px, %d lines)\n",
+                  currentNote.c_str(), bestFontSize, bestLineCount);
+
+    // Brief delay to let button state settle after blocking display refresh
+    delay(50);
+}
+
+/**
  * Display clock image with poem overlay
  */
 bool displayClockWithPoem(ClockImage* clock) {
@@ -908,9 +1207,7 @@ bool displayClockWithPoem(ClockImage* clock) {
     uint8_t* imgBuffer = downloadImage(clock->url, imgLen);
     if (!imgBuffer) return false;
 
-    // Clear display
-    display.fillScreen(TFT_WHITE);
-
+    // Note: No fillScreen() - PNG covers entire display, avoiding extra flash
     // Draw image (scaled 2x)
     bool success = display.drawPng(imgBuffer, imgLen, 0, 0, 960, 540, 0, 0, 2.0, 2.0);
     free(imgBuffer);
@@ -931,64 +1228,95 @@ bool displayClockWithPoem(ClockImage* clock) {
 }
 
 /**
- * Draw a simple clock face logo
+ * Draw an elegant vintage clock face logo
+ * Designed for e-paper aesthetic with stopped hands at 07:07
  */
 void drawClockLogo(int centerX, int centerY, int radius) {
-    // Draw clock circle
+    // Outer decorative bezel - double ring with gap
     display.drawCircle(centerX, centerY, radius, TFT_BLACK);
-    display.drawCircle(centerX, centerY, radius - 2, TFT_BLACK);
+    display.drawCircle(centerX, centerY, radius - 1, TFT_BLACK);
+    display.drawCircle(centerX, centerY, radius - 8, TFT_BLACK);
+    display.drawCircle(centerX, centerY, radius - 9, TFT_BLACK);
 
-    // Draw hour markers
+    // Inner face circle
+    display.drawCircle(centerX, centerY, radius - 20, TFT_BLACK);
+
+    // Hour markers - elegant dots at each hour position
     for (int i = 0; i < 12; i++) {
         float angle = i * 30 * PI / 180 - PI/2;
-        int innerR = radius - 15;
-        int outerR = radius - 5;
-        int x1 = centerX + cos(angle) * innerR;
-        int y1 = centerY + sin(angle) * innerR;
-        int x2 = centerX + cos(angle) * outerR;
-        int y2 = centerY + sin(angle) * outerR;
-        display.drawLine(x1, y1, x2, y2, TFT_BLACK);
+        int markerR = radius - 35;
+        int mx = centerX + cos(angle) * markerR;
+        int my = centerY + sin(angle) * markerR;
+
+        // Larger dots at 12, 3, 6, 9
+        if (i % 3 == 0) {
+            display.fillCircle(mx, my, 6, TFT_BLACK);
+        } else {
+            display.fillCircle(mx, my, 3, TFT_BLACK);
+        }
     }
 
-    // Draw stopped hands at 4:25
-    // Hour hand: 4 hours + 25/60 adjustment = 4.417 * 30 = 132.5 degrees
-    float hourAngle = (4 + 25.0/60.0) * 30 * PI / 180 - PI/2;
-    int hourLen = radius * 0.5;
-    display.drawLine(centerX, centerY,
-                     centerX + cos(hourAngle) * hourLen,
-                     centerY + sin(hourAngle) * hourLen, TFT_BLACK);
+    // Elegant hour hand - thick, pointing to 7
+    // 07:07 - symmetric "stopped" time
+    float hourAngle = (7 + 7.0/60.0) * 30 * PI / 180 - PI/2;
+    int hourLen = radius * 0.45;
+    // Draw thick hour hand (multiple parallel lines)
+    for (int offset = -3; offset <= 3; offset++) {
+        float perpAngle = hourAngle + PI/2;
+        int ox = cos(perpAngle) * offset;
+        int oy = sin(perpAngle) * offset;
+        display.drawLine(centerX + ox, centerY + oy,
+                        centerX + cos(hourAngle) * hourLen + ox,
+                        centerY + sin(hourAngle) * hourLen + oy, TFT_BLACK);
+    }
 
-    // Minute hand: 25 minutes = 25 * 6 = 150 degrees
-    float minAngle = 25 * 6 * PI / 180 - PI/2;
-    int minLen = radius * 0.7;
-    display.drawLine(centerX, centerY,
-                     centerX + cos(minAngle) * minLen,
-                     centerY + sin(minAngle) * minLen, TFT_BLACK);
+    // Elegant minute hand - longer and slightly thinner, pointing to 7 minutes
+    float minAngle = 7 * 6 * PI / 180 - PI/2;  // 7 minutes
+    int minLen = radius * 0.65;
+    // Draw minute hand (slightly thinner)
+    for (int offset = -2; offset <= 2; offset++) {
+        float perpAngle = minAngle + PI/2;
+        int ox = cos(perpAngle) * offset;
+        int oy = sin(perpAngle) * offset;
+        display.drawLine(centerX + ox, centerY + oy,
+                        centerX + cos(minAngle) * minLen + ox,
+                        centerY + sin(minAngle) * minLen + oy, TFT_BLACK);
+    }
 
-    // Center dot
-    display.fillCircle(centerX, centerY, 4, TFT_BLACK);
+    // Decorative center hub
+    display.fillCircle(centerX, centerY, 10, TFT_BLACK);
+    display.fillCircle(centerX, centerY, 6, TFT_WHITE);
+    display.fillCircle(centerX, centerY, 3, TFT_BLACK);
 }
 
 /**
  * Display status message with Poem/1:Stopped Clocks Mod branding
+ * Layout: Clock on left, text on right for elegant asymmetric design
  */
 void displayStatus(const char* status) {
     display.fillScreen(TFT_WHITE);
 
-    // Draw clock logo in background (semi-faded)
-    drawClockLogo(480, 270, 180);
+    // Draw elegant clock logo on left side
+    drawClockLogo(200, 270, 160);
 
-    // Title: Poem/1:Stopped Clocks Mod
+    // Text on right side - much larger sizes
     display.setTextColor(TFT_BLACK);
-    display.setTextDatum(MC_DATUM);
-    display.setTextSize(4);
-    display.drawString("Poem/1", 480, 180);
-    display.setTextSize(2);
-    display.drawString("Stopped Clocks Mod", 480, 240);
+    display.setTextDatum(ML_DATUM);  // Middle-left alignment
 
-    // Status message
-    display.setTextSize(2);
-    display.drawString(status, 480, 380);
+    // Main title "Poem/1" - very large
+    display.setTextSize(8);
+    display.drawString("Poem/1", 420, 200);
+
+    // Subtitle "Stopped Clocks Mod"
+    display.setTextSize(3);
+    display.drawString("Stopped Clocks Mod", 420, 280);
+
+    // Decorative line
+    display.drawFastHLine(420, 320, 400, TFT_BLACK);
+
+    // Status message - large and readable
+    display.setTextSize(3);
+    display.drawString(status, 420, 370);
 
     display.display();
 }
@@ -999,21 +1327,27 @@ void displayStatus(const char* status) {
 void displayError(const char* message) {
     display.fillScreen(TFT_WHITE);
 
-    // Draw clock logo in background
-    drawClockLogo(480, 270, 180);
+    // Draw elegant clock logo on left side
+    drawClockLogo(200, 270, 160);
 
-    // Title
+    // Text on right side
     display.setTextColor(TFT_BLACK);
-    display.setTextDatum(MC_DATUM);
-    display.setTextSize(4);
-    display.drawString("Poem/1", 480, 180);
-    display.setTextSize(2);
-    display.drawString("Stopped Clocks Mod", 480, 240);
+    display.setTextDatum(ML_DATUM);
 
-    // Error message
-    display.setTextSize(2);
-    display.setTextColor(TFT_BLACK);
-    display.drawString(message, 480, 380);
+    // Main title
+    display.setTextSize(8);
+    display.drawString("Poem/1", 420, 200);
+
+    // Subtitle
+    display.setTextSize(3);
+    display.drawString("Stopped Clocks Mod", 420, 280);
+
+    // Decorative line
+    display.drawFastHLine(420, 320, 400, TFT_BLACK);
+
+    // Error message - prominent
+    display.setTextSize(3);
+    display.drawString(message, 420, 370);
 
     display.display();
 }
@@ -1058,16 +1392,27 @@ void updateDisplay() {
 }
 
 void setup() {
-    Serial.begin(115200);
-    unsigned long start = millis();
-    while (!Serial && (millis() - start) < 3000) delay(10);
+    // Initialize M5Unified FIRST for power button detection
+    auto cfg = M5.config();
+    cfg.external_display.module_display = false;  // Don't use M5's display, we use custom LGFX
+    cfg.internal_imu = false;  // Don't need IMU
+    cfg.internal_rtc = false;  // Don't need RTC
+    cfg.serial_baudrate = 115200;
+    M5.begin(cfg);
 
+    delay(100);  // Give serial time to initialize
     Serial.println("\n\n=== Poem/1: Stopped Clocks Mod ===");
     Serial.printf("PSRAM: %d bytes free\n", ESP.getFreePsram());
+    Serial.printf("M5Unified: Board=%d, PMIC=%d\n", M5.getBoard(), M5.Power.getType());
+    Serial.printf("Touch available: %d\n", M5.Touch.isEnabled());
 
     // Initialize power pin
     pinMode(GPIO_NUM_44, OUTPUT);
     digitalWrite(GPIO_NUM_44, LOW);
+
+    // Initialize GPIO 2 button (INPUT_PULLUP, active LOW)
+    pinMode(BUTTON_PIN, INPUT_PULLUP);
+    Serial.println("Button initialized on GPIO 2");
 
     // Initialize display
     Serial.println("Initializing display...");
@@ -1116,24 +1461,83 @@ void setup() {
 }
 
 void loop() {
-    // Check every 10 seconds
-    static unsigned long lastCheck = 0;
     unsigned long now = millis();
 
-    if (now - lastCheck >= 10000) {
+    // Update M5Unified (for compatibility, though touch doesn't work on this unit)
+    M5.update();
+
+    // ========== GPIO 2 Button Handling ==========
+    // Physical button with debounce and double-click detection
+    bool reading = digitalRead(BUTTON_PIN);
+
+    // Debounce
+    if (reading != lastButtonReading) {
+        lastDebounceTime = now;
+    }
+    lastButtonReading = reading;
+
+    // If reading stable for DEBOUNCE_MS, update state
+    if ((now - lastDebounceTime) > DEBOUNCE_MS) {
+        if (reading != buttonState) {
+            buttonState = reading;
+
+            // Button pressed (LOW = pressed due to INPUT_PULLUP)
+            if (buttonState == LOW) {
+                Serial.println("Button PRESSED");
+
+                // If showing note, dismiss immediately (no double-click needed)
+                if (showingNote) {
+                    Serial.println("Dismissing note immediately");
+                    showingNote = false;
+                    lastDisplayedTime = -1;  // Force redraw
+                    updateDisplay();
+                    clickCount = 0;
+                    waitingForDoubleClick = false;
+                } else {
+                    // Normal click counting for double-click detection
+                    clickCount++;
+                    lastClickTime = now;
+                    waitingForDoubleClick = true;
+                }
+            }
+        }
+    }
+
+    // Process clicks after double-click window expires (only when not showing note)
+    if (waitingForDoubleClick && (now - lastClickTime) > DOUBLE_CLICK_MS) {
+        handleButtonClick(clickCount);
+        clickCount = 0;
+        waitingForDoubleClick = false;
+    }
+
+    // ========== Auto-return from note ==========
+    // Skip timeout if button is currently pressed (let button handler process it first)
+    if (showingNote && (now - noteDisplayTime > 10000) && digitalRead(BUTTON_PIN) == HIGH) {
+        Serial.println("Note timeout, returning to clock");
+        showingNote = false;
+        updateDisplay();
+    }
+
+    // ========== Periodic display update ==========
+    static unsigned long lastCheck = 0;
+    if (!showingNote && (now - lastCheck >= 10000)) {
         lastCheck = now;
         updateDisplay();
     }
 
-    // Status log every minute
+    // ========== Status logging ==========
     static int idleCount = 0;
-    if (++idleCount % 60 == 0) {
+    idleCount++;
+    if (idleCount % 100 == 0) {  // Every 10 seconds
         struct tm timeinfo;
         if (getLocalTime(&timeinfo)) {
-            Serial.printf("Time: %02d:%02d | Heap: %d | PSRAM: %d\n",
+            Serial.printf("[%02d:%02d] Btn=%d Note=%s Poem=%s\n",
                           timeinfo.tm_hour, timeinfo.tm_min,
-                          ESP.getFreeHeap(), ESP.getFreePsram());
+                          buttonState == LOW ? 1 : 0,
+                          currentNote.length() > 0 ? "yes" : "no",
+                          currentPoemId.length() > 0 ? currentPoemId.c_str() : "none");
         }
     }
-    delay(1000);
+
+    delay(10);  // Fast polling for responsive button (10ms)
 }

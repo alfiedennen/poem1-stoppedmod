@@ -15,12 +15,9 @@
 #include <WiFi.h>
 #include <WiFiClientSecure.h>
 #include <HTTPClient.h>
-#include <M5Unified.h>
 #include <M5GFX.h>
 #include <lgfx/v1/platforms/esp32/Bus_EPD.h>
 #include <lgfx/v1/platforms/esp32/Panel_EPD.hpp>
-// GT911 touch disabled - doesn't respond on some M5PaperS3 units
-// #include <lgfx/v1/touch/Touch_GT911.hpp>
 #include <ArduinoJson.h>
 #include <time.h>
 #include <OpenFontRender.h>
@@ -1118,8 +1115,8 @@ void displayNoteFullScreen() {
     // Screen and margin constants
     const int SCREEN_WIDTH = 960;
     const int SCREEN_HEIGHT = 540;
-    const int TOP_MARGIN = 30;      // Visual margin from top
-    const int BOTTOM_MARGIN = 30;   // Visual margin from bottom
+    const int TOP_MARGIN = 40;      // Visual margin from top
+    const int BOTTOM_MARGIN = 50;   // Visual margin from bottom (larger for safety)
     const int SIDE_MARGIN = 60;     // Side margins
 
     int usableWidth = SCREEN_WIDTH - (SIDE_MARGIN * 2);
@@ -1135,23 +1132,17 @@ void displayNoteFullScreen() {
         String tempLines[8];
         int lineCount = wrapTextForFont(currentNote, usableWidth, fontSize, tempLines, 8);
 
-        // Calculate ACTUAL rendered height including font metrics
-        // Line height is spacing between line baselines
-        float lineHeight = fontSize * 1.3;
-        // Ascender: space above baseline (~25% of font size)
-        float ascender = fontSize * 0.25;
-        // Descender: space below baseline (~20% of font size)
-        float descender = fontSize * 0.20;
+        // Line height is spacing between line tops (fontSize * 1.3)
+        int lineHeight = fontSize * 1.3;
 
-        // Total height = from top of first char to bottom of last char
-        // = ascender + (lineCount-1)*lineHeight + fontSize-ascender + descender
-        // = (lineCount-1)*lineHeight + fontSize + descender
-        float totalRenderedHeight = (lineCount - 1) * lineHeight + fontSize + descender;
+        // Total height from first line top to last line bottom
+        // = (lineCount-1) * lineHeight + fontSize
+        int totalHeight = (lineCount - 1) * lineHeight + fontSize;
 
-        Serial.printf("  Trying %dpx: %d lines, lineH=%.0f, totalH=%.0f, avail=%d\n",
-                      fontSize, lineCount, lineHeight, totalRenderedHeight, availableHeight);
+        Serial.printf("  Trying %dpx: %d lines, lineH=%d, totalH=%d, avail=%d\n",
+                      fontSize, lineCount, lineHeight, totalHeight, availableHeight);
 
-        if (totalRenderedHeight <= availableHeight && lineCount <= 8) {
+        if (totalHeight <= availableHeight && lineCount <= 8) {
             bestFontSize = fontSize;
             bestLineCount = lineCount;
             for (int i = 0; i < lineCount; i++) {
@@ -1164,16 +1155,9 @@ void displayNoteFullScreen() {
     fontRender.setFontSize(bestFontSize);
     fontRender.setFontColor(TFT_BLACK);
 
-    // Calculate positioning with chosen font size
+    // Simple positioning: start at top margin, no centering
     int lineHeight = bestFontSize * 1.3;
-    int ascender = bestFontSize * 0.25;
-    int descender = bestFontSize * 0.20;
-    int totalRenderedHeight = (bestLineCount - 1) * lineHeight + bestFontSize + descender;
-
-    // Center text block vertically within available space
-    // Then offset by ascender because TopCenter alignment includes ascender in positioning
-    int verticalOffset = (availableHeight - totalRenderedHeight) / 2;
-    int startY = TOP_MARGIN + verticalOffset - ascender;
+    int startY = TOP_MARGIN;
 
     for (int i = 0; i < bestLineCount; i++) {
         int lineY = startY + i * lineHeight;
@@ -1182,7 +1166,7 @@ void displayNoteFullScreen() {
         fontRender.printf("%s", bestLines[i].c_str());
     }
 
-    int lastLineBottom = startY + ascender + (bestLineCount - 1) * lineHeight + bestFontSize + descender;
+    int lastLineBottom = startY + (bestLineCount - 1) * lineHeight + bestFontSize;
     Serial.printf("Note layout: fontSize=%d, startY=%d, lineH=%d, lines=%d, lastBottom=%d (limit=%d)\n",
                   bestFontSize, startY, lineHeight, bestLineCount, lastLineBottom, SCREEN_HEIGHT - BOTTOM_MARGIN);
 
@@ -1392,19 +1376,12 @@ void updateDisplay() {
 }
 
 void setup() {
-    // Initialize M5Unified FIRST for power button detection
-    auto cfg = M5.config();
-    cfg.external_display.module_display = false;  // Don't use M5's display, we use custom LGFX
-    cfg.internal_imu = false;  // Don't need IMU
-    cfg.internal_rtc = false;  // Don't need RTC
-    cfg.serial_baudrate = 115200;
-    M5.begin(cfg);
+    Serial.begin(115200);
+    unsigned long start = millis();
+    while (!Serial && (millis() - start) < 3000) delay(10);
 
-    delay(100);  // Give serial time to initialize
     Serial.println("\n\n=== Poem/1: Stopped Clocks Mod ===");
     Serial.printf("PSRAM: %d bytes free\n", ESP.getFreePsram());
-    Serial.printf("M5Unified: Board=%d, PMIC=%d\n", M5.getBoard(), M5.Power.getType());
-    Serial.printf("Touch available: %d\n", M5.Touch.isEnabled());
 
     // Initialize power pin
     pinMode(GPIO_NUM_44, OUTPUT);
@@ -1462,9 +1439,6 @@ void setup() {
 
 void loop() {
     unsigned long now = millis();
-
-    // Update M5Unified (for compatibility, though touch doesn't work on this unit)
-    M5.update();
 
     // ========== GPIO 2 Button Handling ==========
     // Physical button with debounce and double-click detection

@@ -72,6 +72,7 @@ int clockIndexCount = 0;
 // Current poem data
 String currentPoem;
 String currentFont;  // "INTER" or "PLAYFAIR"
+String loadedFont;   // Track which font is currently loaded to avoid reloading
 
 // Custom LGFX class for M5PaperS3
 class LGFX_M5PaperS3 : public lgfx::LGFX_Device
@@ -534,21 +535,32 @@ bool loadFonts() {
     }
 
     fontsLoaded = true;
+    loadedFont = "INTER";  // Track that Inter is currently loaded
     Serial.println("Fonts loaded successfully!");
     return true;
 }
 
 /**
  * Switch active font based on preference
+ * Only reloads font if it's different from currently loaded font
  */
 void setActiveFont(const String& fontName) {
     if (!fontsLoaded) return;
 
-    if (fontName == "PLAYFAIR" && playfairFontData) {
+    String targetFont = (fontName == "PLAYFAIR" && playfairFontData) ? "PLAYFAIR" : "INTER";
+
+    // Skip if font is already loaded
+    if (targetFont == loadedFont) {
+        return;
+    }
+
+    if (targetFont == "PLAYFAIR") {
         fontRender.loadFont(playfairFontData, playfairFontSize);
+        loadedFont = "PLAYFAIR";
         Serial.println("Switched to Playfair font");
     } else {
         fontRender.loadFont(interFontData, interFontSize);
+        loadedFont = "INTER";
         Serial.println("Using Inter font");
     }
 }

@@ -138,8 +138,9 @@ String getScreenId() {
     uint8_t mac[6];
     WiFi.macAddress(mac);
     char macStr[13];
+    // Reverse byte order to match poem.town dashboard format
     snprintf(macStr, sizeof(macStr), "%02X%02X%02X%02X%02X%02X",
-             mac[0], mac[1], mac[2], mac[3], mac[4], mac[5]);
+             mac[5], mac[4], mac[3], mac[2], mac[1], mac[0]);
     return String(macStr);
 }
 
@@ -331,7 +332,20 @@ bool fetchPoem(const String& time24) {
         return false;
     }
 
-    currentFont = resDoc["preferredFont"] | "INTER";
+    // Check various possible font field names
+    if (resDoc.containsKey("preferredFont")) {
+        currentFont = resDoc["preferredFont"].as<String>();
+        Serial.printf("Found preferredFont: %s\n", currentFont.c_str());
+    } else if (resDoc.containsKey("font")) {
+        currentFont = resDoc["font"].as<String>();
+        Serial.printf("Found font: %s\n", currentFont.c_str());
+    } else if (resDoc.containsKey("fontFamily")) {
+        currentFont = resDoc["fontFamily"].as<String>();
+        Serial.printf("Found fontFamily: %s\n", currentFont.c_str());
+    } else {
+        currentFont = "INTER";
+        Serial.println("No font field found, defaulting to INTER");
+    }
 
     Serial.printf("Poem received: \"%s\"\n", currentPoem.c_str());
     Serial.printf("Font: %s\n", currentFont.c_str());
@@ -547,12 +561,18 @@ bool loadFonts() {
 void setActiveFont(const String& fontName) {
     if (!fontsLoaded) return;
 
-    String targetFont = (fontName == "PLAYFAIR" && playfairFontData) ? "PLAYFAIR" : "INTER";
+    // Case-insensitive comparison for font name
+    String upperFont = fontName;
+    upperFont.toUpperCase();
+    String targetFont = (upperFont == "PLAYFAIR" && playfairFontData) ? "PLAYFAIR" : "INTER";
 
     // Skip if font is already loaded
     if (targetFont == loadedFont) {
+        Serial.printf("Font already loaded: %s\n", loadedFont.c_str());
         return;
     }
+
+    Serial.printf("Font change: %s -> %s (API requested: %s)\n", loadedFont.c_str(), targetFont.c_str(), fontName.c_str());
 
     if (targetFont == "PLAYFAIR") {
         fontRender.loadFont(playfairFontData, playfairFontSize);
@@ -800,17 +820,17 @@ void renderPoemText(int zoneX, int zoneY, int zoneW, int zoneH, const String& st
         // Set the active font based on poem.town preference
         setActiveFont(currentFont);
 
-        // Use 60% of zone for conservative margin
-        int usableWidth = (displayW * 60) / 100;
-        int usableHeight = (displayH * 60) / 100;
+        // Use 75% of zone for text
+        int usableWidth = (displayW * 75) / 100;
+        int usableHeight = (displayH * 75) / 100;
 
-        // Try font sizes from 56 down to 20, find largest that fits
-        int bestFontSize = 20;
+        // Try font sizes from 72 down to 24, find largest that fits
+        int bestFontSize = 24;
         int bestLineCount = 1;
         String bestLines[6];
         bestLines[0] = fullText;
 
-        for (int fontSize = 56; fontSize >= 20; fontSize -= 4) {
+        for (int fontSize = 72; fontSize >= 24; fontSize -= 4) {
             String tempLines[6];
             int lineCount = wrapTextForFont(fullText, usableWidth, fontSize, tempLines, 6);
 

@@ -92,17 +92,19 @@ The firmware supports custom TrueType fonts via OpenFontRender:
 - **Inter** - Clean sans-serif for modern poems
 - **Playfair Display** - Elegant serif for classic poems
 - Fonts downloaded from CDN at boot (~500KB total)
-- poem.town API returns `preferredFont` field ("INTER" or "PLAYFAIR")
-- Dynamic font sizing: tries sizes 56→20px, picks largest that fits
+- poem.town API returns `font` field ("INTER" or "PLAYFAIR")
+- Font preference controlled via poem.town dashboard
+- Dynamic font sizing: tries sizes 72→24px, picks largest that fits
 
 ### Text Rendering
 
 The firmware automatically:
 - Downloads and caches TTF fonts to PSRAM
 - Re-wraps poem text using actual font metrics
-- Tries font sizes 56→20px, picks largest that fits within 60% of zone
+- Tries font sizes 72→24px, picks largest that fits within 75% of zone
 - Centers text in the detected whitespace zone
 - Falls back to strip positioning if no zone detected
+- Only reloads fonts when preference changes (prevents memory leaks)
 
 ### 12-Hour Time Matching
 
@@ -168,6 +170,8 @@ Content-Type: application/json
 ```
 
 Returns time-specific rhyming poem with font preference ("INTER" or "PLAYFAIR").
+
+**Note**: The `screenId` must be the device MAC address in reverse byte order to match the poem.town dashboard format.
 
 ### Stopped Clocks Index
 

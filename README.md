@@ -2,7 +2,7 @@
 
 A mod for the [Poem/1](https://poem.town) e-paper device that displays AI-generated poems overlaid on photographs of stopped public clocks from [stoppedclocks.org](https://stoppedclocks.org).
 
-![Living Clock Display](https://stoppedclocks.org/living-clock/images/preview.png)
+![Living Clock Display](example.jpg)
 
 ## What This Is
 

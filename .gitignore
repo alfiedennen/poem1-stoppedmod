@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.env
+venv/
+
+# PlatformIO
+.pio/
+.pioenvs/
+.piolibdeps/
+
+# IDE
+.vscode/
+.idea/
+
+# Build artifacts
+*.o
+*.a
+*.so
+*.dylib
+
+# Test images
+test_*.png
+bw_images/
+
+# Debug files
+*-debug.json
+device-time-index.json
+
+# Fonts - only keep required TTFs
+fonts/
+firmware/src/fonts/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Archives
+*.zip

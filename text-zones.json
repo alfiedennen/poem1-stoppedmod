@@ -1,0 +1,3231 @@
+{
+  "generated": "2025-12-15T09:11:12.764429Z",
+  "parameters": {
+    "cell_size": 8,
+    "white_threshold": 128,
+    "black_threshold": 127,
+    "high_density": 0.2,
+    "min_zone_size": "120x40"
+  },
+  "images": {
+    "0000_old-market-house-maltravers-street-arundel-uk_threshold.png": {
+      "time": "00:00",
+      "zone": {
+        "x": 0,
+        "y": 16,
+        "width": 472,
+        "height": 256,
+        "area": 120832,
+        "density": 0.96
+      },
+      "best_strip": "middle",
+      "overall_density": 0.96,
+      "recommendation": "ZONE_TOP"
+    },
+    "0105_local-shop-for-local-people_threshold.png": {
+      "time": "01:05",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 504,
+        "height": 144,
+        "area": 72576,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.78,
+      "recommendation": "ZONE_TOP"
+    },
+    "0112_big-contemporary-clock-by-the-station_threshold.png": {
+      "time": "01:12",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 504,
+        "height": 112,
+        "area": 56448,
+        "density": 0.99
+      },
+      "best_strip": "top",
+      "overall_density": 0.58,
+      "recommendation": "ZONE_TOP"
+    },
+    "0113_the-clock-has-stopped_threshold.png": {
+      "time": "01:13",
+      "zone": {
+        "x": 224,
+        "y": 0,
+        "width": 280,
+        "height": 248,
+        "area": 69440,
+        "density": 0.99
+      },
+      "best_strip": "top",
+      "overall_density": 0.9,
+      "recommendation": "ZONE_TOP"
+    },
+    "0117_art-deco-clock-electric-house-torquay_threshold.png": {
+      "time": "01:17",
+      "zone": {
+        "x": 152,
+        "y": 0,
+        "width": 200,
+        "height": 152,
+        "area": 30400,
+        "density": 0.98
+      },
+      "best_strip": "top",
+      "overall_density": 0.44,
+      "recommendation": "ZONE_TOP"
+    },
+    "0119_cafe-on-the-platform_threshold.png": {
+      "time": "01:19",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 504,
+        "height": 120,
+        "area": 60480,
+        "density": 0.98
+      },
+      "best_strip": "top",
+      "overall_density": 0.55,
+      "recommendation": "ZONE_TOP"
+    },
+    "0119_former-garage-castle-street-worcester_threshold.png": {
+      "time": "01:19",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 352,
+        "height": 256,
+        "area": 90112,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.9,
+      "recommendation": "ZONE_TOP"
+    },
+    "0120_great-malvern-station_threshold.png": {
+      "time": "01:20",
+      "zone": null,
+      "best_strip": "middle",
+      "overall_density": 0.25,
+      "recommendation": "DARK_OVERLAY"
+    },
+    "0126_barton-s-arms-pub-aston-birmingham_threshold.png": {
+      "time": "01:26",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 360,
+        "height": 200,
+        "area": 72000,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.79,
+      "recommendation": "ZONE_TOP"
+    },
+    "0128_the-old-town-hall-burslem-stoke-on-trent_threshold.png": {
+      "time": "01:28",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 256,
+        "height": 296,
+        "area": 75776,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.67,
+      "recommendation": "ZONE_TOP"
+    },
+    "0129_tucked-away-near-devonshire-square-london_threshold.png": {
+      "time": "01:29",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 232,
+        "height": 264,
+        "area": 61248,
+        "density": 0.99
+      },
+      "best_strip": "top",
+      "overall_density": 0.68,
+      "recommendation": "ZONE_TOP"
+    },
+    "0136_picton-clock-tower-in-wavertree-liverpool_threshold.png": {
+      "time": "01:36",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 248,
+        "height": 280,
+        "area": 69440,
+        "density": 1.0
+      },
+      "best_strip": "middle",
+      "overall_density": 0.71,
+      "recommendation": "ZONE_TOP"
+    },
+    "0138_former-st-george-s-in-wolverhampton_threshold.png": {
+      "time": "01:38",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 296,
+        "height": 296,
+        "area": 87616,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.94,
+      "recommendation": "ZONE_TOP"
+    },
+    "0146_clock-st-michael-all-angels-st-michaels-tenbury-wells-worcestershire-england_threshold.png": {
+      "time": "01:46",
+      "zone": {
+        "x": 144,
+        "y": 152,
+        "width": 320,
+        "height": 80,
+        "area": 25600,
+        "density": 0.97
+      },
+      "best_strip": "bottom",
+      "overall_density": 0.74,
+      "recommendation": "ZONE_CENTER"
+    },
+    "0146_horley-former-fire-station_threshold.png": {
+      "time": "01:46",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 240,
+        "height": 288,
+        "area": 69120,
+        "density": 0.99
+      },
+      "best_strip": "middle",
+      "overall_density": 0.55,
+      "recommendation": "ZONE_TOP"
+    },
+    "0151_former-church-of-the-holy-trinity-clock-bromham-road-bedford-uk_threshold.png": {
+      "time": "01:51",
+      "zone": {
+        "x": 120,
+        "y": 208,
+        "width": 280,
+        "height": 72,
+        "area": 20160,
+        "density": 0.96
+      },
+      "best_strip": "bottom",
+      "overall_density": 0.85,
+      "recommendation": "ZONE_BOTTOM"
+    },
+    "0201_pond-and-tesco-s-clock_threshold.png": {
+      "time": "02:01",
+      "zone": {
+        "x": 184,
+        "y": 0,
+        "width": 320,
+        "height": 280,
+        "area": 89600,
+        "density": 0.99
+      },
+      "best_strip": "top",
+      "overall_density": 0.9,
+      "recommendation": "ZONE_TOP"
+    },
+    "0213_knowlsley-registry-office-stopped_threshold.png": {
+      "time": "02:13",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 272,
+        "height": 264,
+        "area": 71808,
+        "density": 1.0
+      },
+      "best_strip": "middle",
+      "overall_density": 0.64,
+      "recommendation": "ZONE_TOP"
+    },
+    "0219_clock-house-near-waddingham_threshold.png": {
+      "time": "02:19",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 504,
+        "height": 176,
+        "area": 88704,
+        "density": 0.97
+      },
+      "best_strip": "top",
+      "overall_density": 0.93,
+      "recommendation": "ZONE_TOP"
+    },
+    "0221_abdiel-house_threshold.png": {
+      "time": "02:21",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 336,
+        "height": 288,
+        "area": 96768,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.84,
+      "recommendation": "ZONE_TOP"
+    },
+    "0223_alive-lynnsport-stopped-in-norfolk_threshold.png": {
+      "time": "02:23",
+      "zone": {
+        "x": 0,
+        "y": 104,
+        "width": 264,
+        "height": 136,
+        "area": 35904,
+        "density": 0.92
+      },
+      "best_strip": "top",
+      "overall_density": 0.83,
+      "recommendation": "ZONE_CENTER"
+    },
+    "0231_the-east-end-of-friar-gate_threshold.png": {
+      "time": "02:31",
+      "zone": {
+        "x": 200,
+        "y": 128,
+        "width": 128,
+        "height": 168,
+        "area": 21504,
+        "density": 0.98
+      },
+      "best_strip": "top",
+      "overall_density": 0.79,
+      "recommendation": "ZONE_CENTER"
+    },
+    "0231_tower-clock-ruthin-castle-hotel-ruthin-denbighshire-wales_threshold.png": {
+      "time": "02:31",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 208,
+        "height": 296,
+        "area": 61568,
+        "density": 1.0
+      },
+      "best_strip": "bottom",
+      "overall_density": 0.86,
+      "recommendation": "ZONE_TOP"
+    },
+    "0232_clock-and-sundial-great-witcombe-church_threshold.png": {
+      "time": "02:32",
+      "zone": {
+        "x": 176,
+        "y": 0,
+        "width": 328,
+        "height": 296,
+        "area": 97088,
+        "density": 1.0
+      },
+      "best_strip": "bottom",
+      "overall_density": 0.88,
+      "recommendation": "ZONE_TOP"
+    },
+    "0232_st-john-the-baptist-church-paignton_threshold.png": {
+      "time": "02:32",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 296,
+        "height": 296,
+        "area": 87616,
+        "density": 1.0
+      },
+      "best_strip": "middle",
+      "overall_density": 0.77,
+      "recommendation": "ZONE_TOP"
+    },
+    "0234_clock-our-lady-st-james-church-bangor-gwynedd-wales_threshold.png": {
+      "time": "02:34",
+      "zone": {
+        "x": 184,
+        "y": 160,
+        "width": 192,
+        "height": 136,
+        "area": 26112,
+        "density": 0.95
+      },
+      "best_strip": "bottom",
+      "overall_density": 0.66,
+      "recommendation": "ZONE_CENTER"
+    },
+    "0246_guildhall-in-norwich-stopped-since-2017_threshold.png": {
+      "time": "02:46",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 368,
+        "height": 152,
+        "area": 55936,
+        "density": 0.99
+      },
+      "best_strip": "top",
+      "overall_density": 0.76,
+      "recommendation": "ZONE_TOP"
+    },
+    "0249_stopped-clock-in-peckham-rye_threshold.png": {
+      "time": "02:49",
+      "zone": {
+        "x": 248,
+        "y": 0,
+        "width": 256,
+        "height": 296,
+        "area": 75776,
+        "density": 0.99
+      },
+      "best_strip": "middle",
+      "overall_density": 0.55,
+      "recommendation": "ZONE_TOP"
+    },
+    "0250_victoria-centre-clock_threshold.png": {
+      "time": "02:50",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 208,
+        "height": 296,
+        "area": 61568,
+        "density": 1.0
+      },
+      "best_strip": "middle",
+      "overall_density": 0.75,
+      "recommendation": "ZONE_TOP"
+    },
+    "0252_shipley-clock-tower_threshold.png": {
+      "time": "02:52",
+      "zone": {
+        "x": 232,
+        "y": 0,
+        "width": 272,
+        "height": 296,
+        "area": 80512,
+        "density": 0.99
+      },
+      "best_strip": "top",
+      "overall_density": 0.94,
+      "recommendation": "ZONE_TOP"
+    },
+    "0256_clock-abergele-road-colwyn-bay-conwy-wales_threshold.png": {
+      "time": "02:56",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 200,
+        "height": 296,
+        "area": 59200,
+        "density": 0.99
+      },
+      "best_strip": "bottom",
+      "overall_density": 0.78,
+      "recommendation": "ZONE_TOP"
+    },
+    "0300_3-o-clock-in-tredegar_threshold.png": {
+      "time": "03:00",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 360,
+        "height": 296,
+        "area": 106560,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.86,
+      "recommendation": "ZONE_TOP"
+    },
+    "0304_a-chilling-time_threshold.png": {
+      "time": "03:04",
+      "zone": {
+        "x": 200,
+        "y": 0,
+        "width": 304,
+        "height": 296,
+        "area": 89984,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.84,
+      "recommendation": "ZONE_TOP"
+    },
+    "0305_seacroft-hospital-clock-tower-seacroft-uk_threshold.png": {
+      "time": "03:05",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 304,
+        "height": 296,
+        "area": 89984,
+        "density": 1.0
+      },
+      "best_strip": "bottom",
+      "overall_density": 0.86,
+      "recommendation": "ZONE_TOP"
+    },
+    "0308_teignmouth-st-michael-s-church_threshold.png": {
+      "time": "03:08",
+      "zone": {
+        "x": 216,
+        "y": 0,
+        "width": 256,
+        "height": 296,
+        "area": 75776,
+        "density": 1.0
+      },
+      "best_strip": "bottom",
+      "overall_density": 0.83,
+      "recommendation": "ZONE_TOP"
+    },
+    "0309_ebley-mill-clock-tower_threshold.png": {
+      "time": "03:09",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 272,
+        "height": 184,
+        "area": 50048,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.61,
+      "recommendation": "ZONE_TOP"
+    },
+    "0309_the-fighting-cocks-pub-moseley-village-birmingham_threshold.png": {
+      "time": "03:09",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 280,
+        "height": 296,
+        "area": 82880,
+        "density": 1.0
+      },
+      "best_strip": "middle",
+      "overall_density": 0.75,
+      "recommendation": "ZONE_TOP"
+    },
+    "0315_llandudno-station_threshold.png": {
+      "time": "03:15",
+      "zone": {
+        "x": 128,
+        "y": 0,
+        "width": 280,
+        "height": 216,
+        "area": 60480,
+        "density": 0.98
+      },
+      "best_strip": "middle",
+      "overall_density": 0.83,
+      "recommendation": "ZONE_TOP"
+    },
+    "0319_st-illtyd-s-church-clock-pembrey-carmarthenshire-wales_threshold.png": {
+      "time": "03:19",
+      "zone": {
+        "x": 120,
+        "y": 72,
+        "width": 256,
+        "height": 72,
+        "area": 18432,
+        "density": 0.98
+      },
+      "best_strip": "top",
+      "overall_density": 0.83,
+      "recommendation": "ZONE_TOP"
+    },
+    "0319_st-john-the-evangelist-golden-hill-stopped-since-2014_threshold.png": {
+      "time": "03:19",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 296,
+        "height": 288,
+        "area": 85248,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.96,
+      "recommendation": "ZONE_TOP"
+    },
+    "0320_lamlash-the-clock-house_threshold.png": {
+      "time": "03:20",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 336,
+        "height": 240,
+        "area": 80640,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.74,
+      "recommendation": "ZONE_TOP"
+    },
+    "0322_view-out-through-the-east-gate-arch_threshold.png": {
+      "time": "03:22",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 504,
+        "height": 144,
+        "area": 72576,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.68,
+      "recommendation": "ZONE_TOP"
+    },
+    "0328_clock-st-john-the-baptist-crowle-worcestershire-england_threshold.png": {
+      "time": "03:28",
+      "zone": {
+        "x": 320,
+        "y": 168,
+        "width": 184,
+        "height": 128,
+        "area": 23552,
+        "density": 0.91
+      },
+      "best_strip": "bottom",
+      "overall_density": 0.84,
+      "recommendation": "ZONE_BOTTOM"
+    },
+    "0329_wistow-the-village-where-time-stands-still_threshold.png": {
+      "time": "03:29",
+      "zone": {
+        "x": 0,
+        "y": 16,
+        "width": 504,
+        "height": 136,
+        "area": 68544,
+        "density": 0.99
+      },
+      "best_strip": "top",
+      "overall_density": 0.96,
+      "recommendation": "ZONE_TOP"
+    },
+    "0330_brandon-main-street_threshold.png": {
+      "time": "03:30",
+      "zone": {
+        "x": 120,
+        "y": 0,
+        "width": 336,
+        "height": 144,
+        "area": 48384,
+        "density": 0.99
+      },
+      "best_strip": "top",
+      "overall_density": 0.61,
+      "recommendation": "ZONE_TOP"
+    },
+    "0330_stopped-at-aldenham-house-elstree-hertfordshire-habs-school_threshold.png": {
+      "time": "03:30",
+      "zone": {
+        "x": 184,
+        "y": 0,
+        "width": 320,
+        "height": 296,
+        "area": 94720,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.93,
+      "recommendation": "ZONE_TOP"
+    },
+    "0334_clock-railway-station-bangor-gwynedd-wales_threshold.png": {
+      "time": "03:34",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 232,
+        "height": 136,
+        "area": 31552,
+        "density": 0.99
+      },
+      "best_strip": "top",
+      "overall_density": 0.59,
+      "recommendation": "ZONE_TOP"
+    },
+    "0337_albion-house-clock-lime-street-bedford-uk_threshold.png": {
+      "time": "03:37",
+      "zone": {
+        "x": 208,
+        "y": 104,
+        "width": 296,
+        "height": 192,
+        "area": 56832,
+        "density": 0.99
+      },
+      "best_strip": "bottom",
+      "overall_density": 0.9,
+      "recommendation": "ZONE_CENTER"
+    },
+    "0337_the-clockhouse-stopped-in-havering-london_threshold.png": {
+      "time": "03:37",
+      "zone": {
+        "x": 144,
+        "y": 0,
+        "width": 360,
+        "height": 296,
+        "area": 106560,
+        "density": 0.99
+      },
+      "best_strip": "bottom",
+      "overall_density": 0.93,
+      "recommendation": "ZONE_TOP"
+    },
+    "0339_android-test-post_threshold.png": {
+      "time": "03:39",
+      "zone": {
+        "x": 272,
+        "y": 0,
+        "width": 232,
+        "height": 296,
+        "area": 68672,
+        "density": 0.99
+      },
+      "best_strip": "bottom",
+      "overall_density": 0.88,
+      "recommendation": "ZONE_TOP"
+    },
+    "0345_cadbury-lodge-clock-on-path-from-cadbury-world-to-bournville-station-broken_threshold.png": {
+      "time": "03:45",
+      "zone": {
+        "x": 0,
+        "y": 48,
+        "width": 424,
+        "height": 248,
+        "area": 105152,
+        "density": 0.99
+      },
+      "best_strip": "bottom",
+      "overall_density": 0.94,
+      "recommendation": "ZONE_TOP"
+    },
+    "0349_st-john-s-church-buglawton-southern-and-eastern-clockfaces_threshold.png": {
+      "time": "03:49",
+      "zone": {
+        "x": 280,
+        "y": 0,
+        "width": 224,
+        "height": 240,
+        "area": 53760,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.55,
+      "recommendation": "ZONE_TOP"
+    },
+    "0350_-east-park-clock-tower-wolverhampton_threshold.png": {
+      "time": "03:50",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 296,
+        "height": 296,
+        "area": 87616,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.81,
+      "recommendation": "ZONE_TOP"
+    },
+    "0350_buses-run-on-time-at-leominster-bus-station-just-not-the-clock_threshold.png": {
+      "time": "03:50",
+      "zone": {
+        "x": 336,
+        "y": 24,
+        "width": 168,
+        "height": 176,
+        "area": 29568,
+        "density": 0.99
+      },
+      "best_strip": "top",
+      "overall_density": 0.72,
+      "recommendation": "ZONE_TOP"
+    },
+    "0351_the-old-police-station-clock-stopped-in-halton_threshold.png": {
+      "time": "03:51",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 240,
+        "height": 296,
+        "area": 71040,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.74,
+      "recommendation": "ZONE_TOP"
+    },
+    "0354_stopped-at-coombe-park-pavilion-leicester_threshold.png": {
+      "time": "03:54",
+      "zone": {
+        "x": 216,
+        "y": 0,
+        "width": 288,
+        "height": 248,
+        "area": 71424,
+        "density": 1.0
+      },
+      "best_strip": "middle",
+      "overall_density": 0.72,
+      "recommendation": "ZONE_TOP"
+    },
+    "0354_whitehead-park-clock-tower-bury_threshold.png": {
+      "time": "03:54",
+      "zone": {
+        "x": 176,
+        "y": 0,
+        "width": 328,
+        "height": 296,
+        "area": 97088,
+        "density": 0.98
+      },
+      "best_strip": "bottom",
+      "overall_density": 0.9,
+      "recommendation": "ZONE_TOP"
+    },
+    "0356_st-john-s-church-buglawton-western-clockface_threshold.png": {
+      "time": "03:56",
+      "zone": {
+        "x": 264,
+        "y": 0,
+        "width": 240,
+        "height": 296,
+        "area": 71040,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.7,
+      "recommendation": "ZONE_TOP"
+    },
+    "0403_longton-park-clock-tower-stopped-in-stoke-on-trent_threshold.png": {
+      "time": "04:03",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 248,
+        "height": 296,
+        "area": 73408,
+        "density": 1.0
+      },
+      "best_strip": "middle",
+      "overall_density": 0.61,
+      "recommendation": "ZONE_TOP"
+    },
+    "0403_the-roundhouse-marlowes-hemel-hampstead-_threshold.png": {
+      "time": "04:03",
+      "zone": {
+        "x": 0,
+        "y": 48,
+        "width": 328,
+        "height": 88,
+        "area": 28864,
+        "density": 0.99
+      },
+      "best_strip": "middle",
+      "overall_density": 0.73,
+      "recommendation": "ZONE_TOP"
+    },
+    "0404_the-old-town-hall-of-middlesborough_threshold.png": {
+      "time": "04:04",
+      "zone": {
+        "x": 208,
+        "y": 0,
+        "width": 296,
+        "height": 256,
+        "area": 75776,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.78,
+      "recommendation": "ZONE_TOP"
+    },
+    "0407_stopped-clock-on-an-oldfield-park-corner-bath_threshold.png": {
+      "time": "04:07",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 336,
+        "height": 296,
+        "area": 99456,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.83,
+      "recommendation": "ZONE_TOP"
+    },
+    "0410_village-clock-st-margaret-owthorpe-nottinghamshire_threshold.png": {
+      "time": "04:10",
+      "zone": {
+        "x": 104,
+        "y": 0,
+        "width": 400,
+        "height": 152,
+        "area": 60800,
+        "density": 0.99
+      },
+      "best_strip": "middle",
+      "overall_density": 0.87,
+      "recommendation": "ZONE_TOP"
+    },
+    "0411_thurstan-hoskin-building-redruth-cornwall-uk_threshold.png": {
+      "time": "04:11",
+      "zone": {
+        "x": 216,
+        "y": 0,
+        "width": 288,
+        "height": 296,
+        "area": 85248,
+        "density": 0.99
+      },
+      "best_strip": "middle",
+      "overall_density": 0.71,
+      "recommendation": "ZONE_TOP"
+    },
+    "0420_canadian-pacific-building-trafalgar-square-_threshold.png": {
+      "time": "04:20",
+      "zone": {
+        "x": 0,
+        "y": 144,
+        "width": 352,
+        "height": 88,
+        "area": 30976,
+        "density": 0.96
+      },
+      "best_strip": "middle",
+      "overall_density": 0.71,
+      "recommendation": "ZONE_CENTER"
+    },
+    "0421_jr-tasker-clock-on-st-james-street-brighton-_threshold.png": {
+      "time": "04:21",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 280,
+        "height": 280,
+        "area": 78400,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.81,
+      "recommendation": "ZONE_TOP"
+    },
+    "0423_st-john-s-church-hollington_threshold.png": {
+      "time": "04:23",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 288,
+        "height": 296,
+        "area": 85248,
+        "density": 0.93
+      },
+      "best_strip": "middle",
+      "overall_density": 0.78,
+      "recommendation": "ZONE_TOP"
+    },
+    "0427_kings-norton-hospital-clock_threshold.png": {
+      "time": "04:27",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 504,
+        "height": 160,
+        "area": 80640,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.79,
+      "recommendation": "ZONE_TOP"
+    },
+    "0429_old-square-walsall-clock-not-working_threshold.png": {
+      "time": "04:29",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 328,
+        "height": 296,
+        "area": 97088,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.94,
+      "recommendation": "ZONE_TOP"
+    },
+    "0434_st-marys-day-centre-west-byfleet_threshold.png": {
+      "time": "04:34",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 328,
+        "height": 272,
+        "area": 89216,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.81,
+      "recommendation": "ZONE_TOP"
+    },
+    "0435_closest-to-home_threshold.png": {
+      "time": "04:35",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 392,
+        "height": 296,
+        "area": 116032,
+        "density": 0.99
+      },
+      "best_strip": "bottom",
+      "overall_density": 0.93,
+      "recommendation": "ZONE_TOP"
+    },
+    "0437_st-matthias-poplar_threshold.png": {
+      "time": "04:37",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 392,
+        "height": 224,
+        "area": 87808,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.82,
+      "recommendation": "ZONE_TOP"
+    },
+    "0438_clock-paint-factory-coed-y-parc-gwynedd-wales_threshold.png": {
+      "time": "04:38",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 360,
+        "height": 296,
+        "area": 106560,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.96,
+      "recommendation": "ZONE_TOP"
+    },
+    "0439_stopped-above-haz-restaurant-finsbury-square_threshold.png": {
+      "time": "04:39",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 288,
+        "height": 296,
+        "area": 85248,
+        "density": 1.0
+      },
+      "best_strip": "middle",
+      "overall_density": 0.92,
+      "recommendation": "ZONE_TOP"
+    },
+    "0439_the-five-ways-clock_threshold.png": {
+      "time": "04:39",
+      "zone": {
+        "x": 200,
+        "y": 0,
+        "width": 304,
+        "height": 296,
+        "area": 89984,
+        "density": 0.98
+      },
+      "best_strip": "top",
+      "overall_density": 0.94,
+      "recommendation": "ZONE_TOP"
+    },
+    "0446_broadgate-house-stopped-in-coventry_threshold.png": {
+      "time": "04:46",
+      "zone": {
+        "x": 0,
+        "y": 48,
+        "width": 312,
+        "height": 248,
+        "area": 77376,
+        "density": 0.99
+      },
+      "best_strip": "top",
+      "overall_density": 0.76,
+      "recommendation": "ZONE_TOP"
+    },
+    "0450_hobbs-pavilion-clock-parker-s-piece-cambridge-uk_threshold.png": {
+      "time": "04:50",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 272,
+        "height": 296,
+        "area": 80512,
+        "density": 1.0
+      },
+      "best_strip": "bottom",
+      "overall_density": 0.87,
+      "recommendation": "ZONE_TOP"
+    },
+    "0450_slater-menswear-birmingham-clock_threshold.png": {
+      "time": "04:50",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 240,
+        "height": 296,
+        "area": 71040,
+        "density": 1.0
+      },
+      "best_strip": "middle",
+      "overall_density": 0.77,
+      "recommendation": "ZONE_TOP"
+    },
+    "0453_road-junction_threshold.png": {
+      "time": "04:53",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 504,
+        "height": 168,
+        "area": 84672,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.81,
+      "recommendation": "ZONE_TOP"
+    },
+    "0501_stopped-at-the-village-arcade-in-st-albans_threshold.png": {
+      "time": "05:01",
+      "zone": {
+        "x": 16,
+        "y": 120,
+        "width": 488,
+        "height": 176,
+        "area": 85888,
+        "density": 0.99
+      },
+      "best_strip": "bottom",
+      "overall_density": 0.91,
+      "recommendation": "ZONE_CENTER"
+    },
+    "0505_saint-samlet-church-clock-llansamlet-swansea-wales_threshold.png": {
+      "time": "05:05",
+      "zone": {
+        "x": 224,
+        "y": 0,
+        "width": 280,
+        "height": 296,
+        "area": 82880,
+        "density": 1.0
+      },
+      "best_strip": "bottom",
+      "overall_density": 0.7,
+      "recommendation": "ZONE_TOP"
+    },
+    "0517_combined-libray-police-station-and-fire-station-clock-leeds-uk_threshold.png": {
+      "time": "05:17",
+      "zone": {
+        "x": 240,
+        "y": 0,
+        "width": 264,
+        "height": 296,
+        "area": 78144,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.78,
+      "recommendation": "ZONE_TOP"
+    },
+    "0517_stopped-in-leeds-uk-combined-library-police-station-and-fire-station-clock_threshold.png": {
+      "time": "05:17",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 256,
+        "height": 296,
+        "area": 75776,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.65,
+      "recommendation": "ZONE_TOP"
+    },
+    "0531_brighton-pier-clock-half-right-_threshold.png": {
+      "time": "05:31",
+      "zone": {
+        "x": 208,
+        "y": 0,
+        "width": 296,
+        "height": 296,
+        "area": 87616,
+        "density": 1.0
+      },
+      "best_strip": "middle",
+      "overall_density": 0.78,
+      "recommendation": "ZONE_TOP"
+    },
+    "0533_stopped-defunct-lever-building-clerknwell-london_threshold.png": {
+      "time": "05:33",
+      "zone": {
+        "x": 184,
+        "y": 0,
+        "width": 320,
+        "height": 240,
+        "area": 76800,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.81,
+      "recommendation": "ZONE_TOP"
+    },
+    "0535_clock-st-peter-s-church-bromyard-herefordshire-england_threshold.png": {
+      "time": "05:35",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 304,
+        "height": 296,
+        "area": 89984,
+        "density": 0.98
+      },
+      "best_strip": "top",
+      "overall_density": 0.91,
+      "recommendation": "ZONE_TOP"
+    },
+    "0538_warwick-town-east-gate_threshold.png": {
+      "time": "05:38",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 328,
+        "height": 208,
+        "area": 68224,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.66,
+      "recommendation": "ZONE_TOP"
+    },
+    "0548_st-paul-s-stalybridge_threshold.png": {
+      "time": "05:48",
+      "zone": {
+        "x": 240,
+        "y": 0,
+        "width": 264,
+        "height": 296,
+        "area": 78144,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.56,
+      "recommendation": "ZONE_TOP"
+    },
+    "0552_clock-nelson-e-eye-patch-shire-house-shirehall-plain-holt-nr25-6ht_threshold.png": {
+      "time": "05:52",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 368,
+        "height": 296,
+        "area": 108928,
+        "density": 0.99
+      },
+      "best_strip": "top",
+      "overall_density": 0.97,
+      "recommendation": "ZONE_TOP"
+    },
+    "0554_clock-tower-at-king-george-v-primary-school-in-west-bromwich_threshold.png": {
+      "time": "05:54",
+      "zone": {
+        "x": 240,
+        "y": 0,
+        "width": 264,
+        "height": 296,
+        "area": 78144,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.76,
+      "recommendation": "ZONE_TOP"
+    },
+    "0556_stopped-on-leonard-street-shoreditch-london_threshold.png": {
+      "time": "05:56",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 504,
+        "height": 176,
+        "area": 88704,
+        "density": 0.98
+      },
+      "best_strip": "top",
+      "overall_density": 0.95,
+      "recommendation": "ZONE_TOP"
+    },
+    "0559_stopped-in-battle-above-costa-coffee_threshold.png": {
+      "time": "05:59",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 304,
+        "height": 296,
+        "area": 89984,
+        "density": 0.99
+      },
+      "best_strip": "top",
+      "overall_density": 0.88,
+      "recommendation": "ZONE_TOP"
+    },
+    "0601_the-old-police-station-and-library-chapel-allerton_threshold.png": {
+      "time": "06:01",
+      "zone": {
+        "x": 16,
+        "y": 168,
+        "width": 488,
+        "height": 104,
+        "area": 50752,
+        "density": 0.99
+      },
+      "best_strip": "bottom",
+      "overall_density": 0.88,
+      "recommendation": "ZONE_BOTTOM"
+    },
+    "0604_old-high-kirk-kilmarnock_threshold.png": {
+      "time": "06:04",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 240,
+        "height": 296,
+        "area": 71040,
+        "density": 0.99
+      },
+      "best_strip": "top",
+      "overall_density": 0.9,
+      "recommendation": "ZONE_TOP"
+    },
+    "0607_dorset-house-stamford-road-recently-acquired-by-whitbread_threshold.png": {
+      "time": "06:07",
+      "zone": {
+        "x": 208,
+        "y": 0,
+        "width": 296,
+        "height": 296,
+        "area": 87616,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.88,
+      "recommendation": "ZONE_TOP"
+    },
+    "0611_time-stands-still-in-milldale_threshold.png": {
+      "time": "06:11",
+      "zone": {
+        "x": 168,
+        "y": 0,
+        "width": 192,
+        "height": 296,
+        "area": 56832,
+        "density": 0.96
+      },
+      "best_strip": "top",
+      "overall_density": 0.94,
+      "recommendation": "ZONE_TOP"
+    },
+    "0611_twyning-church_threshold.png": {
+      "time": "06:11",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 264,
+        "height": 280,
+        "area": 73920,
+        "density": 1.0
+      },
+      "best_strip": "middle",
+      "overall_density": 0.88,
+      "recommendation": "ZONE_TOP"
+    },
+    "0612_church-clock_threshold.png": {
+      "time": "06:12",
+      "zone": {
+        "x": 232,
+        "y": 0,
+        "width": 272,
+        "height": 288,
+        "area": 78336,
+        "density": 0.99
+      },
+      "best_strip": "top",
+      "overall_density": 0.8,
+      "recommendation": "ZONE_TOP"
+    },
+    "0613_st-leonard-s-church-the-marina-st-leonards-on-sea-clock-status-history_threshold.png": {
+      "time": "06:13",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 504,
+        "height": 296,
+        "area": 149184,
+        "density": 0.97
+      },
+      "best_strip": "top",
+      "overall_density": 0.97,
+      "recommendation": "ZONE_TOP"
+    },
+    "0614_clock-tower-in-stoke-park_threshold.png": {
+      "time": "06:14",
+      "zone": {
+        "x": 216,
+        "y": 0,
+        "width": 288,
+        "height": 296,
+        "area": 85248,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.64,
+      "recommendation": "ZONE_TOP"
+    },
+    "0630_clock-pensax-court-pensax-worcestershire-england_threshold.png": {
+      "time": "06:30",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 200,
+        "height": 256,
+        "area": 51200,
+        "density": 1.0
+      },
+      "best_strip": "middle",
+      "overall_density": 0.66,
+      "recommendation": "ZONE_TOP"
+    },
+    "0630_village-clock-the-old-post-office-hambleton-rutland_threshold.png": {
+      "time": "06:30",
+      "zone": {
+        "x": 176,
+        "y": 0,
+        "width": 328,
+        "height": 248,
+        "area": 81344,
+        "density": 0.99
+      },
+      "best_strip": "bottom",
+      "overall_density": 0.93,
+      "recommendation": "ZONE_TOP"
+    },
+    "0632_slaughter-house-barns_threshold.png": {
+      "time": "06:32",
+      "zone": {
+        "x": 0,
+        "y": 72,
+        "width": 504,
+        "height": 224,
+        "area": 112896,
+        "density": 0.99
+      },
+      "best_strip": "bottom",
+      "overall_density": 0.96,
+      "recommendation": "ZONE_TOP"
+    },
+    "0633_central-forest-park-pavilion-stoke-on-trent_threshold.png": {
+      "time": "06:33",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 424,
+        "height": 216,
+        "area": 91584,
+        "density": 0.95
+      },
+      "best_strip": "top",
+      "overall_density": 0.88,
+      "recommendation": "ZONE_TOP"
+    },
+    "0635_stopped-above-a-council-block-11-wormwood-gate-dublin_threshold.png": {
+      "time": "06:35",
+      "zone": {
+        "x": 216,
+        "y": 0,
+        "width": 288,
+        "height": 216,
+        "area": 62208,
+        "density": 0.99
+      },
+      "best_strip": "top",
+      "overall_density": 0.78,
+      "recommendation": "ZONE_TOP"
+    },
+    "0640_nathans-old-shop-clock-31-corporation-street-birmingham_threshold.png": {
+      "time": "06:40",
+      "zone": {
+        "x": 232,
+        "y": 0,
+        "width": 272,
+        "height": 296,
+        "area": 80512,
+        "density": 1.0
+      },
+      "best_strip": "middle",
+      "overall_density": 0.73,
+      "recommendation": "ZONE_TOP"
+    },
+    "0646_the-church-sampford-arundel_threshold.png": {
+      "time": "06:46",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 360,
+        "height": 288,
+        "area": 103680,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.87,
+      "recommendation": "ZONE_TOP"
+    },
+    "0655_tower-clock-stopped-at-the-sunny-bar-doncaster_threshold.png": {
+      "time": "06:55",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 272,
+        "height": 296,
+        "area": 80512,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.84,
+      "recommendation": "ZONE_TOP"
+    },
+    "0700_one-handed-clock-on-st-nicolas-church-north-stoneham_threshold.png": {
+      "time": "07:00",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 472,
+        "height": 168,
+        "area": 79296,
+        "density": 0.98
+      },
+      "best_strip": "top",
+      "overall_density": 0.87,
+      "recommendation": "ZONE_TOP"
+    },
+    "0704_monarch-house-stopped-in-hampshire_threshold.png": {
+      "time": "07:04",
+      "zone": {
+        "x": 256,
+        "y": 0,
+        "width": 248,
+        "height": 296,
+        "area": 73408,
+        "density": 0.99
+      },
+      "best_strip": "top",
+      "overall_density": 0.54,
+      "recommendation": "ZONE_TOP"
+    },
+    "0709_broken-clock-eastern-branch_threshold.png": {
+      "time": "07:09",
+      "zone": {
+        "x": 152,
+        "y": 104,
+        "width": 352,
+        "height": 192,
+        "area": 67584,
+        "density": 0.99
+      },
+      "best_strip": "bottom",
+      "overall_density": 0.85,
+      "recommendation": "ZONE_CENTER"
+    },
+    "0711_hodge-house-castle-clock-cardiff-capital-of-wales_threshold.png": {
+      "time": "07:11",
+      "zone": {
+        "x": 224,
+        "y": 0,
+        "width": 280,
+        "height": 296,
+        "area": 82880,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.89,
+      "recommendation": "ZONE_TOP"
+    },
+    "0716_the-granary-wood-hall_threshold.png": {
+      "time": "07:16",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 504,
+        "height": 208,
+        "area": 104832,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.95,
+      "recommendation": "ZONE_TOP"
+    },
+    "0719_control-tower-on-the-airfield_threshold.png": {
+      "time": "07:19",
+      "zone": {
+        "x": 64,
+        "y": 0,
+        "width": 440,
+        "height": 200,
+        "area": 88000,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.79,
+      "recommendation": "ZONE_TOP"
+    },
+    "0720_war-memorial-at-llanfair-pg_threshold.png": {
+      "time": "07:20",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 304,
+        "height": 296,
+        "area": 89984,
+        "density": 1.0
+      },
+      "best_strip": "bottom",
+      "overall_density": 0.73,
+      "recommendation": "ZONE_TOP"
+    },
+    "0721_clock-st-seiriol-s-church-penmaenmawr-conwy-wales_threshold.png": {
+      "time": "07:21",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 272,
+        "height": 296,
+        "area": 80512,
+        "density": 1.0
+      },
+      "best_strip": "bottom",
+      "overall_density": 0.82,
+      "recommendation": "ZONE_TOP"
+    },
+    "0724_cocker-clock-in-blackpool-memento-mori_threshold.png": {
+      "time": "07:24",
+      "zone": {
+        "x": 160,
+        "y": 0,
+        "width": 344,
+        "height": 296,
+        "area": 101824,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.87,
+      "recommendation": "ZONE_TOP"
+    },
+    "0729_the-arcade-bognor-regis_threshold.png": {
+      "time": "07:29",
+      "zone": {
+        "x": 40,
+        "y": 0,
+        "width": 416,
+        "height": 208,
+        "area": 86528,
+        "density": 0.99
+      },
+      "best_strip": "top",
+      "overall_density": 0.76,
+      "recommendation": "ZONE_TOP"
+    },
+    "0730_chelsea-college-of-art-design-clock-atterbury-street-london-uk_threshold.png": {
+      "time": "07:30",
+      "zone": {
+        "x": 240,
+        "y": 0,
+        "width": 264,
+        "height": 296,
+        "area": 78144,
+        "density": 0.98
+      },
+      "best_strip": "middle",
+      "overall_density": 0.82,
+      "recommendation": "ZONE_TOP"
+    },
+    "0731_the-landgate-clock-tower-rye_threshold.png": {
+      "time": "07:31",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 248,
+        "height": 296,
+        "area": 73408,
+        "density": 1.0
+      },
+      "best_strip": "middle",
+      "overall_density": 0.58,
+      "recommendation": "ZONE_TOP"
+    },
+    "0739_orchardleigh-house-stable-block_threshold.png": {
+      "time": "07:39",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 400,
+        "height": 296,
+        "area": 118400,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.98,
+      "recommendation": "ZONE_TOP"
+    },
+    "0743_established-1866_threshold.png": {
+      "time": "07:43",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 504,
+        "height": 184,
+        "area": 92736,
+        "density": 0.99
+      },
+      "best_strip": "top",
+      "overall_density": 0.95,
+      "recommendation": "ZONE_TOP"
+    },
+    "0754_stopped-at-quakersmill-bexhill-on-sea-east-sussex_threshold.png": {
+      "time": "07:54",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 336,
+        "height": 296,
+        "area": 99456,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.92,
+      "recommendation": "ZONE_TOP"
+    },
+    "0756_coney-street-clock_threshold.png": {
+      "time": "07:56",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 304,
+        "height": 296,
+        "area": 89984,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.92,
+      "recommendation": "ZONE_TOP"
+    },
+    "0756_diggle-clock-tower_threshold.png": {
+      "time": "07:56",
+      "zone": {
+        "x": 208,
+        "y": 0,
+        "width": 296,
+        "height": 296,
+        "area": 87616,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.84,
+      "recommendation": "ZONE_TOP"
+    },
+    "0756_public-convenience-at-the-marina_threshold.png": {
+      "time": "07:56",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 368,
+        "height": 280,
+        "area": 103040,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.91,
+      "recommendation": "ZONE_TOP"
+    },
+    "0800_the-clockmaker-s-clock-has-stopped_threshold.png": {
+      "time": "08:00",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 456,
+        "height": 152,
+        "area": 69312,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.71,
+      "recommendation": "ZONE_TOP"
+    },
+    "0800_who-called-time-on-pubs-_threshold.png": {
+      "time": "08:00",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 272,
+        "height": 296,
+        "area": 80512,
+        "density": 0.99
+      },
+      "best_strip": "top",
+      "overall_density": 0.73,
+      "recommendation": "ZONE_TOP"
+    },
+    "0804_community-centre-clock-stopped-in-andover_threshold.png": {
+      "time": "08:04",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 504,
+        "height": 184,
+        "area": 92736,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.73,
+      "recommendation": "ZONE_TOP"
+    },
+    "0816_toby-carvery-clock-talke-stoke-on-trent-staffordshire_threshold.png": {
+      "time": "08:16",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 288,
+        "height": 240,
+        "area": 69120,
+        "density": 0.99
+      },
+      "best_strip": "top",
+      "overall_density": 0.7,
+      "recommendation": "ZONE_TOP"
+    },
+    "0818_st-mary-s-church-high-street-huntingdon_threshold.png": {
+      "time": "08:18",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 280,
+        "height": 272,
+        "area": 76160,
+        "density": 0.99
+      },
+      "best_strip": "bottom",
+      "overall_density": 0.86,
+      "recommendation": "ZONE_TOP"
+    },
+    "0820_town-clock-canning-terrace-nottingham-nottinghamshire_threshold.png": {
+      "time": "08:20",
+      "zone": {
+        "x": 192,
+        "y": 0,
+        "width": 312,
+        "height": 296,
+        "area": 92352,
+        "density": 0.99
+      },
+      "best_strip": "bottom",
+      "overall_density": 0.96,
+      "recommendation": "ZONE_TOP"
+    },
+    "0821_clock-on-outbuilding-himley-hall-himley-south-staffordshire-england_threshold.png": {
+      "time": "08:21",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 360,
+        "height": 296,
+        "area": 106560,
+        "density": 1.0
+      },
+      "best_strip": "bottom",
+      "overall_density": 0.95,
+      "recommendation": "ZONE_TOP"
+    },
+    "0822_church-clock-all-saints-church-church-lawton-stoke-on-trent-staffordshire_threshold.png": {
+      "time": "08:22",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 248,
+        "height": 296,
+        "area": 73408,
+        "density": 0.99
+      },
+      "best_strip": "bottom",
+      "overall_density": 0.68,
+      "recommendation": "ZONE_TOP"
+    },
+    "0823_billingsgate-christian-mission-and-dispensary-clock-st-mary-at-hill-london-uk_threshold.png": {
+      "time": "08:23",
+      "zone": {
+        "x": 200,
+        "y": 0,
+        "width": 304,
+        "height": 296,
+        "area": 89984,
+        "density": 1.0
+      },
+      "best_strip": "bottom",
+      "overall_density": 0.93,
+      "recommendation": "ZONE_TOP"
+    },
+    "0825_stopped-at-emily-davies-court-girton-college-cambridge-university-in-memoriam-cm-cm-deserves-better_threshold.png": {
+      "time": "08:25",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 344,
+        "height": 280,
+        "area": 96320,
+        "density": 0.99
+      },
+      "best_strip": "top",
+      "overall_density": 0.94,
+      "recommendation": "ZONE_TOP"
+    },
+    "0829_bexhill-west-station-and-sivyers-antique-emporium-_threshold.png": {
+      "time": "08:29",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 328,
+        "height": 224,
+        "area": 73472,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.74,
+      "recommendation": "ZONE_TOP"
+    },
+    "0830_stopped-above-rathmines-college-in-dublin_threshold.png": {
+      "time": "08:30",
+      "zone": {
+        "x": 120,
+        "y": 0,
+        "width": 272,
+        "height": 288,
+        "area": 78336,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.8,
+      "recommendation": "ZONE_TOP"
+    },
+    "0844_stopped-clock-above-station-house-pub-tonbridge_threshold.png": {
+      "time": "08:44",
+      "zone": {
+        "x": 120,
+        "y": 0,
+        "width": 336,
+        "height": 296,
+        "area": 99456,
+        "density": 0.95
+      },
+      "best_strip": "bottom",
+      "overall_density": 0.91,
+      "recommendation": "ZONE_TOP"
+    },
+    "0844_the-clock-above-the-gift-shop-at-upton-house-and-gardens-hadn-t-changed-between-visits-_threshold.png": {
+      "time": "08:44",
+      "zone": {
+        "x": 136,
+        "y": 0,
+        "width": 368,
+        "height": 296,
+        "area": 108928,
+        "density": 1.0
+      },
+      "best_strip": "bottom",
+      "overall_density": 0.94,
+      "recommendation": "ZONE_TOP"
+    },
+    "0845_st-peter-s-church-and-churchyard-addingham_threshold.png": {
+      "time": "08:45",
+      "zone": {
+        "x": 144,
+        "y": 0,
+        "width": 360,
+        "height": 256,
+        "area": 92160,
+        "density": 0.99
+      },
+      "best_strip": "top",
+      "overall_density": 0.84,
+      "recommendation": "ZONE_TOP"
+    },
+    "0846_tunbridge-wells-millennium-clock-future-uncertain_threshold.png": {
+      "time": "08:46",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 384,
+        "height": 296,
+        "area": 113664,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.9,
+      "recommendation": "ZONE_TOP"
+    },
+    "0851_stopped-in-wakefield-uk-wakefield-and-barnsley-union-bank-clock_threshold.png": {
+      "time": "08:51",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 312,
+        "height": 256,
+        "area": 79872,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.83,
+      "recommendation": "ZONE_TOP"
+    },
+    "0852_wakefield-and-barnsley-union-bank-clock-wakefield-uk_threshold.png": {
+      "time": "08:52",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 232,
+        "height": 296,
+        "area": 68672,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.82,
+      "recommendation": "ZONE_TOP"
+    },
+    "0859_stopped-above-nuyard-paving-and-fencing-cowroast-hertfordshire_threshold.png": {
+      "time": "08:59",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 368,
+        "height": 248,
+        "area": 91264,
+        "density": 0.99
+      },
+      "best_strip": "bottom",
+      "overall_density": 0.97,
+      "recommendation": "ZONE_TOP"
+    },
+    "0901_former-st-john-s-church-roundhay-clock-dial_threshold.png": {
+      "time": "09:01",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 256,
+        "height": 296,
+        "area": 75776,
+        "density": 0.99
+      },
+      "best_strip": "top",
+      "overall_density": 0.68,
+      "recommendation": "ZONE_TOP"
+    },
+    "0926_stopped-clock-southgate-underground-station_threshold.png": {
+      "time": "09:26",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 504,
+        "height": 160,
+        "area": 80640,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.66,
+      "recommendation": "ZONE_TOP"
+    },
+    "0927_kelmarsh-church_threshold.png": {
+      "time": "09:27",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 432,
+        "height": 168,
+        "area": 72576,
+        "density": 1.0
+      },
+      "best_strip": "middle",
+      "overall_density": 0.87,
+      "recommendation": "ZONE_TOP"
+    },
+    "0932_stopped-outside-ag-hendy-homestore-hastings-high-street-uk_threshold.png": {
+      "time": "09:32",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 296,
+        "height": 288,
+        "area": 85248,
+        "density": 0.99
+      },
+      "best_strip": "top",
+      "overall_density": 0.92,
+      "recommendation": "ZONE_TOP"
+    },
+    "0932_whiteley-s-corner-brighouse_threshold.png": {
+      "time": "09:32",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 304,
+        "height": 296,
+        "area": 89984,
+        "density": 0.99
+      },
+      "best_strip": "top",
+      "overall_density": 0.91,
+      "recommendation": "ZONE_TOP"
+    },
+    "0941_edward-vii-memorial-four-face-clock-bexhill-on-sea-seafront_threshold.png": {
+      "time": "09:41",
+      "zone": {
+        "x": 232,
+        "y": 0,
+        "width": 272,
+        "height": 296,
+        "area": 80512,
+        "density": 0.99
+      },
+      "best_strip": "top",
+      "overall_density": 0.75,
+      "recommendation": "ZONE_TOP"
+    },
+    "0943_captain-cook-square-car-park-middlesborough_threshold.png": {
+      "time": "09:43",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 504,
+        "height": 192,
+        "area": 96768,
+        "density": 0.99
+      },
+      "best_strip": "top",
+      "overall_density": 0.86,
+      "recommendation": "ZONE_TOP"
+    },
+    "0946_pigeon-shitshow-_threshold.png": {
+      "time": "09:46",
+      "zone": {
+        "x": 0,
+        "y": 112,
+        "width": 504,
+        "height": 176,
+        "area": 88704,
+        "density": 1.0
+      },
+      "best_strip": "bottom",
+      "overall_density": 0.94,
+      "recommendation": "ZONE_CENTER"
+    },
+    "0949_romford-stewards-walk_threshold.png": {
+      "time": "09:49",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 312,
+        "height": 280,
+        "area": 87360,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.9,
+      "recommendation": "ZONE_TOP"
+    },
+    "0951_clock-12-lower-n-st-exeter-devon_threshold.png": {
+      "time": "09:51",
+      "zone": {
+        "x": 200,
+        "y": 0,
+        "width": 304,
+        "height": 296,
+        "area": 89984,
+        "density": 0.99
+      },
+      "best_strip": "bottom",
+      "overall_density": 0.85,
+      "recommendation": "ZONE_TOP"
+    },
+    "0957_morrisco-in-milton-keynes_threshold.png": {
+      "time": "09:57",
+      "zone": {
+        "x": 184,
+        "y": 0,
+        "width": 320,
+        "height": 288,
+        "area": 92160,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.88,
+      "recommendation": "ZONE_TOP"
+    },
+    "0959_always-midday-at-prittlewell-square-gardens_threshold.png": {
+      "time": "09:59",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 504,
+        "height": 208,
+        "area": 104832,
+        "density": 0.99
+      },
+      "best_strip": "top",
+      "overall_density": 0.91,
+      "recommendation": "ZONE_TOP"
+    },
+    "1001_clock-the-old-court-house-wolverley-worcestershire-england_threshold.png": {
+      "time": "10:01",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 376,
+        "height": 296,
+        "area": 111296,
+        "density": 0.99
+      },
+      "best_strip": "bottom",
+      "overall_density": 0.97,
+      "recommendation": "ZONE_TOP"
+    },
+    "1002_baddesley-clinton-warwickshire-england_threshold.png": {
+      "time": "10:02",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 312,
+        "height": 288,
+        "area": 89856,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.82,
+      "recommendation": "ZONE_TOP"
+    },
+    "1004_thurgarton-priory-2_threshold.png": {
+      "time": "10:04",
+      "zone": {
+        "x": 104,
+        "y": 0,
+        "width": 400,
+        "height": 296,
+        "area": 118400,
+        "density": 0.99
+      },
+      "best_strip": "bottom",
+      "overall_density": 0.99,
+      "recommendation": "ZONE_TOP"
+    },
+    "1005_calls-wharf-clock-leeds-uk_threshold.png": {
+      "time": "10:05",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 312,
+        "height": 296,
+        "area": 92352,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.93,
+      "recommendation": "ZONE_TOP"
+    },
+    "1006_george-street-croydon_threshold.png": {
+      "time": "10:06",
+      "zone": {
+        "x": 48,
+        "y": 0,
+        "width": 456,
+        "height": 216,
+        "area": 98496,
+        "density": 1.0
+      },
+      "best_strip": "middle",
+      "overall_density": 0.81,
+      "recommendation": "ZONE_TOP"
+    },
+    "1006_st-patrick-s-salter-street_threshold.png": {
+      "time": "10:06",
+      "zone": {
+        "x": 184,
+        "y": 0,
+        "width": 320,
+        "height": 296,
+        "area": 94720,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.74,
+      "recommendation": "ZONE_TOP"
+    },
+    "1009_mitcham-cricket-club_threshold.png": {
+      "time": "10:09",
+      "zone": {
+        "x": 16,
+        "y": 0,
+        "width": 488,
+        "height": 176,
+        "area": 85888,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.89,
+      "recommendation": "ZONE_TOP"
+    },
+    "1010_stands-the-church-clock-at-five-past-ten_threshold.png": {
+      "time": "10:10",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 368,
+        "height": 208,
+        "area": 76544,
+        "density": 0.99
+      },
+      "best_strip": "middle",
+      "overall_density": 0.88,
+      "recommendation": "ZONE_TOP"
+    },
+    "1011_carnival-clock-haltwhistle-northumberland_threshold.png": {
+      "time": "10:11",
+      "zone": {
+        "x": 200,
+        "y": 0,
+        "width": 304,
+        "height": 296,
+        "area": 89984,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.79,
+      "recommendation": "ZONE_TOP"
+    },
+    "1011_stopped-at-the-finedon-community-library_threshold.png": {
+      "time": "10:11",
+      "zone": {
+        "x": 72,
+        "y": 0,
+        "width": 432,
+        "height": 296,
+        "area": 127872,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.98,
+      "recommendation": "ZONE_TOP"
+    },
+    "1014_when-you-really-have-to-go-it-doesn-t-matter-what-time-it-is_threshold.png": {
+      "time": "10:14",
+      "zone": {
+        "x": 0,
+        "y": 88,
+        "width": 504,
+        "height": 208,
+        "area": 104832,
+        "density": 0.99
+      },
+      "best_strip": "bottom",
+      "overall_density": 0.98,
+      "recommendation": "ZONE_CENTER"
+    },
+    "1019_hanley-park-main-pavilion-stoke-on-trent-stopped-since-2021_threshold.png": {
+      "time": "10:19",
+      "zone": {
+        "x": 104,
+        "y": 0,
+        "width": 400,
+        "height": 216,
+        "area": 86400,
+        "density": 0.99
+      },
+      "best_strip": "top",
+      "overall_density": 0.83,
+      "recommendation": "ZONE_TOP"
+    },
+    "1032_interesting-housing-at-manaccan_threshold.png": {
+      "time": "10:32",
+      "zone": {
+        "x": 0,
+        "y": 64,
+        "width": 504,
+        "height": 232,
+        "area": 116928,
+        "density": 0.99
+      },
+      "best_strip": "bottom",
+      "overall_density": 0.99,
+      "recommendation": "ZONE_TOP"
+    },
+    "1032_the-farley-clock-tower-west-bromwich_threshold.png": {
+      "time": "10:32",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 392,
+        "height": 296,
+        "area": 116032,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.89,
+      "recommendation": "ZONE_TOP"
+    },
+    "1036_kiosk-3-stopped-in-worthing_threshold.png": {
+      "time": "10:36",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 408,
+        "height": 256,
+        "area": 104448,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.94,
+      "recommendation": "ZONE_TOP"
+    },
+    "1038_art-deco-clock-at-the-hoover-canteen_threshold.png": {
+      "time": "10:38",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 336,
+        "height": 296,
+        "area": 99456,
+        "density": 1.0
+      },
+      "best_strip": "middle",
+      "overall_density": 0.97,
+      "recommendation": "ZONE_TOP"
+    },
+    "1045_village-clock-burstall-suffolk_threshold.png": {
+      "time": "10:45",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 360,
+        "height": 248,
+        "area": 89280,
+        "density": 0.99
+      },
+      "best_strip": "top",
+      "overall_density": 0.87,
+      "recommendation": "ZONE_TOP"
+    },
+    "1046_town-clock-former-boots-chemist-shop-126-derby-road-nottingham-nottinghamshire_threshold.png": {
+      "time": "10:46",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 288,
+        "height": 296,
+        "area": 85248,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.85,
+      "recommendation": "ZONE_TOP"
+    },
+    "1054_balsham-parish-church_threshold.png": {
+      "time": "10:54",
+      "zone": {
+        "x": 88,
+        "y": 0,
+        "width": 416,
+        "height": 296,
+        "area": 123136,
+        "density": 1.0
+      },
+      "best_strip": "bottom",
+      "overall_density": 0.97,
+      "recommendation": "ZONE_TOP"
+    },
+    "1054_clock-leominster-bus-depot-herefordshire-england_threshold.png": {
+      "time": "10:54",
+      "zone": {
+        "x": 200,
+        "y": 0,
+        "width": 304,
+        "height": 296,
+        "area": 89984,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.82,
+      "recommendation": "ZONE_TOP"
+    },
+    "1055_the-aston-cross-clock-hasn-t-worked-in-years_threshold.png": {
+      "time": "10:55",
+      "zone": {
+        "x": 152,
+        "y": 0,
+        "width": 352,
+        "height": 296,
+        "area": 104192,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.89,
+      "recommendation": "ZONE_TOP"
+    },
+    "1058_who-called-time-on-pubs-stopped-at-the-nags-head-kirkby-ashfield_threshold.png": {
+      "time": "10:58",
+      "zone": {
+        "x": 208,
+        "y": 0,
+        "width": 296,
+        "height": 296,
+        "area": 87616,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.72,
+      "recommendation": "ZONE_TOP"
+    },
+    "1059_stopped-at-north-road-morrisons-darlington-uk_threshold.png": {
+      "time": "10:59",
+      "zone": {
+        "x": 200,
+        "y": 0,
+        "width": 304,
+        "height": 288,
+        "area": 87552,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.84,
+      "recommendation": "ZONE_TOP"
+    },
+    "1100_former-st-peters-church-clock-stanley-uk_threshold.png": {
+      "time": "11:00",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 360,
+        "height": 296,
+        "area": 106560,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.93,
+      "recommendation": "ZONE_TOP"
+    },
+    "1104_clock-and-weathervane-on-riverside_threshold.png": {
+      "time": "11:04",
+      "zone": {
+        "x": 168,
+        "y": 0,
+        "width": 336,
+        "height": 296,
+        "area": 99456,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.94,
+      "recommendation": "ZONE_TOP"
+    },
+    "1106_stopped-in-st-helens-uk-zodiac-clock_threshold.png": {
+      "time": "11:06",
+      "zone": {
+        "x": 136,
+        "y": 0,
+        "width": 368,
+        "height": 296,
+        "area": 108928,
+        "density": 0.99
+      },
+      "best_strip": "top",
+      "overall_density": 0.99,
+      "recommendation": "ZONE_TOP"
+    },
+    "1107_springvale-court-_threshold.png": {
+      "time": "11:07",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 336,
+        "height": 280,
+        "area": 94080,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.96,
+      "recommendation": "ZONE_TOP"
+    },
+    "1108_village-hall-clock-barlaston-stoke-on-trent-staffordshire-uk_threshold.png": {
+      "time": "11:08",
+      "zone": {
+        "x": 136,
+        "y": 0,
+        "width": 368,
+        "height": 296,
+        "area": 108928,
+        "density": 0.99
+      },
+      "best_strip": "top",
+      "overall_density": 0.95,
+      "recommendation": "ZONE_TOP"
+    },
+    "1110_stopped-in-victoria-park-haslingden_threshold.png": {
+      "time": "11:10",
+      "zone": {
+        "x": 112,
+        "y": 0,
+        "width": 392,
+        "height": 216,
+        "area": 84672,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.82,
+      "recommendation": "ZONE_TOP"
+    },
+    "1110_time-did-not-stop-at-the-same-time_threshold.png": {
+      "time": "11:10",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 216,
+        "height": 296,
+        "area": 63936,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.79,
+      "recommendation": "ZONE_TOP"
+    },
+    "1111_stopped-at-christ-church-ore-hastings_threshold.png": {
+      "time": "11:11",
+      "zone": {
+        "x": 128,
+        "y": 0,
+        "width": 376,
+        "height": 296,
+        "area": 111296,
+        "density": 1.0
+      },
+      "best_strip": "middle",
+      "overall_density": 0.89,
+      "recommendation": "ZONE_TOP"
+    },
+    "1114_the-old-town-hall-margate_threshold.png": {
+      "time": "11:14",
+      "zone": {
+        "x": 168,
+        "y": 0,
+        "width": 336,
+        "height": 296,
+        "area": 99456,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.94,
+      "recommendation": "ZONE_TOP"
+    },
+    "1121_spring-hill-library_threshold.png": {
+      "time": "11:21",
+      "zone": {
+        "x": 176,
+        "y": 0,
+        "width": 328,
+        "height": 296,
+        "area": 97088,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.79,
+      "recommendation": "ZONE_TOP"
+    },
+    "1121_stotfold-former-three-counties-lunatic-asylum-church_threshold.png": {
+      "time": "11:21",
+      "zone": {
+        "x": 232,
+        "y": 0,
+        "width": 272,
+        "height": 248,
+        "area": 67456,
+        "density": 1.0
+      },
+      "best_strip": "bottom",
+      "overall_density": 0.77,
+      "recommendation": "ZONE_TOP"
+    },
+    "1126_clock-at-sainsbury-s-in-dorridge-solihull-is-wrong_threshold.png": {
+      "time": "11:26",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 296,
+        "height": 296,
+        "area": 87616,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.8,
+      "recommendation": "ZONE_TOP"
+    },
+    "1126_farm-building-with-clock-auchtertyre_threshold.png": {
+      "time": "11:26",
+      "zone": {
+        "x": 0,
+        "y": 40,
+        "width": 504,
+        "height": 256,
+        "area": 129024,
+        "density": 1.0
+      },
+      "best_strip": "middle",
+      "overall_density": 0.98,
+      "recommendation": "ZONE_TOP"
+    },
+    "1131_clock-st-denys-severn-stoke-worcestershire-england_threshold.png": {
+      "time": "11:31",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 344,
+        "height": 296,
+        "area": 101824,
+        "density": 1.0
+      },
+      "best_strip": "bottom",
+      "overall_density": 0.94,
+      "recommendation": "ZONE_TOP"
+    },
+    "1134_ottringham-church_threshold.png": {
+      "time": "11:34",
+      "zone": {
+        "x": 80,
+        "y": 0,
+        "width": 424,
+        "height": 248,
+        "area": 105152,
+        "density": 1.0
+      },
+      "best_strip": "middle",
+      "overall_density": 0.95,
+      "recommendation": "ZONE_TOP"
+    },
+    "1137_st-mark-s-church-spire-detail-in-wolverhampton_threshold.png": {
+      "time": "11:37",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 296,
+        "area": 94720,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.84,
+      "recommendation": "ZONE_TOP"
+    },
+    "1138_st-mark-s-church-clock-in-chapel-ash-wolverhampton_threshold.png": {
+      "time": "11:38",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 296,
+        "height": 296,
+        "area": 87616,
+        "density": 0.99
+      },
+      "best_strip": "top",
+      "overall_density": 0.94,
+      "recommendation": "ZONE_TOP"
+    },
+    "1146_stopped-public-clock-in-cymmer_threshold.png": {
+      "time": "11:46",
+      "zone": {
+        "x": 128,
+        "y": 0,
+        "width": 376,
+        "height": 296,
+        "area": 111296,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.97,
+      "recommendation": "ZONE_TOP"
+    },
+    "1149_clock-in-worcester-s-angel-place_threshold.png": {
+      "time": "11:49",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 328,
+        "height": 296,
+        "area": 97088,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.91,
+      "recommendation": "ZONE_TOP"
+    },
+    "1150_clock-stourport-yachtclub-stourport-on-severn-worcestershire-england_threshold.png": {
+      "time": "11:50",
+      "zone": {
+        "x": 256,
+        "y": 40,
+        "width": 232,
+        "height": 256,
+        "area": 59392,
+        "density": 1.0
+      },
+      "best_strip": "bottom",
+      "overall_density": 0.95,
+      "recommendation": "ZONE_TOP"
+    },
+    "1150_clock-with-wrong-time-at-10-and-10a-vyse-street-from-warstone-lane-cemetery-jewellery-quarter_threshold.png": {
+      "time": "11:50",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 408,
+        "height": 296,
+        "area": 120768,
+        "density": 0.99
+      },
+      "best_strip": "bottom",
+      "overall_density": 0.98,
+      "recommendation": "ZONE_TOP"
+    },
+    "1151_clock-masonic-hall-29-broad-street-bromyard-herefordshire-england_threshold.png": {
+      "time": "11:51",
+      "zone": {
+        "x": 184,
+        "y": 0,
+        "width": 320,
+        "height": 296,
+        "area": 94720,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.93,
+      "recommendation": "ZONE_TOP"
+    },
+    "1155_stopped-above-aleks-jewellers-in-norwich_threshold.png": {
+      "time": "11:55",
+      "zone": {
+        "x": 136,
+        "y": 0,
+        "width": 368,
+        "height": 296,
+        "area": 108928,
+        "density": 1.0
+      },
+      "best_strip": "bottom",
+      "overall_density": 0.88,
+      "recommendation": "ZONE_TOP"
+    },
+    "1155_stopped-in-birmingham-theatrix-130-colmore-row_threshold.png": {
+      "time": "11:55",
+      "zone": {
+        "x": 0,
+        "y": 80,
+        "width": 416,
+        "height": 184,
+        "area": 76544,
+        "density": 0.98
+      },
+      "best_strip": "middle",
+      "overall_density": 0.9,
+      "recommendation": "ZONE_CENTER"
+    },
+    "1156_factory-clock_threshold.png": {
+      "time": "11:56",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 368,
+        "height": 296,
+        "area": 108928,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.93,
+      "recommendation": "ZONE_TOP"
+    },
+    "1157_clock-st-john-the-baptist-bewdley-road-kidderminster-worcestershire-england_threshold.png": {
+      "time": "11:57",
+      "zone": {
+        "x": 216,
+        "y": 24,
+        "width": 280,
+        "height": 272,
+        "area": 76160,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.91,
+      "recommendation": "ZONE_TOP"
+    },
+    "1159_former-technical-college-sunderland-uk_threshold.png": {
+      "time": "11:59",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 312,
+        "height": 296,
+        "area": 92352,
+        "density": 1.0
+      },
+      "best_strip": "middle",
+      "overall_density": 0.7,
+      "recommendation": "ZONE_TOP"
+    },
+    "1159_shanklin-clock-tower-isle-of-wight_threshold.png": {
+      "time": "11:59",
+      "zone": {
+        "x": 256,
+        "y": 0,
+        "width": 248,
+        "height": 296,
+        "area": 73408,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.73,
+      "recommendation": "ZONE_TOP"
+    },
+    "1200_clock-tower-behind-the-fire-station_threshold.png": {
+      "time": "12:00",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 384,
+        "height": 296,
+        "area": 113664,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.94,
+      "recommendation": "ZONE_TOP"
+    },
+    "1200_high-noon-at-weston_threshold.png": {
+      "time": "12:00",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 368,
+        "height": 296,
+        "area": 108928,
+        "density": 0.99
+      },
+      "best_strip": "middle",
+      "overall_density": 0.88,
+      "recommendation": "ZONE_TOP"
+    },
+    "1201_clock-st-philip-st-james-hallow-worcestershire-england_threshold.png": {
+      "time": "12:01",
+      "zone": {
+        "x": 0,
+        "y": 80,
+        "width": 504,
+        "height": 216,
+        "area": 108864,
+        "density": 0.96
+      },
+      "best_strip": "top",
+      "overall_density": 0.96,
+      "recommendation": "ZONE_CENTER"
+    },
+    "1202_the-old-town-hall-clock-stopped-in-dacorum-hemel-hampstead_threshold.png": {
+      "time": "12:02",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 312,
+        "height": 296,
+        "area": 92352,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.87,
+      "recommendation": "ZONE_TOP"
+    },
+    "1203_stopped-at-southward-cathedral_threshold.png": {
+      "time": "12:03",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 304,
+        "height": 256,
+        "area": 77824,
+        "density": 0.99
+      },
+      "best_strip": "top",
+      "overall_density": 0.72,
+      "recommendation": "ZONE_TOP"
+    },
+    "1204_the-old-school-clock-and-bell_threshold.png": {
+      "time": "12:04",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 416,
+        "height": 296,
+        "area": 123136,
+        "density": 1.0
+      },
+      "best_strip": "middle",
+      "overall_density": 0.97,
+      "recommendation": "ZONE_TOP"
+    },
+    "1210_stopped-in-leeds-uk-st-john-the-evangelist-church-clock_threshold.png": {
+      "time": "12:10",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 272,
+        "height": 256,
+        "area": 69632,
+        "density": 0.99
+      },
+      "best_strip": "middle",
+      "overall_density": 0.87,
+      "recommendation": "ZONE_TOP"
+    },
+    "1211_glossop-town-hall-stopped-since-2022_threshold.png": {
+      "time": "12:11",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 504,
+        "height": 184,
+        "area": 92736,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.98,
+      "recommendation": "ZONE_TOP"
+    },
+    "1211_st-john-the-evangelist-church-clock-leeds-uk_threshold.png": {
+      "time": "12:11",
+      "zone": {
+        "x": 0,
+        "y": 8,
+        "width": 432,
+        "height": 288,
+        "area": 124416,
+        "density": 0.99
+      },
+      "best_strip": "bottom",
+      "overall_density": 0.98,
+      "recommendation": "ZONE_TOP"
+    },
+    "1212_clock-tower-turret-at-royal-house-on-blossomfield-road-solihull_threshold.png": {
+      "time": "12:12",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 312,
+        "height": 296,
+        "area": 92352,
+        "density": 1.0
+      },
+      "best_strip": "middle",
+      "overall_density": 0.86,
+      "recommendation": "ZONE_TOP"
+    },
+    "1218_bury-place-bloomsbury_threshold.png": {
+      "time": "12:18",
+      "zone": {
+        "x": 160,
+        "y": 0,
+        "width": 344,
+        "height": 296,
+        "area": 101824,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.82,
+      "recommendation": "ZONE_TOP"
+    },
+    "1219_the-clock-on-the-pier_threshold.png": {
+      "time": "12:19",
+      "zone": {
+        "x": 224,
+        "y": 0,
+        "width": 280,
+        "height": 296,
+        "area": 82880,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.85,
+      "recommendation": "ZONE_TOP"
+    },
+    "1230_burton-town-hall_threshold.png": {
+      "time": "12:30",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 392,
+        "height": 264,
+        "area": 103488,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.85,
+      "recommendation": "ZONE_TOP"
+    },
+    "1231_where-was-this-again_threshold.png": {
+      "time": "12:31",
+      "zone": {
+        "x": 0,
+        "y": 8,
+        "width": 408,
+        "height": 288,
+        "area": 117504,
+        "density": 0.92
+      },
+      "best_strip": "middle",
+      "overall_density": 0.85,
+      "recommendation": "ZONE_TOP"
+    },
+    "1239_st-peter-s-ipswich_threshold.png": {
+      "time": "12:39",
+      "zone": {
+        "x": 128,
+        "y": 0,
+        "width": 376,
+        "height": 272,
+        "area": 102272,
+        "density": 0.98
+      },
+      "best_strip": "top",
+      "overall_density": 0.85,
+      "recommendation": "ZONE_TOP"
+    },
+    "1239_stopped-in-leadenhall-market_threshold.png": {
+      "time": "12:39",
+      "zone": {
+        "x": 160,
+        "y": 0,
+        "width": 344,
+        "height": 272,
+        "area": 93568,
+        "density": 0.99
+      },
+      "best_strip": "top",
+      "overall_density": 0.93,
+      "recommendation": "ZONE_TOP"
+    },
+    "1242_school-clock-the-school-house-alkmonton-derbyshire_threshold.png": {
+      "time": "12:42",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 360,
+        "height": 296,
+        "area": 106560,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.98,
+      "recommendation": "ZONE_TOP"
+    },
+    "1245_stopped-outside-the-pannier-market-holsworthy_threshold.png": {
+      "time": "12:45",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 504,
+        "height": 136,
+        "area": 68544,
+        "density": 0.99
+      },
+      "best_strip": "top",
+      "overall_density": 0.92,
+      "recommendation": "ZONE_TOP"
+    },
+    "1249_pentonville-road-at-ten-to-four_threshold.png": {
+      "time": "12:49",
+      "zone": {
+        "x": 48,
+        "y": 0,
+        "width": 176,
+        "height": 288,
+        "area": 50688,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.86,
+      "recommendation": "ZONE_TOP"
+    },
+    "1252_stop-watch-clock-maltravers-street-arundel-uk_threshold.png": {
+      "time": "12:52",
+      "zone": {
+        "x": 144,
+        "y": 0,
+        "width": 360,
+        "height": 256,
+        "area": 92160,
+        "density": 0.99
+      },
+      "best_strip": "top",
+      "overall_density": 0.96,
+      "recommendation": "ZONE_TOP"
+    },
+    "1256_church-tower-st-weonards_threshold.png": {
+      "time": "12:56",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 360,
+        "height": 232,
+        "area": 83520,
+        "density": 0.99
+      },
+      "best_strip": "top",
+      "overall_density": 0.89,
+      "recommendation": "ZONE_TOP"
+    },
+    "1331_ladykirk-parish-church-clock_threshold.png": {
+      "time": "13:31",
+      "zone": {
+        "x": 0,
+        "y": 0,
+        "width": 296,
+        "height": 296,
+        "area": 87616,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.76,
+      "recommendation": "ZONE_TOP"
+    }
+  },
+  "summary": {
+    "total_images": 230,
+    "images_with_zones": 229,
+    "images_without_zones": 1,
+    "zone_coverage": "99.6%"
+  }
+}

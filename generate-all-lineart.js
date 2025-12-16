@@ -8,7 +8,11 @@
 const fs = require('fs');
 const path = require('path');
 
-const GEMINI_API_KEY = 'AIzaSyAsp2dVrItysWM1pR9XstbbhwKs0qE02iY';
+const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
+if (!GEMINI_API_KEY) {
+    console.error('ERROR: Set GEMINI_API_KEY environment variable');
+    process.exit(1);
+}
 const MODEL = 'nano-banana-pro-preview';
 
 const croppedDir = path.join(__dirname, 'croppedimages');

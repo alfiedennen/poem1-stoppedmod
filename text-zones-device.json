@@ -1,5 +1,5 @@
 {
-  "generated": "2025-12-17T12:05:56.690180Z",
+  "generated": "2025-12-17T12:07:44.871591Z",
   "parameters": {
     "cell_size": 8,
     "white_threshold": 250,
@@ -10,72 +10,65 @@
   "images": {
     "0000_old-market-house-maltravers-street-arundel-uk_lineart.png": {
       "time": "00:00",
-      "zone": {
-        "x": 0,
-        "y": 0,
-        "width": 240,
-        "height": 784,
-        "area": 188160,
-        "density": 1.0
-      },
+      "zone": null,
       "best_strip": "top",
-      "overall_density": 0.49,
-      "recommendation": "ZONE_TOP"
+      "overall_density": 0.3,
+      "recommendation": "DARK_OVERLAY"
     },
     "0105_local-shop-for-local-people_lineart.png": {
       "time": "01:05",
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 824,
-        "height": 784,
-        "area": 646016,
+        "width": 304,
+        "height": 296,
+        "area": 89984,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.95,
+      "overall_density": 0.91,
       "recommendation": "ZONE_TOP"
     },
     "0112_big-contemporary-clock-by-the-station_lineart.png": {
       "time": "01:12",
       "zone": {
-        "x": 800,
+        "x": 320,
         "y": 0,
-        "width": 544,
-        "height": 784,
-        "area": 426496,
+        "width": 184,
+        "height": 296,
+        "area": 54464,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.81,
+      "overall_density": 0.62,
       "recommendation": "ZONE_TOP"
     },
     "0113_the-clock-has-stopped_lineart.png": {
       "time": "01:13",
       "zone": {
-        "x": 888,
+        "x": 344,
         "y": 0,
-        "width": 456,
-        "height": 784,
-        "area": 357504,
+        "width": 160,
+        "height": 296,
+        "area": 47360,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.78,
+      "overall_density": 0.63,
       "recommendation": "ZONE_TOP"
     },
     "0117_art-deco-clock-electric-house-torquay_lineart.png": {
       "time": "01:17",
       "zone": {
-        "x": 344,
+        "x": 144,
         "y": 0,
-        "width": 1000,
-        "height": 784,
-        "area": 784000,
+        "width": 360,
+        "height": 296,
+        "area": 106560,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.94,
+      "overall_density": 0.9,
       "recommendation": "ZONE_TOP"
     },
     "0119_cafe-on-the-platform_lineart.png": {
@@ -83,13 +76,13 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 1344,
-        "height": 280,
-        "area": 376320,
+        "width": 504,
+        "height": 96,
+        "area": 48384,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.5,
+      "overall_density": 0.36,
       "recommendation": "ZONE_TOP"
     },
     "0119_former-garage-castle-street-worcester_lineart.png": {
@@ -97,13 +90,13 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 888,
-        "height": 784,
-        "area": 696192,
+        "width": 320,
+        "height": 296,
+        "area": 94720,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.86,
+      "overall_density": 0.8,
       "recommendation": "ZONE_TOP"
     },
     "0120_great-malvern-station_lineart.png": {
@@ -111,13 +104,13 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 472,
-        "height": 768,
-        "area": 362496,
+        "width": 160,
+        "height": 296,
+        "area": 47360,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.69,
+      "overall_density": 0.63,
       "recommendation": "ZONE_TOP"
     },
     "0126_barton-s-arms-pub-aston-birmingham_lineart.png": {
@@ -125,13 +118,13 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 912,
-        "height": 784,
-        "area": 715008,
+        "width": 336,
+        "height": 296,
+        "area": 99456,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.83,
+      "overall_density": 0.77,
       "recommendation": "ZONE_TOP"
     },
     "0128_the-old-town-hall-burslem-stoke-on-trent_lineart.png": {
@@ -139,13 +132,13 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 640,
-        "height": 784,
-        "area": 501760,
+        "width": 232,
+        "height": 296,
+        "area": 68672,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.67,
+      "overall_density": 0.6,
       "recommendation": "ZONE_TOP"
     },
     "0129_tucked-away-near-devonshire-square-london_lineart.png": {
@@ -153,13 +146,13 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 440,
-        "height": 768,
-        "area": 337920,
+        "width": 152,
+        "height": 296,
+        "area": 44992,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.48,
+      "overall_density": 0.41,
       "recommendation": "ZONE_TOP"
     },
     "0136_picton-clock-tower-in-wavertree-liverpool_lineart.png": {
@@ -167,13 +160,13 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 592,
-        "height": 784,
-        "area": 464128,
+        "width": 216,
+        "height": 296,
+        "area": 63936,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.57,
+      "overall_density": 0.49,
       "recommendation": "ZONE_TOP"
     },
     "0138_former-st-george-s-in-wolverhampton_lineart.png": {
@@ -181,27 +174,27 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 736,
-        "height": 784,
-        "area": 577024,
+        "width": 272,
+        "height": 296,
+        "area": 80512,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.75,
+      "overall_density": 0.67,
       "recommendation": "ZONE_TOP"
     },
     "0146_clock-st-michael-all-angels-st-michaels-tenbury-wells-worcestershire-england_lineart.png": {
       "time": "01:46",
       "zone": {
-        "x": 400,
-        "y": 448,
-        "width": 760,
-        "height": 232,
-        "area": 176320,
+        "x": 160,
+        "y": 184,
+        "width": 272,
+        "height": 64,
+        "area": 17408,
         "density": 1.0
       },
       "best_strip": "bottom",
-      "overall_density": 0.58,
+      "overall_density": 0.37,
       "recommendation": "ZONE_BOTTOM"
     },
     "0146_horley-former-fire-station_lineart.png": {
@@ -209,69 +202,69 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 712,
-        "height": 768,
-        "area": 546816,
+        "width": 256,
+        "height": 296,
+        "area": 75776,
         "density": 1.0
       },
       "best_strip": "bottom",
-      "overall_density": 0.72,
+      "overall_density": 0.58,
       "recommendation": "ZONE_TOP"
     },
     "0151_former-church-of-the-holy-trinity-clock-bromham-road-bedford-uk_lineart.png": {
       "time": "01:51",
       "zone": {
-        "x": 368,
-        "y": 464,
-        "width": 664,
-        "height": 200,
-        "area": 132800,
+        "x": 192,
+        "y": 192,
+        "width": 192,
+        "height": 64,
+        "area": 12288,
         "density": 1.0
       },
-      "best_strip": "middle",
-      "overall_density": 0.5,
-      "recommendation": "ZONE_BOTTOM"
+      "best_strip": "bottom",
+      "overall_density": 0.26,
+      "recommendation": "DARK_OVERLAY"
     },
     "0201_pond-and-tesco-s-clock_lineart.png": {
       "time": "02:01",
       "zone": {
-        "x": 536,
+        "x": 208,
         "y": 0,
-        "width": 808,
-        "height": 784,
-        "area": 633472,
+        "width": 296,
+        "height": 296,
+        "area": 87616,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.84,
+      "overall_density": 0.78,
       "recommendation": "ZONE_TOP"
     },
     "0213_knowlsley-registry-office-stopped_lineart.png": {
       "time": "02:13",
       "zone": {
-        "x": 8,
-        "y": 16,
-        "width": 504,
-        "height": 600,
-        "area": 302400,
+        "x": 0,
+        "y": 8,
+        "width": 184,
+        "height": 224,
+        "area": 41216,
         "density": 1.0
       },
       "best_strip": "middle",
-      "overall_density": 0.48,
+      "overall_density": 0.41,
       "recommendation": "ZONE_TOP"
     },
     "0219_clock-house-near-waddingham_lineart.png": {
       "time": "02:19",
       "zone": {
-        "x": 24,
+        "x": 0,
         "y": 0,
-        "width": 1320,
-        "height": 216,
-        "area": 285120,
+        "width": 504,
+        "height": 72,
+        "area": 36288,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.74,
+      "overall_density": 0.53,
       "recommendation": "ZONE_TOP"
     },
     "0221_abdiel-house_lineart.png": {
@@ -279,13 +272,13 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 872,
-        "height": 720,
-        "area": 627840,
+        "width": 296,
+        "height": 296,
+        "area": 87616,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.81,
+      "overall_density": 0.74,
       "recommendation": "ZONE_TOP"
     },
     "0223_alive-lynnsport-stopped-in-norfolk_lineart.png": {
@@ -293,27 +286,27 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 616,
-        "height": 160,
-        "area": 98560,
+        "width": 168,
+        "height": 64,
+        "area": 10752,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.43,
-      "recommendation": "ZONE_TOP"
+      "overall_density": 0.21,
+      "recommendation": "DARK_OVERLAY"
     },
     "0231_the-east-end-of-friar-gate_lineart.png": {
       "time": "02:31",
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 744,
-        "height": 784,
-        "area": 583296,
+        "width": 272,
+        "height": 296,
+        "area": 80512,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.81,
+      "overall_density": 0.71,
       "recommendation": "ZONE_TOP"
     },
     "0231_tower-clock-ruthin-castle-hotel-ruthin-denbighshire-wales_lineart.png": {
@@ -321,27 +314,27 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 488,
-        "height": 784,
-        "area": 382592,
+        "width": 176,
+        "height": 296,
+        "area": 52096,
         "density": 1.0
       },
-      "best_strip": "middle",
-      "overall_density": 0.56,
+      "best_strip": "bottom",
+      "overall_density": 0.43,
       "recommendation": "ZONE_TOP"
     },
     "0232_clock-and-sundial-great-witcombe-church_lineart.png": {
       "time": "02:32",
       "zone": {
-        "x": 520,
+        "x": 208,
         "y": 0,
-        "width": 824,
-        "height": 784,
-        "area": 646016,
+        "width": 296,
+        "height": 296,
+        "area": 87616,
         "density": 1.0
       },
-      "best_strip": "bottom",
-      "overall_density": 0.69,
+      "best_strip": "middle",
+      "overall_density": 0.6,
       "recommendation": "ZONE_TOP"
     },
     "0232_st-john-the-baptist-church-paignton_lineart.png": {
@@ -349,83 +342,83 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 736,
-        "height": 784,
-        "area": 577024,
+        "width": 272,
+        "height": 296,
+        "area": 80512,
         "density": 1.0
       },
-      "best_strip": "bottom",
-      "overall_density": 0.7,
+      "best_strip": "top",
+      "overall_density": 0.58,
       "recommendation": "ZONE_TOP"
     },
     "0234_clock-our-lady-st-james-church-bangor-gwynedd-wales_lineart.png": {
       "time": "02:34",
       "zone": {
-        "x": 1032,
-        "y": 0,
-        "width": 312,
-        "height": 784,
-        "area": 244608,
+        "x": 384,
+        "y": 192,
+        "width": 120,
+        "height": 104,
+        "area": 12480,
         "density": 1.0
       },
       "best_strip": "bottom",
-      "overall_density": 0.67,
-      "recommendation": "ZONE_TOP"
+      "overall_density": 0.46,
+      "recommendation": "DARK_OVERLAY"
     },
     "0246_guildhall-in-norwich-stopped-since-2017_lineart.png": {
       "time": "02:46",
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 896,
-        "height": 344,
-        "area": 308224,
+        "width": 328,
+        "height": 120,
+        "area": 39360,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.43,
+      "recommendation": "ZONE_TOP"
+    },
+    "0249_stopped-clock-in-peckham-rye_lineart.png": {
+      "time": "02:49",
+      "zone": {
+        "x": 256,
+        "y": 0,
+        "width": 248,
+        "height": 296,
+        "area": 73408,
         "density": 1.0
       },
       "best_strip": "top",
       "overall_density": 0.56,
       "recommendation": "ZONE_TOP"
     },
-    "0249_stopped-clock-in-peckham-rye_lineart.png": {
-      "time": "02:49",
-      "zone": {
-        "x": 632,
-        "y": 0,
-        "width": 712,
-        "height": 784,
-        "area": 558208,
-        "density": 1.0
-      },
-      "best_strip": "bottom",
-      "overall_density": 0.69,
-      "recommendation": "ZONE_TOP"
-    },
     "0250_victoria-centre-clock_lineart.png": {
       "time": "02:50",
       "zone": {
-        "x": 960,
+        "x": 376,
         "y": 0,
-        "width": 384,
-        "height": 768,
-        "area": 294912,
+        "width": 128,
+        "height": 296,
+        "area": 37888,
         "density": 1.0
       },
-      "best_strip": "bottom",
-      "overall_density": 0.39,
+      "best_strip": "top",
+      "overall_density": 0.31,
       "recommendation": "ZONE_TOP"
     },
     "0252_shipley-clock-tower_lineart.png": {
       "time": "02:52",
       "zone": {
-        "x": 656,
+        "x": 264,
         "y": 0,
-        "width": 688,
-        "height": 784,
-        "area": 539392,
+        "width": 240,
+        "height": 296,
+        "area": 71040,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.79,
+      "overall_density": 0.64,
       "recommendation": "ZONE_TOP"
     },
     "0256_clock-abergele-road-colwyn-bay-conwy-wales_lineart.png": {
@@ -433,13 +426,13 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 496,
-        "height": 768,
-        "area": 380928,
+        "width": 176,
+        "height": 296,
+        "area": 52096,
         "density": 1.0
       },
       "best_strip": "bottom",
-      "overall_density": 0.44,
+      "overall_density": 0.37,
       "recommendation": "ZONE_TOP"
     },
     "0300_3-o-clock-in-tredegar_lineart.png": {
@@ -447,27 +440,27 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 928,
-        "height": 784,
-        "area": 727552,
+        "width": 344,
+        "height": 296,
+        "area": 101824,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.78,
+      "overall_density": 0.72,
       "recommendation": "ZONE_TOP"
     },
     "0304_a-chilling-time_lineart.png": {
       "time": "03:04",
       "zone": {
-        "x": 552,
+        "x": 224,
         "y": 0,
-        "width": 792,
-        "height": 768,
-        "area": 608256,
+        "width": 280,
+        "height": 296,
+        "area": 82880,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.69,
+      "overall_density": 0.6,
       "recommendation": "ZONE_TOP"
     },
     "0305_seacroft-hospital-clock-tower-seacroft-uk_lineart.png": {
@@ -475,20 +468,20 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 632,
-        "height": 784,
-        "area": 495488,
+        "width": 224,
+        "height": 296,
+        "area": 66304,
         "density": 1.0
       },
       "best_strip": "bottom",
-      "overall_density": 0.62,
+      "overall_density": 0.51,
       "recommendation": "ZONE_TOP"
     },
     "0308_teignmouth-st-michael-s-church_lineart.png": {
       "time": "03:08",
       "zone": null,
-      "best_strip": "top",
-      "overall_density": 0.23,
+      "best_strip": "bottom",
+      "overall_density": 0.0,
       "recommendation": "DARK_OVERLAY"
     },
     "0309_ebley-mill-clock-tower_lineart.png": {
@@ -496,13 +489,13 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 344,
-        "height": 768,
-        "area": 264192,
+        "width": 120,
+        "height": 296,
+        "area": 35520,
         "density": 1.0
       },
       "best_strip": "middle",
-      "overall_density": 0.64,
+      "overall_density": 0.43,
       "recommendation": "ZONE_TOP"
     },
     "0309_the-fighting-cocks-pub-moseley-village-birmingham_lineart.png": {
@@ -510,41 +503,41 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 704,
-        "height": 784,
-        "area": 551936,
+        "width": 256,
+        "height": 296,
+        "area": 75776,
         "density": 1.0
       },
-      "best_strip": "bottom",
-      "overall_density": 0.59,
+      "best_strip": "top",
+      "overall_density": 0.53,
       "recommendation": "ZONE_TOP"
     },
     "0315_llandudno-station_lineart.png": {
       "time": "03:15",
       "zone": {
-        "x": 344,
-        "y": 56,
-        "width": 536,
-        "height": 296,
-        "area": 158656,
+        "x": 144,
+        "y": 32,
+        "width": 184,
+        "height": 96,
+        "area": 17664,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.54,
+      "overall_density": 0.34,
       "recommendation": "ZONE_TOP"
     },
     "0319_st-john-the-evangelist-golden-hill-stopped-since-2014_lineart.png": {
       "time": "03:19",
       "zone": {
-        "x": 152,
+        "x": 56,
         "y": 0,
-        "width": 608,
-        "height": 688,
-        "area": 418304,
+        "width": 224,
+        "height": 240,
+        "area": 53760,
         "density": 1.0
       },
-      "best_strip": "bottom",
-      "overall_density": 0.67,
+      "best_strip": "top",
+      "overall_density": 0.52,
       "recommendation": "ZONE_TOP"
     },
     "0320_lamlash-the-clock-house_lineart.png": {
@@ -552,13 +545,13 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 856,
-        "height": 576,
-        "area": 493056,
+        "width": 312,
+        "height": 216,
+        "area": 67392,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.67,
+      "overall_density": 0.59,
       "recommendation": "ZONE_TOP"
     },
     "0322_view-out-through-the-east-gate-arch_lineart.png": {
@@ -566,69 +559,62 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 1344,
-        "height": 344,
-        "area": 462336,
+        "width": 504,
+        "height": 120,
+        "area": 60480,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.61,
+      "overall_density": 0.56,
       "recommendation": "ZONE_TOP"
     },
     "0328_clock-st-john-the-baptist-crowle-worcestershire-england_lineart.png": {
       "time": "03:28",
-      "zone": {
-        "x": 1112,
-        "y": 552,
-        "width": 232,
-        "height": 232,
-        "area": 53824,
-        "density": 1.0
-      },
-      "best_strip": "top",
-      "overall_density": 0.46,
-      "recommendation": "ZONE_BOTTOM"
+      "zone": null,
+      "best_strip": "bottom",
+      "overall_density": 0.22,
+      "recommendation": "DARK_OVERLAY"
     },
     "0329_wistow-the-village-where-time-stands-still_lineart.png": {
       "time": "03:29",
       "zone": {
-        "x": 816,
+        "x": 320,
         "y": 0,
-        "width": 528,
-        "height": 784,
-        "area": 413952,
+        "width": 184,
+        "height": 296,
+        "area": 54464,
         "density": 1.0
       },
       "best_strip": "bottom",
-      "overall_density": 0.68,
+      "overall_density": 0.48,
       "recommendation": "ZONE_TOP"
     },
     "0330_brandon-main-street_lineart.png": {
       "time": "03:30",
       "zone": {
-        "x": 568,
+        "x": 224,
         "y": 0,
-        "width": 776,
-        "height": 784,
-        "area": 608384,
+        "width": 280,
+        "height": 296,
+        "area": 82880,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.81,
+      "overall_density": 0.76,
       "recommendation": "ZONE_TOP"
     },
     "0330_stopped-at-aldenham-house-elstree-hertfordshire-habs-school_lineart.png": {
       "time": "03:30",
       "zone": {
-        "x": 576,
+        "x": 232,
         "y": 0,
-        "width": 768,
-        "height": 760,
-        "area": 583680,
+        "width": 272,
+        "height": 296,
+        "area": 80512,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.77,
+      "overall_density": 0.7,
       "recommendation": "ZONE_TOP"
     },
     "0334_clock-railway-station-bangor-gwynedd-wales_lineart.png": {
@@ -636,13 +622,13 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 440,
-        "height": 784,
-        "area": 344960,
+        "width": 160,
+        "height": 296,
+        "area": 47360,
         "density": 1.0
       },
       "best_strip": "middle",
-      "overall_density": 0.52,
+      "overall_density": 0.37,
       "recommendation": "ZONE_TOP"
     },
     "0337_albion-house-clock-lime-street-bedford-uk_lineart.png": {
@@ -650,41 +636,41 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 808,
-        "height": 768,
-        "area": 620544,
+        "width": 296,
+        "height": 296,
+        "area": 87616,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.8,
+      "overall_density": 0.73,
       "recommendation": "ZONE_TOP"
     },
     "0337_the-clockhouse-stopped-in-havering-london_lineart.png": {
       "time": "03:37",
       "zone": {
-        "x": 504,
+        "x": 200,
         "y": 0,
-        "width": 840,
-        "height": 656,
-        "area": 551040,
+        "width": 304,
+        "height": 240,
+        "area": 72960,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.7,
+      "overall_density": 0.61,
       "recommendation": "ZONE_TOP"
     },
     "0339_android-test-post_lineart.png": {
       "time": "03:39",
       "zone": {
-        "x": 760,
+        "x": 304,
         "y": 0,
-        "width": 584,
-        "height": 416,
-        "area": 242944,
+        "width": 200,
+        "height": 152,
+        "area": 30400,
         "density": 1.0
       },
       "best_strip": "bottom",
-      "overall_density": 0.62,
+      "overall_density": 0.45,
       "recommendation": "ZONE_TOP"
     },
     "0345_cadbury-lodge-clock-on-path-from-cadbury-world-to-bournville-station-broken_lineart.png": {
@@ -692,27 +678,27 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 928,
-        "height": 784,
-        "area": 727552,
+        "width": 344,
+        "height": 296,
+        "area": 101824,
         "density": 1.0
       },
-      "best_strip": "bottom",
-      "overall_density": 0.82,
+      "best_strip": "top",
+      "overall_density": 0.75,
       "recommendation": "ZONE_TOP"
     },
     "0349_st-john-s-church-buglawton-southern-and-eastern-clockfaces_lineart.png": {
       "time": "03:49",
       "zone": {
-        "x": 760,
+        "x": 296,
         "y": 0,
-        "width": 584,
-        "height": 592,
-        "area": 345728,
+        "width": 208,
+        "height": 208,
+        "area": 43264,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.57,
+      "overall_density": 0.47,
       "recommendation": "ZONE_TOP"
     },
     "0350_-east-park-clock-tower-wolverhampton_lineart.png": {
@@ -720,27 +706,27 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 752,
-        "height": 784,
-        "area": 589568,
+        "width": 272,
+        "height": 296,
+        "area": 80512,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.68,
+      "overall_density": 0.63,
       "recommendation": "ZONE_TOP"
     },
     "0350_buses-run-on-time-at-leominster-bus-station-just-not-the-clock_lineart.png": {
       "time": "03:50",
       "zone": {
-        "x": 696,
+        "x": 280,
         "y": 0,
-        "width": 648,
-        "height": 784,
-        "area": 508032,
+        "width": 224,
+        "height": 296,
+        "area": 66304,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.68,
+      "overall_density": 0.54,
       "recommendation": "ZONE_TOP"
     },
     "0351_the-old-police-station-clock-stopped-in-halton_lineart.png": {
@@ -748,55 +734,55 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 592,
-        "height": 752,
-        "area": 445184,
+        "width": 208,
+        "height": 296,
+        "area": 61568,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.62,
+      "overall_density": 0.53,
       "recommendation": "ZONE_TOP"
     },
     "0354_stopped-at-coombe-park-pavilion-leicester_lineart.png": {
       "time": "03:54",
       "zone": {
-        "x": 600,
+        "x": 240,
         "y": 0,
-        "width": 744,
-        "height": 784,
-        "area": 583296,
+        "width": 264,
+        "height": 296,
+        "area": 78144,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.78,
+      "overall_density": 0.67,
       "recommendation": "ZONE_TOP"
     },
     "0354_whitehead-park-clock-tower-bury_lineart.png": {
       "time": "03:54",
       "zone": {
-        "x": 768,
+        "x": 304,
         "y": 0,
-        "width": 592,
-        "height": 784,
-        "area": 464128,
+        "width": 200,
+        "height": 296,
+        "area": 59200,
         "density": 1.0
       },
       "best_strip": "bottom",
-      "overall_density": 0.67,
+      "overall_density": 0.54,
       "recommendation": "ZONE_TOP"
     },
     "0356_st-john-s-church-buglawton-western-clockface_lineart.png": {
       "time": "03:56",
       "zone": {
-        "x": 712,
+        "x": 280,
         "y": 0,
-        "width": 648,
-        "height": 784,
-        "area": 508032,
+        "width": 224,
+        "height": 296,
+        "area": 66304,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.62,
+      "overall_density": 0.58,
       "recommendation": "ZONE_TOP"
     },
     "0403_longton-park-clock-tower-stopped-in-stoke-on-trent_lineart.png": {
@@ -804,27 +790,27 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 608,
-        "height": 784,
-        "area": 476672,
+        "width": 216,
+        "height": 296,
+        "area": 63936,
         "density": 1.0
       },
-      "best_strip": "top",
-      "overall_density": 0.54,
+      "best_strip": "middle",
+      "overall_density": 0.49,
       "recommendation": "ZONE_TOP"
     },
     "0404_the-old-town-hall-of-middlesborough_lineart.png": {
       "time": "04:04",
       "zone": {
-        "x": 584,
+        "x": 232,
         "y": 0,
-        "width": 760,
-        "height": 784,
-        "area": 595840,
+        "width": 272,
+        "height": 296,
+        "area": 80512,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.76,
+      "overall_density": 0.67,
       "recommendation": "ZONE_TOP"
     },
     "0407_stopped-clock-on-an-oldfield-park-corner-bath_lineart.png": {
@@ -832,41 +818,41 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 872,
-        "height": 784,
-        "area": 683648,
+        "width": 320,
+        "height": 296,
+        "area": 94720,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.83,
+      "overall_density": 0.77,
       "recommendation": "ZONE_TOP"
     },
     "0410_village-clock-st-margaret-owthorpe-nottinghamshire_lineart.png": {
       "time": "04:10",
       "zone": {
-        "x": 664,
+        "x": 264,
         "y": 0,
-        "width": 680,
-        "height": 784,
-        "area": 533120,
+        "width": 240,
+        "height": 296,
+        "area": 71040,
         "density": 1.0
       },
       "best_strip": "bottom",
-      "overall_density": 0.81,
+      "overall_density": 0.68,
       "recommendation": "ZONE_TOP"
     },
     "0411_thurstan-hoskin-building-redruth-cornwall-uk_lineart.png": {
       "time": "04:11",
       "zone": {
-        "x": 688,
+        "x": 272,
         "y": 0,
-        "width": 656,
-        "height": 784,
-        "area": 514304,
+        "width": 232,
+        "height": 296,
+        "area": 68672,
         "density": 1.0
       },
       "best_strip": "bottom",
-      "overall_density": 0.63,
+      "overall_density": 0.48,
       "recommendation": "ZONE_TOP"
     },
     "0420_canadian-pacific-building-trafalgar-square-_lineart.png": {
@@ -874,55 +860,48 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 352,
-        "height": 784,
-        "area": 275968,
+        "width": 120,
+        "height": 112,
+        "area": 13440,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.71,
-      "recommendation": "ZONE_TOP"
+      "overall_density": 0.56,
+      "recommendation": "STRIP_TOP"
     },
     "0421_jr-tasker-clock-on-st-james-street-brighton-_lineart.png": {
       "time": "04:21",
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 768,
-        "height": 664,
-        "area": 509952,
+        "width": 240,
+        "height": 296,
+        "area": 71040,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.74,
+      "overall_density": 0.59,
       "recommendation": "ZONE_TOP"
     },
     "0423_st-john-s-church-hollington_lineart.png": {
       "time": "04:23",
-      "zone": {
-        "x": 0,
-        "y": 0,
-        "width": 248,
-        "height": 784,
-        "area": 194432,
-        "density": 1.0
-      },
-      "best_strip": "middle",
-      "overall_density": 0.23,
-      "recommendation": "ZONE_TOP"
+      "zone": null,
+      "best_strip": "top",
+      "overall_density": 0.18,
+      "recommendation": "DARK_OVERLAY"
     },
     "0427_kings-norton-hospital-clock_lineart.png": {
       "time": "04:27",
       "zone": {
-        "x": 560,
+        "x": 224,
         "y": 0,
-        "width": 784,
-        "height": 784,
-        "area": 614656,
+        "width": 280,
+        "height": 296,
+        "area": 82880,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.85,
+      "overall_density": 0.79,
       "recommendation": "ZONE_TOP"
     },
     "0429_old-square-walsall-clock-not-working_lineart.png": {
@@ -930,13 +909,13 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 832,
-        "height": 784,
-        "area": 652288,
+        "width": 304,
+        "height": 296,
+        "area": 89984,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.77,
+      "overall_density": 0.68,
       "recommendation": "ZONE_TOP"
     },
     "0434_st-marys-day-centre-west-byfleet_lineart.png": {
@@ -944,13 +923,13 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 840,
-        "height": 784,
-        "area": 658560,
+        "width": 304,
+        "height": 296,
+        "area": 89984,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.82,
+      "overall_density": 0.73,
       "recommendation": "ZONE_TOP"
     },
     "0435_closest-to-home_lineart.png": {
@@ -958,13 +937,13 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 856,
-        "height": 784,
-        "area": 671104,
+        "width": 312,
+        "height": 296,
+        "area": 92352,
         "density": 1.0
       },
       "best_strip": "bottom",
-      "overall_density": 0.68,
+      "overall_density": 0.64,
       "recommendation": "ZONE_TOP"
     },
     "0437_st-matthias-poplar_lineart.png": {
@@ -972,13 +951,13 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 1016,
-        "height": 560,
-        "area": 568960,
+        "width": 264,
+        "height": 296,
+        "area": 78144,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.79,
+      "overall_density": 0.73,
       "recommendation": "ZONE_TOP"
     },
     "0438_clock-paint-factory-coed-y-parc-gwynedd-wales_lineart.png": {
@@ -986,13 +965,13 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 984,
-        "height": 784,
-        "area": 771456,
+        "width": 360,
+        "height": 296,
+        "area": 106560,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.93,
+      "overall_density": 0.88,
       "recommendation": "ZONE_TOP"
     },
     "0439_stopped-above-haz-restaurant-finsbury-square_lineart.png": {
@@ -1000,55 +979,55 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 712,
-        "height": 784,
-        "area": 558208,
+        "width": 256,
+        "height": 296,
+        "area": 75776,
         "density": 1.0
       },
-      "best_strip": "bottom",
-      "overall_density": 0.62,
+      "best_strip": "middle",
+      "overall_density": 0.56,
       "recommendation": "ZONE_TOP"
     },
     "0439_the-five-ways-clock_lineart.png": {
       "time": "04:39",
       "zone": {
-        "x": 432,
+        "x": 176,
         "y": 0,
-        "width": 912,
-        "height": 784,
-        "area": 715008,
+        "width": 328,
+        "height": 296,
+        "area": 97088,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.86,
+      "overall_density": 0.76,
       "recommendation": "ZONE_TOP"
     },
     "0446_broadgate-house-stopped-in-coventry_lineart.png": {
       "time": "04:46",
       "zone": {
         "x": 0,
-        "y": 0,
-        "width": 312,
-        "height": 784,
-        "area": 244608,
+        "y": 208,
+        "width": 240,
+        "height": 88,
+        "area": 21120,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.77,
-      "recommendation": "ZONE_TOP"
+      "overall_density": 0.62,
+      "recommendation": "ZONE_BOTTOM"
     },
     "0450_hobbs-pavilion-clock-parker-s-piece-cambridge-uk_lineart.png": {
       "time": "04:50",
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 688,
-        "height": 784,
-        "area": 539392,
+        "width": 248,
+        "height": 296,
+        "area": 73408,
         "density": 1.0
       },
       "best_strip": "bottom",
-      "overall_density": 0.67,
+      "overall_density": 0.55,
       "recommendation": "ZONE_TOP"
     },
     "0450_slater-menswear-birmingham-clock_lineart.png": {
@@ -1056,13 +1035,13 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 608,
-        "height": 784,
-        "area": 476672,
+        "width": 216,
+        "height": 296,
+        "area": 63936,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.57,
+      "overall_density": 0.45,
       "recommendation": "ZONE_TOP"
     },
     "0453_road-junction_lineart.png": {
@@ -1070,55 +1049,55 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 1344,
-        "height": 416,
-        "area": 559104,
+        "width": 504,
+        "height": 152,
+        "area": 76608,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.9,
+      "overall_density": 0.8,
       "recommendation": "ZONE_TOP"
     },
     "0501_stopped-at-the-village-arcade-in-st-albans_lineart.png": {
       "time": "05:01",
       "zone": {
-        "x": 800,
+        "x": 312,
         "y": 0,
-        "width": 544,
-        "height": 784,
-        "area": 426496,
+        "width": 192,
+        "height": 296,
+        "area": 56832,
         "density": 1.0
       },
       "best_strip": "bottom",
-      "overall_density": 0.72,
+      "overall_density": 0.61,
       "recommendation": "ZONE_TOP"
     },
     "0505_saint-samlet-church-clock-llansamlet-swansea-wales_lineart.png": {
       "time": "05:05",
       "zone": {
-        "x": 672,
+        "x": 256,
         "y": 0,
-        "width": 688,
-        "height": 784,
-        "area": 539392,
+        "width": 248,
+        "height": 296,
+        "area": 73408,
         "density": 1.0
       },
       "best_strip": "bottom",
-      "overall_density": 0.72,
+      "overall_density": 0.59,
       "recommendation": "ZONE_TOP"
     },
     "0517_combined-libray-police-station-and-fire-station-clock-leeds-uk_lineart.png": {
       "time": "05:17",
       "zone": {
-        "x": 696,
+        "x": 272,
         "y": 0,
-        "width": 648,
-        "height": 768,
-        "area": 497664,
+        "width": 232,
+        "height": 296,
+        "area": 68672,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.62,
+      "overall_density": 0.57,
       "recommendation": "ZONE_TOP"
     },
     "0517_stopped-in-leeds-uk-combined-library-police-station-and-fire-station-clock_lineart.png": {
@@ -1126,41 +1105,41 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 640,
-        "height": 784,
-        "area": 501760,
+        "width": 232,
+        "height": 296,
+        "area": 68672,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.63,
+      "overall_density": 0.57,
       "recommendation": "ZONE_TOP"
     },
     "0531_brighton-pier-clock-half-right-_lineart.png": {
       "time": "05:31",
       "zone": {
-        "x": 576,
+        "x": 232,
         "y": 0,
-        "width": 768,
-        "height": 784,
-        "area": 602112,
+        "width": 272,
+        "height": 296,
+        "area": 80512,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.69,
+      "overall_density": 0.61,
       "recommendation": "ZONE_TOP"
     },
     "0533_stopped-defunct-lever-building-clerknwell-london_lineart.png": {
       "time": "05:33",
       "zone": {
-        "x": 480,
+        "x": 192,
         "y": 0,
-        "width": 864,
-        "height": 576,
-        "area": 497664,
+        "width": 312,
+        "height": 216,
+        "area": 67392,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.77,
+      "overall_density": 0.73,
       "recommendation": "ZONE_TOP"
     },
     "0535_clock-st-peter-s-church-bromyard-herefordshire-england_lineart.png": {
@@ -1168,13 +1147,13 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 528,
-        "height": 768,
-        "area": 405504,
+        "width": 192,
+        "height": 296,
+        "area": 56832,
         "density": 1.0
       },
-      "best_strip": "middle",
-      "overall_density": 0.52,
+      "best_strip": "top",
+      "overall_density": 0.41,
       "recommendation": "ZONE_TOP"
     },
     "0538_warwick-town-east-gate_lineart.png": {
@@ -1182,27 +1161,27 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 832,
-        "height": 784,
-        "area": 652288,
+        "width": 304,
+        "height": 296,
+        "area": 89984,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.71,
+      "overall_density": 0.64,
       "recommendation": "ZONE_TOP"
     },
     "0548_st-paul-s-stalybridge_lineart.png": {
       "time": "05:48",
       "zone": {
-        "x": 672,
+        "x": 264,
         "y": 0,
-        "width": 672,
-        "height": 784,
-        "area": 526848,
+        "width": 240,
+        "height": 296,
+        "area": 71040,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.59,
+      "overall_density": 0.5,
       "recommendation": "ZONE_TOP"
     },
     "0552_clock-nelson-e-eye-patch-shire-house-shirehall-plain-holt-nr25-6ht_lineart.png": {
@@ -1210,41 +1189,41 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 696,
-        "height": 784,
-        "area": 545664,
-        "density": 1.0
-      },
-      "best_strip": "top",
-      "overall_density": 0.78,
-      "recommendation": "ZONE_TOP"
-    },
-    "0554_clock-tower-at-king-george-v-primary-school-in-west-bromwich_lineart.png": {
-      "time": "05:54",
-      "zone": {
-        "x": 608,
-        "y": 0,
-        "width": 736,
-        "height": 768,
-        "area": 565248,
+        "width": 248,
+        "height": 296,
+        "area": 73408,
         "density": 1.0
       },
       "best_strip": "top",
       "overall_density": 0.66,
       "recommendation": "ZONE_TOP"
     },
-    "0556_stopped-on-leonard-street-shoreditch-london_lineart.png": {
-      "time": "05:56",
+    "0554_clock-tower-at-king-george-v-primary-school-in-west-bromwich_lineart.png": {
+      "time": "05:54",
       "zone": {
-        "x": 696,
+        "x": 240,
         "y": 0,
-        "width": 648,
-        "height": 784,
-        "area": 508032,
+        "width": 264,
+        "height": 296,
+        "area": 78144,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.84,
+      "overall_density": 0.59,
+      "recommendation": "ZONE_TOP"
+    },
+    "0556_stopped-on-leonard-street-shoreditch-london_lineart.png": {
+      "time": "05:56",
+      "zone": {
+        "x": 272,
+        "y": 0,
+        "width": 232,
+        "height": 296,
+        "area": 68672,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.77,
       "recommendation": "ZONE_TOP"
     },
     "0559_stopped-in-battle-above-costa-coffee_lineart.png": {
@@ -1252,27 +1231,27 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 680,
-        "height": 784,
-        "area": 533120,
+        "width": 248,
+        "height": 296,
+        "area": 73408,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.66,
+      "overall_density": 0.59,
       "recommendation": "ZONE_TOP"
     },
     "0601_the-old-police-station-and-library-chapel-allerton_lineart.png": {
       "time": "06:01",
       "zone": {
-        "x": 648,
+        "x": 256,
         "y": 0,
-        "width": 696,
-        "height": 784,
-        "area": 545664,
+        "width": 248,
+        "height": 296,
+        "area": 73408,
         "density": 1.0
       },
       "best_strip": "bottom",
-      "overall_density": 0.79,
+      "overall_density": 0.7,
       "recommendation": "ZONE_TOP"
     },
     "0604_old-high-kirk-kilmarnock_lineart.png": {
@@ -1280,41 +1259,41 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 448,
-        "height": 784,
-        "area": 351232,
+        "width": 160,
+        "height": 296,
+        "area": 47360,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.7,
+      "overall_density": 0.61,
       "recommendation": "ZONE_TOP"
     },
     "0607_dorset-house-stamford-road-recently-acquired-by-whitbread_lineart.png": {
       "time": "06:07",
       "zone": {
-        "x": 488,
+        "x": 264,
         "y": 0,
-        "width": 856,
-        "height": 632,
-        "area": 540992,
+        "width": 240,
+        "height": 296,
+        "area": 71040,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.69,
+      "overall_density": 0.6,
       "recommendation": "ZONE_TOP"
     },
     "0611_time-stands-still-in-milldale_lineart.png": {
       "time": "06:11",
       "zone": {
-        "x": 488,
+        "x": 200,
         "y": 0,
-        "width": 856,
-        "height": 784,
-        "area": 671104,
+        "width": 304,
+        "height": 296,
+        "area": 89984,
         "density": 1.0
       },
       "best_strip": "bottom",
-      "overall_density": 0.91,
+      "overall_density": 0.82,
       "recommendation": "ZONE_TOP"
     },
     "0611_twyning-church_lineart.png": {
@@ -1322,27 +1301,27 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 672,
-        "height": 784,
-        "area": 526848,
+        "width": 240,
+        "height": 296,
+        "area": 71040,
         "density": 1.0
       },
       "best_strip": "bottom",
-      "overall_density": 0.84,
+      "overall_density": 0.69,
       "recommendation": "ZONE_TOP"
     },
     "0612_church-clock_lineart.png": {
       "time": "06:12",
       "zone": {
-        "x": 680,
+        "x": 272,
         "y": 0,
-        "width": 664,
-        "height": 784,
-        "area": 520576,
+        "width": 232,
+        "height": 296,
+        "area": 68672,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.53,
+      "overall_density": 0.48,
       "recommendation": "ZONE_TOP"
     },
     "0613_st-leonard-s-church-the-marina-st-leonards-on-sea-clock-status-history_lineart.png": {
@@ -1350,27 +1329,27 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 824,
-        "height": 784,
-        "area": 646016,
+        "width": 304,
+        "height": 296,
+        "area": 89984,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.76,
+      "overall_density": 0.7,
       "recommendation": "ZONE_TOP"
     },
     "0614_clock-tower-in-stoke-park_lineart.png": {
       "time": "06:14",
       "zone": {
-        "x": 592,
+        "x": 240,
         "y": 0,
-        "width": 752,
-        "height": 784,
-        "area": 589568,
+        "width": 264,
+        "height": 296,
+        "area": 78144,
         "density": 1.0
       },
       "best_strip": "bottom",
-      "overall_density": 0.78,
+      "overall_density": 0.61,
       "recommendation": "ZONE_TOP"
     },
     "0630_clock-pensax-court-pensax-worcestershire-england_lineart.png": {
@@ -1378,27 +1357,27 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 504,
-        "height": 616,
-        "area": 310464,
+        "width": 176,
+        "height": 224,
+        "area": 39424,
         "density": 1.0
       },
       "best_strip": "middle",
-      "overall_density": 0.62,
+      "overall_density": 0.44,
       "recommendation": "ZONE_TOP"
     },
     "0630_village-clock-the-old-post-office-hambleton-rutland_lineart.png": {
       "time": "06:30",
       "zone": {
-        "x": 504,
+        "x": 200,
         "y": 0,
-        "width": 840,
-        "height": 784,
-        "area": 658560,
+        "width": 304,
+        "height": 296,
+        "area": 89984,
         "density": 1.0
       },
       "best_strip": "bottom",
-      "overall_density": 0.84,
+      "overall_density": 0.76,
       "recommendation": "ZONE_TOP"
     },
     "0632_slaughter-house-barns_lineart.png": {
@@ -1406,13 +1385,13 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 456,
-        "height": 784,
-        "area": 357504,
+        "width": 160,
+        "height": 296,
+        "area": 47360,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.65,
+      "overall_density": 0.57,
       "recommendation": "ZONE_TOP"
     },
     "0633_central-forest-park-pavilion-stoke-on-trent_lineart.png": {
@@ -1420,41 +1399,41 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 1088,
-        "height": 784,
-        "area": 852992,
+        "width": 408,
+        "height": 296,
+        "area": 120768,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.94,
+      "overall_density": 0.92,
       "recommendation": "ZONE_TOP"
     },
     "0635_stopped-above-a-council-block-11-wormwood-gate-dublin_lineart.png": {
       "time": "06:35",
       "zone": {
-        "x": 616,
+        "x": 248,
         "y": 0,
-        "width": 728,
-        "height": 784,
-        "area": 570752,
+        "width": 256,
+        "height": 296,
+        "area": 75776,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.75,
+      "overall_density": 0.64,
       "recommendation": "ZONE_TOP"
     },
     "0640_nathans-old-shop-clock-31-corporation-street-birmingham_lineart.png": {
       "time": "06:40",
       "zone": {
-        "x": 640,
+        "x": 256,
         "y": 0,
-        "width": 704,
-        "height": 784,
-        "area": 551936,
+        "width": 248,
+        "height": 296,
+        "area": 73408,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.59,
+      "overall_density": 0.53,
       "recommendation": "ZONE_TOP"
     },
     "0646_the-church-sampford-arundel_lineart.png": {
@@ -1462,13 +1441,13 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 912,
-        "height": 784,
-        "area": 715008,
+        "width": 336,
+        "height": 296,
+        "area": 99456,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.89,
+      "overall_density": 0.83,
       "recommendation": "ZONE_TOP"
     },
     "0655_tower-clock-stopped-at-the-sunny-bar-doncaster_lineart.png": {
@@ -1476,13 +1455,13 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 672,
-        "height": 784,
-        "area": 526848,
+        "width": 248,
+        "height": 296,
+        "area": 73408,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.71,
+      "overall_density": 0.64,
       "recommendation": "ZONE_TOP"
     },
     "0700_one-handed-clock-on-st-nicolas-church-north-stoneham_lineart.png": {
@@ -1490,83 +1469,83 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 584,
-        "height": 784,
-        "area": 457856,
+        "width": 208,
+        "height": 296,
+        "area": 61568,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.76,
+      "overall_density": 0.7,
       "recommendation": "ZONE_TOP"
     },
     "0704_monarch-house-stopped-in-hampshire_lineart.png": {
       "time": "07:04",
       "zone": {
-        "x": 712,
+        "x": 280,
         "y": 0,
-        "width": 632,
-        "height": 784,
-        "area": 495488,
+        "width": 224,
+        "height": 296,
+        "area": 66304,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.71,
+      "overall_density": 0.55,
       "recommendation": "ZONE_TOP"
     },
     "0709_broken-clock-eastern-branch_lineart.png": {
       "time": "07:09",
       "zone": {
-        "x": 1064,
-        "y": 0,
-        "width": 280,
-        "height": 784,
-        "area": 219520,
+        "x": 384,
+        "y": 232,
+        "width": 120,
+        "height": 64,
+        "area": 7680,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.53,
-      "recommendation": "ZONE_TOP"
+      "overall_density": 0.37,
+      "recommendation": "DARK_OVERLAY"
     },
     "0711_hodge-house-castle-clock-cardiff-capital-of-wales_lineart.png": {
       "time": "07:11",
       "zone": {
-        "x": 616,
+        "x": 248,
         "y": 0,
-        "width": 728,
-        "height": 784,
-        "area": 570752,
+        "width": 256,
+        "height": 296,
+        "area": 75776,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.75,
+      "overall_density": 0.69,
       "recommendation": "ZONE_TOP"
     },
     "0716_the-granary-wood-hall_lineart.png": {
       "time": "07:16",
       "zone": {
-        "x": 696,
+        "x": 312,
         "y": 0,
-        "width": 648,
-        "height": 664,
-        "area": 430272,
+        "width": 192,
+        "height": 296,
+        "area": 56832,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.75,
+      "overall_density": 0.69,
       "recommendation": "ZONE_TOP"
     },
     "0719_control-tower-on-the-airfield_lineart.png": {
       "time": "07:19",
       "zone": {
-        "x": 656,
+        "x": 264,
         "y": 0,
-        "width": 688,
-        "height": 784,
-        "area": 539392,
+        "width": 240,
+        "height": 296,
+        "area": 71040,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.81,
+      "overall_density": 0.69,
       "recommendation": "ZONE_TOP"
     },
     "0720_war-memorial-at-llanfair-pg_lineart.png": {
@@ -1574,13 +1553,13 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 768,
-        "height": 784,
-        "area": 602112,
+        "width": 280,
+        "height": 296,
+        "area": 82880,
         "density": 1.0
       },
       "best_strip": "bottom",
-      "overall_density": 0.67,
+      "overall_density": 0.6,
       "recommendation": "ZONE_TOP"
     },
     "0721_clock-st-seiriol-s-church-penmaenmawr-conwy-wales_lineart.png": {
@@ -1588,27 +1567,27 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 688,
-        "height": 784,
-        "area": 539392,
+        "width": 248,
+        "height": 296,
+        "area": 73408,
         "density": 1.0
       },
       "best_strip": "bottom",
-      "overall_density": 0.68,
+      "overall_density": 0.64,
       "recommendation": "ZONE_TOP"
     },
     "0724_cocker-clock-in-blackpool-memento-mori_lineart.png": {
       "time": "07:24",
       "zone": {
-        "x": 472,
+        "x": 192,
         "y": 0,
-        "width": 872,
-        "height": 784,
-        "area": 683648,
+        "width": 312,
+        "height": 296,
+        "area": 92352,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.75,
+      "overall_density": 0.69,
       "recommendation": "ZONE_TOP"
     },
     "0729_the-arcade-bognor-regis_lineart.png": {
@@ -1616,27 +1595,27 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 1344,
-        "height": 408,
-        "area": 548352,
+        "width": 504,
+        "height": 144,
+        "area": 72576,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.8,
+      "overall_density": 0.69,
       "recommendation": "ZONE_TOP"
     },
     "0730_chelsea-college-of-art-design-clock-atterbury-street-london-uk_lineart.png": {
       "time": "07:30",
       "zone": {
-        "x": 672,
+        "x": 264,
         "y": 0,
-        "width": 672,
-        "height": 784,
-        "area": 526848,
+        "width": 240,
+        "height": 296,
+        "area": 71040,
         "density": 1.0
       },
       "best_strip": "middle",
-      "overall_density": 0.62,
+      "overall_density": 0.49,
       "recommendation": "ZONE_TOP"
     },
     "0731_the-landgate-clock-tower-rye_lineart.png": {
@@ -1644,41 +1623,34 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 632,
-        "height": 784,
-        "area": 495488,
+        "width": 232,
+        "height": 296,
+        "area": 68672,
         "density": 1.0
       },
       "best_strip": "bottom",
-      "overall_density": 0.58,
+      "overall_density": 0.5,
       "recommendation": "ZONE_TOP"
     },
     "0739_orchardleigh-house-stable-block_lineart.png": {
       "time": "07:39",
-      "zone": {
-        "x": 0,
-        "y": 32,
-        "width": 160,
-        "height": 752,
-        "area": 120320,
-        "density": 1.0
-      },
+      "zone": null,
       "best_strip": "middle",
-      "overall_density": 0.28,
-      "recommendation": "ZONE_TOP"
+      "overall_density": 0.19,
+      "recommendation": "DARK_OVERLAY"
     },
     "0743_established-1866_lineart.png": {
       "time": "07:43",
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 720,
-        "height": 784,
-        "area": 564480,
+        "width": 264,
+        "height": 296,
+        "area": 78144,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.83,
+      "overall_density": 0.77,
       "recommendation": "ZONE_TOP"
     },
     "0754_stopped-at-quakersmill-bexhill-on-sea-east-sussex_lineart.png": {
@@ -1686,13 +1658,13 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 848,
-        "height": 784,
-        "area": 664832,
+        "width": 312,
+        "height": 296,
+        "area": 92352,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.85,
+      "overall_density": 0.8,
       "recommendation": "ZONE_TOP"
     },
     "0756_coney-street-clock_lineart.png": {
@@ -1700,27 +1672,27 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 776,
-        "height": 784,
-        "area": 608384,
+        "width": 280,
+        "height": 296,
+        "area": 82880,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.81,
+      "overall_density": 0.76,
       "recommendation": "ZONE_TOP"
     },
     "0756_diggle-clock-tower_lineart.png": {
       "time": "07:56",
       "zone": {
-        "x": 328,
+        "x": 136,
         "y": 0,
-        "width": 1016,
-        "height": 784,
-        "area": 796544,
+        "width": 368,
+        "height": 296,
+        "area": 108928,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.83,
+      "overall_density": 0.77,
       "recommendation": "ZONE_TOP"
     },
     "0756_public-convenience-at-the-marina_lineart.png": {
@@ -1728,13 +1700,13 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 960,
-        "height": 704,
-        "area": 675840,
+        "width": 352,
+        "height": 256,
+        "area": 90112,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.81,
+      "overall_density": 0.74,
       "recommendation": "ZONE_TOP"
     },
     "0800_the-clockmaker-s-clock-has-stopped_lineart.png": {
@@ -1742,13 +1714,13 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 1072,
-        "height": 784,
-        "area": 840448,
+        "width": 392,
+        "height": 296,
+        "area": 116032,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.95,
+      "overall_density": 0.91,
       "recommendation": "ZONE_TOP"
     },
     "0800_who-called-time-on-pubs-_lineart.png": {
@@ -1756,13 +1728,13 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 688,
-        "height": 784,
-        "area": 539392,
+        "width": 248,
+        "height": 296,
+        "area": 73408,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.53,
+      "overall_density": 0.49,
       "recommendation": "ZONE_TOP"
     },
     "0804_community-centre-clock-stopped-in-andover_lineart.png": {
@@ -1770,13 +1742,13 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 1344,
-        "height": 448,
-        "area": 602112,
+        "width": 504,
+        "height": 160,
+        "area": 80640,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.87,
+      "overall_density": 0.74,
       "recommendation": "ZONE_TOP"
     },
     "0816_toby-carvery-clock-talke-stoke-on-trent-staffordshire_lineart.png": {
@@ -1784,13 +1756,13 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 728,
-        "height": 784,
-        "area": 570752,
+        "width": 264,
+        "height": 296,
+        "area": 78144,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.73,
+      "overall_density": 0.65,
       "recommendation": "ZONE_TOP"
     },
     "0818_st-mary-s-church-high-street-huntingdon_lineart.png": {
@@ -1798,27 +1770,27 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 704,
-        "height": 784,
-        "area": 551936,
+        "width": 256,
+        "height": 296,
+        "area": 75776,
         "density": 1.0
       },
       "best_strip": "bottom",
-      "overall_density": 0.61,
+      "overall_density": 0.53,
       "recommendation": "ZONE_TOP"
     },
     "0820_town-clock-canning-terrace-nottingham-nottinghamshire_lineart.png": {
       "time": "08:20",
       "zone": {
-        "x": 576,
+        "x": 232,
         "y": 0,
-        "width": 768,
-        "height": 784,
-        "area": 602112,
+        "width": 272,
+        "height": 296,
+        "area": 80512,
         "density": 1.0
       },
       "best_strip": "bottom",
-      "overall_density": 0.82,
+      "overall_density": 0.73,
       "recommendation": "ZONE_TOP"
     },
     "0821_clock-on-outbuilding-himley-hall-himley-south-staffordshire-england_lineart.png": {
@@ -1826,13 +1798,13 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 824,
-        "height": 784,
-        "area": 646016,
+        "width": 296,
+        "height": 296,
+        "area": 87616,
         "density": 1.0
       },
       "best_strip": "bottom",
-      "overall_density": 0.71,
+      "overall_density": 0.65,
       "recommendation": "ZONE_TOP"
     },
     "0822_church-clock-all-saints-church-church-lawton-stoke-on-trent-staffordshire_lineart.png": {
@@ -1840,27 +1812,27 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 592,
-        "height": 784,
-        "area": 464128,
+        "width": 208,
+        "height": 296,
+        "area": 61568,
         "density": 1.0
       },
       "best_strip": "bottom",
-      "overall_density": 0.63,
+      "overall_density": 0.5,
       "recommendation": "ZONE_TOP"
     },
     "0823_billingsgate-christian-mission-and-dispensary-clock-st-mary-at-hill-london-uk_lineart.png": {
       "time": "08:23",
       "zone": {
-        "x": 528,
+        "x": 216,
         "y": 0,
-        "width": 816,
-        "height": 784,
-        "area": 639744,
+        "width": 288,
+        "height": 296,
+        "area": 85248,
         "density": 1.0
       },
       "best_strip": "bottom",
-      "overall_density": 0.85,
+      "overall_density": 0.78,
       "recommendation": "ZONE_TOP"
     },
     "0825_stopped-at-emily-davies-court-girton-college-cambridge-university-in-memoriam-cm-cm-deserves-better_lineart.png": {
@@ -1868,13 +1840,13 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 328,
-        "height": 536,
-        "area": 175808,
+        "width": 120,
+        "height": 184,
+        "area": 22080,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.43,
+      "overall_density": 0.32,
       "recommendation": "ZONE_TOP"
     },
     "0829_bexhill-west-station-and-sivyers-antique-emporium-_lineart.png": {
@@ -1882,13 +1854,13 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 840,
-        "height": 784,
-        "area": 658560,
+        "width": 304,
+        "height": 296,
+        "area": 89984,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.69,
+      "overall_density": 0.66,
       "recommendation": "ZONE_TOP"
     },
     "0830_stopped-above-rathmines-college-in-dublin_lineart.png": {
@@ -1896,55 +1868,55 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 992,
-        "height": 784,
-        "area": 777728,
+        "width": 368,
+        "height": 296,
+        "area": 108928,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.82,
+      "overall_density": 0.77,
       "recommendation": "ZONE_TOP"
     },
     "0844_stopped-clock-above-station-house-pub-tonbridge_lineart.png": {
       "time": "08:44",
       "zone": {
-        "x": 392,
+        "x": 160,
         "y": 0,
-        "width": 520,
-        "height": 624,
-        "area": 324480,
+        "width": 176,
+        "height": 224,
+        "area": 39424,
         "density": 1.0
       },
       "best_strip": "middle",
-      "overall_density": 0.68,
+      "overall_density": 0.47,
       "recommendation": "ZONE_TOP"
     },
     "0844_the-clock-above-the-gift-shop-at-upton-house-and-gardens-hadn-t-changed-between-visits-_lineart.png": {
       "time": "08:44",
       "zone": {
-        "x": 376,
+        "x": 152,
         "y": 0,
-        "width": 968,
-        "height": 784,
-        "area": 758912,
+        "width": 352,
+        "height": 296,
+        "area": 104192,
         "density": 1.0
       },
       "best_strip": "bottom",
-      "overall_density": 0.87,
+      "overall_density": 0.84,
       "recommendation": "ZONE_TOP"
     },
     "0845_st-peter-s-church-and-churchyard-addingham_lineart.png": {
       "time": "08:45",
       "zone": {
-        "x": 480,
+        "x": 192,
         "y": 0,
-        "width": 864,
-        "height": 784,
-        "area": 677376,
+        "width": 312,
+        "height": 296,
+        "area": 92352,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.76,
+      "overall_density": 0.71,
       "recommendation": "ZONE_TOP"
     },
     "0846_tunbridge-wells-millennium-clock-future-uncertain_lineart.png": {
@@ -1952,13 +1924,13 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 984,
-        "height": 784,
-        "area": 771456,
+        "width": 360,
+        "height": 296,
+        "area": 106560,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.86,
+      "overall_density": 0.77,
       "recommendation": "ZONE_TOP"
     },
     "0851_stopped-in-wakefield-uk-wakefield-and-barnsley-union-bank-clock_lineart.png": {
@@ -1966,13 +1938,13 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 816,
-        "height": 640,
-        "area": 522240,
+        "width": 296,
+        "height": 232,
+        "area": 68672,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.87,
+      "overall_density": 0.76,
       "recommendation": "ZONE_TOP"
     },
     "0852_wakefield-and-barnsley-union-bank-clock-wakefield-uk_lineart.png": {
@@ -1980,13 +1952,13 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 576,
-        "height": 784,
-        "area": 451584,
+        "width": 208,
+        "height": 296,
+        "area": 61568,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.77,
+      "overall_density": 0.7,
       "recommendation": "ZONE_TOP"
     },
     "0859_stopped-above-nuyard-paving-and-fencing-cowroast-hertfordshire_lineart.png": {
@@ -1994,13 +1966,13 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 624,
-        "height": 784,
-        "area": 489216,
+        "width": 224,
+        "height": 296,
+        "area": 66304,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.77,
+      "overall_density": 0.71,
       "recommendation": "ZONE_TOP"
     },
     "0901_former-st-john-s-church-roundhay-clock-dial_lineart.png": {
@@ -2008,13 +1980,13 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 648,
-        "height": 784,
-        "area": 508032,
+        "width": 232,
+        "height": 296,
+        "area": 68672,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.67,
+      "overall_density": 0.59,
       "recommendation": "ZONE_TOP"
     },
     "0926_stopped-clock-southgate-underground-station_lineart.png": {
@@ -2022,13 +1994,13 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 1344,
-        "height": 488,
-        "area": 655872,
+        "width": 504,
+        "height": 176,
+        "area": 88704,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.91,
+      "overall_density": 0.88,
       "recommendation": "ZONE_TOP"
     },
     "0927_kelmarsh-church_lineart.png": {
@@ -2036,13 +2008,13 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 736,
-        "height": 784,
-        "area": 577024,
+        "width": 272,
+        "height": 296,
+        "area": 80512,
         "density": 1.0
       },
       "best_strip": "bottom",
-      "overall_density": 0.79,
+      "overall_density": 0.65,
       "recommendation": "ZONE_TOP"
     },
     "0932_stopped-outside-ag-hendy-homestore-hastings-high-street-uk_lineart.png": {
@@ -2050,125 +2022,125 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 712,
-        "height": 784,
-        "area": 558208,
+        "width": 256,
+        "height": 296,
+        "area": 75776,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.71,
+      "overall_density": 0.62,
       "recommendation": "ZONE_TOP"
     },
     "0932_whiteley-s-corner-brighouse_lineart.png": {
       "time": "09:32",
       "zone": {
-        "x": 584,
+        "x": 232,
         "y": 0,
-        "width": 760,
-        "height": 784,
-        "area": 595840,
+        "width": 272,
+        "height": 296,
+        "area": 80512,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.73,
+      "overall_density": 0.65,
       "recommendation": "ZONE_TOP"
     },
     "0941_edward-vii-memorial-four-face-clock-bexhill-on-sea-seafront_lineart.png": {
       "time": "09:41",
       "zone": {
-        "x": 336,
+        "x": 144,
         "y": 0,
-        "width": 1008,
-        "height": 784,
-        "area": 790272,
+        "width": 360,
+        "height": 296,
+        "area": 106560,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.9,
+      "overall_density": 0.86,
       "recommendation": "ZONE_TOP"
     },
     "0943_captain-cook-square-car-park-middlesborough_lineart.png": {
       "time": "09:43",
       "zone": {
-        "x": 824,
+        "x": 328,
         "y": 0,
-        "width": 520,
-        "height": 432,
-        "area": 224640,
+        "width": 176,
+        "height": 152,
+        "area": 26752,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.41,
+      "overall_density": 0.27,
       "recommendation": "ZONE_TOP"
     },
     "0946_pigeon-shitshow-_lineart.png": {
       "time": "09:46",
       "zone": {
         "x": 0,
-        "y": 344,
-        "width": 1344,
-        "height": 440,
-        "area": 591360,
+        "y": 144,
+        "width": 504,
+        "height": 152,
+        "area": 76608,
         "density": 1.0
       },
       "best_strip": "bottom",
-      "overall_density": 0.74,
-      "recommendation": "ZONE_BOTTOM"
+      "overall_density": 0.63,
+      "recommendation": "ZONE_CENTER"
     },
     "0949_romford-stewards-walk_lineart.png": {
       "time": "09:49",
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 856,
-        "height": 624,
-        "area": 534144,
+        "width": 312,
+        "height": 232,
+        "area": 72384,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.82,
+      "overall_density": 0.77,
       "recommendation": "ZONE_TOP"
     },
     "0951_clock-12-lower-n-st-exeter-devon_lineart.png": {
       "time": "09:51",
       "zone": {
-        "x": 560,
+        "x": 224,
         "y": 0,
-        "width": 784,
-        "height": 784,
-        "area": 614656,
+        "width": 280,
+        "height": 296,
+        "area": 82880,
         "density": 1.0
       },
       "best_strip": "bottom",
-      "overall_density": 0.76,
+      "overall_density": 0.64,
       "recommendation": "ZONE_TOP"
     },
     "0957_morrisco-in-milton-keynes_lineart.png": {
       "time": "09:57",
       "zone": {
-        "x": 512,
+        "x": 208,
         "y": 0,
-        "width": 832,
-        "height": 784,
-        "area": 652288,
+        "width": 296,
+        "height": 296,
+        "area": 87616,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.82,
+      "overall_density": 0.76,
       "recommendation": "ZONE_TOP"
     },
     "0959_always-midday-at-prittlewell-square-gardens_lineart.png": {
       "time": "09:59",
       "zone": {
-        "x": 544,
+        "x": 216,
         "y": 0,
-        "width": 800,
-        "height": 784,
-        "area": 627200,
+        "width": 288,
+        "height": 296,
+        "area": 85248,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.86,
+      "overall_density": 0.82,
       "recommendation": "ZONE_TOP"
     },
     "1001_clock-the-old-court-house-wolverley-worcestershire-england_lineart.png": {
@@ -2176,13 +2148,13 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 648,
-        "height": 784,
-        "area": 508032,
+        "width": 232,
+        "height": 296,
+        "area": 68672,
         "density": 1.0
       },
       "best_strip": "bottom",
-      "overall_density": 0.78,
+      "overall_density": 0.7,
       "recommendation": "ZONE_TOP"
     },
     "1002_baddesley-clinton-warwickshire-england_lineart.png": {
@@ -2190,27 +2162,27 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 824,
-        "height": 784,
-        "area": 646016,
+        "width": 304,
+        "height": 296,
+        "area": 89984,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.78,
+      "overall_density": 0.72,
       "recommendation": "ZONE_TOP"
     },
     "1004_thurgarton-priory-2_lineart.png": {
       "time": "10:04",
       "zone": {
-        "x": 632,
+        "x": 248,
         "y": 0,
-        "width": 712,
-        "height": 784,
-        "area": 558208,
+        "width": 256,
+        "height": 296,
+        "area": 75776,
         "density": 1.0
       },
-      "best_strip": "bottom",
-      "overall_density": 0.7,
+      "best_strip": "top",
+      "overall_density": 0.59,
       "recommendation": "ZONE_TOP"
     },
     "1005_calls-wharf-clock-leeds-uk_lineart.png": {
@@ -2218,55 +2190,55 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 808,
-        "height": 784,
-        "area": 633472,
+        "width": 296,
+        "height": 296,
+        "area": 87616,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.66,
+      "overall_density": 0.6,
       "recommendation": "ZONE_TOP"
     },
     "1006_george-street-croydon_lineart.png": {
       "time": "10:06",
       "zone": {
-        "x": 944,
+        "x": 368,
         "y": 0,
-        "width": 400,
-        "height": 784,
-        "area": 313600,
+        "width": 136,
+        "height": 296,
+        "area": 40256,
         "density": 1.0
       },
       "best_strip": "middle",
-      "overall_density": 0.62,
+      "overall_density": 0.48,
       "recommendation": "ZONE_TOP"
     },
     "1006_st-patrick-s-salter-street_lineart.png": {
       "time": "10:06",
       "zone": {
-        "x": 512,
+        "x": 200,
         "y": 0,
-        "width": 832,
-        "height": 784,
-        "area": 652288,
+        "width": 304,
+        "height": 296,
+        "area": 89984,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.69,
+      "overall_density": 0.63,
       "recommendation": "ZONE_TOP"
     },
     "1009_mitcham-cricket-club_lineart.png": {
       "time": "10:09",
       "zone": {
-        "x": 744,
+        "x": 296,
         "y": 0,
-        "width": 600,
-        "height": 784,
-        "area": 470400,
+        "width": 208,
+        "height": 296,
+        "area": 61568,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.58,
+      "overall_density": 0.5,
       "recommendation": "ZONE_TOP"
     },
     "1010_stands-the-church-clock-at-five-past-ten_lineart.png": {
@@ -2274,83 +2246,83 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 952,
-        "height": 512,
-        "area": 487424,
+        "width": 352,
+        "height": 184,
+        "area": 64768,
         "density": 1.0
       },
-      "best_strip": "middle",
-      "overall_density": 0.8,
+      "best_strip": "top",
+      "overall_density": 0.65,
       "recommendation": "ZONE_TOP"
     },
     "1011_carnival-clock-haltwhistle-northumberland_lineart.png": {
       "time": "10:11",
       "zone": {
-        "x": 552,
+        "x": 224,
         "y": 0,
-        "width": 792,
-        "height": 784,
-        "area": 620928,
+        "width": 280,
+        "height": 296,
+        "area": 82880,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.75,
+      "overall_density": 0.66,
       "recommendation": "ZONE_TOP"
     },
     "1011_stopped-at-the-finedon-community-library_lineart.png": {
       "time": "10:11",
       "zone": {
-        "x": 320,
+        "x": 136,
         "y": 0,
-        "width": 1024,
-        "height": 784,
-        "area": 802816,
+        "width": 368,
+        "height": 296,
+        "area": 108928,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.85,
+      "overall_density": 0.81,
       "recommendation": "ZONE_TOP"
     },
     "1014_when-you-really-have-to-go-it-doesn-t-matter-what-time-it-is_lineart.png": {
       "time": "10:14",
       "zone": {
-        "x": 664,
+        "x": 264,
         "y": 0,
-        "width": 680,
-        "height": 784,
-        "area": 533120,
+        "width": 240,
+        "height": 296,
+        "area": 71040,
         "density": 1.0
       },
       "best_strip": "bottom",
-      "overall_density": 0.84,
+      "overall_density": 0.71,
       "recommendation": "ZONE_TOP"
     },
     "1019_hanley-park-main-pavilion-stoke-on-trent-stopped-since-2021_lineart.png": {
       "time": "10:19",
       "zone": {
-        "x": 312,
+        "x": 128,
         "y": 0,
-        "width": 1032,
-        "height": 784,
-        "area": 809088,
+        "width": 376,
+        "height": 296,
+        "area": 111296,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.93,
+      "overall_density": 0.88,
       "recommendation": "ZONE_TOP"
     },
     "1032_interesting-housing-at-manaccan_lineart.png": {
       "time": "10:32",
       "zone": {
-        "x": 736,
+        "x": 296,
         "y": 0,
-        "width": 608,
-        "height": 784,
-        "area": 476672,
+        "width": 208,
+        "height": 296,
+        "area": 61568,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.76,
+      "overall_density": 0.63,
       "recommendation": "ZONE_TOP"
     },
     "1032_the-farley-clock-tower-west-bromwich_lineart.png": {
@@ -2358,13 +2330,13 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 1000,
-        "height": 784,
-        "area": 784000,
+        "width": 368,
+        "height": 296,
+        "area": 108928,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.84,
+      "overall_density": 0.8,
       "recommendation": "ZONE_TOP"
     },
     "1036_kiosk-3-stopped-in-worthing_lineart.png": {
@@ -2372,41 +2344,34 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 1040,
-        "height": 640,
-        "area": 665600,
+        "width": 400,
+        "height": 224,
+        "area": 89600,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.92,
+      "overall_density": 0.85,
       "recommendation": "ZONE_TOP"
     },
     "1038_art-deco-clock-at-the-hoover-canteen_lineart.png": {
       "time": "10:38",
-      "zone": {
-        "x": 776,
-        "y": 600,
-        "width": 288,
-        "height": 184,
-        "area": 52992,
-        "density": 1.0
-      },
+      "zone": null,
       "best_strip": "top",
-      "overall_density": 0.49,
-      "recommendation": "ZONE_BOTTOM"
+      "overall_density": 0.2,
+      "recommendation": "DARK_OVERLAY"
     },
     "1045_village-clock-burstall-suffolk_lineart.png": {
       "time": "10:45",
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 912,
-        "height": 784,
-        "area": 715008,
+        "width": 336,
+        "height": 296,
+        "area": 99456,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.74,
+      "overall_density": 0.7,
       "recommendation": "ZONE_TOP"
     },
     "1046_town-clock-former-boots-chemist-shop-126-derby-road-nottingham-nottinghamshire_lineart.png": {
@@ -2414,83 +2379,83 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 736,
-        "height": 784,
-        "area": 577024,
+        "width": 264,
+        "height": 296,
+        "area": 78144,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.73,
+      "overall_density": 0.65,
       "recommendation": "ZONE_TOP"
     },
     "1054_balsham-parish-church_lineart.png": {
       "time": "10:54",
       "zone": {
-        "x": 496,
+        "x": 200,
         "y": 0,
-        "width": 848,
-        "height": 784,
-        "area": 664832,
+        "width": 304,
+        "height": 296,
+        "area": 89984,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.69,
+      "overall_density": 0.62,
       "recommendation": "ZONE_TOP"
     },
     "1054_clock-leominster-bus-depot-herefordshire-england_lineart.png": {
       "time": "10:54",
       "zone": {
-        "x": 576,
+        "x": 232,
         "y": 0,
-        "width": 768,
-        "height": 784,
-        "area": 602112,
+        "width": 272,
+        "height": 296,
+        "area": 80512,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.69,
+      "overall_density": 0.59,
       "recommendation": "ZONE_TOP"
     },
     "1055_the-aston-cross-clock-hasn-t-worked-in-years_lineart.png": {
       "time": "10:55",
       "zone": {
-        "x": 424,
+        "x": 176,
         "y": 0,
-        "width": 920,
-        "height": 784,
-        "area": 721280,
+        "width": 328,
+        "height": 296,
+        "area": 97088,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.85,
+      "overall_density": 0.79,
       "recommendation": "ZONE_TOP"
     },
     "1058_who-called-time-on-pubs-stopped-at-the-nags-head-kirkby-ashfield_lineart.png": {
       "time": "10:58",
       "zone": {
-        "x": 600,
+        "x": 240,
         "y": 0,
-        "width": 744,
-        "height": 784,
-        "area": 583296,
+        "width": 264,
+        "height": 296,
+        "area": 78144,
         "density": 1.0
       },
       "best_strip": "bottom",
-      "overall_density": 0.71,
+      "overall_density": 0.59,
       "recommendation": "ZONE_TOP"
     },
     "1059_stopped-at-north-road-morrisons-darlington-uk_lineart.png": {
       "time": "10:59",
       "zone": {
-        "x": 560,
+        "x": 224,
         "y": 0,
-        "width": 784,
-        "height": 736,
-        "area": 577024,
+        "width": 280,
+        "height": 272,
+        "area": 76160,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.76,
+      "overall_density": 0.7,
       "recommendation": "ZONE_TOP"
     },
     "1100_former-st-peters-church-clock-stanley-uk_lineart.png": {
@@ -2498,41 +2463,41 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 912,
-        "height": 784,
-        "area": 715008,
+        "width": 336,
+        "height": 296,
+        "area": 99456,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.88,
+      "overall_density": 0.83,
       "recommendation": "ZONE_TOP"
     },
     "1104_clock-and-weathervane-on-riverside_lineart.png": {
       "time": "11:04",
       "zone": {
-        "x": 520,
+        "x": 208,
         "y": 0,
-        "width": 824,
-        "height": 784,
-        "area": 646016,
+        "width": 296,
+        "height": 296,
+        "area": 87616,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.85,
+      "overall_density": 0.78,
       "recommendation": "ZONE_TOP"
     },
     "1106_stopped-in-st-helens-uk-zodiac-clock_lineart.png": {
       "time": "11:06",
       "zone": {
-        "x": 632,
+        "x": 256,
         "y": 0,
-        "width": 712,
-        "height": 784,
-        "area": 558208,
+        "width": 248,
+        "height": 296,
+        "area": 73408,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.91,
+      "overall_density": 0.74,
       "recommendation": "ZONE_TOP"
     },
     "1107_springvale-court-_lineart.png": {
@@ -2540,41 +2505,41 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 856,
-        "height": 784,
-        "area": 671104,
+        "width": 312,
+        "height": 296,
+        "area": 92352,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.87,
+      "overall_density": 0.8,
       "recommendation": "ZONE_TOP"
     },
     "1108_village-hall-clock-barlaston-stoke-on-trent-staffordshire-uk_lineart.png": {
       "time": "11:08",
       "zone": {
-        "x": 384,
+        "x": 160,
         "y": 0,
-        "width": 960,
-        "height": 784,
-        "area": 752640,
+        "width": 344,
+        "height": 296,
+        "area": 101824,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.92,
+      "overall_density": 0.86,
       "recommendation": "ZONE_TOP"
     },
     "1110_stopped-in-victoria-park-haslingden_lineart.png": {
       "time": "11:10",
       "zone": {
-        "x": 320,
+        "x": 136,
         "y": 0,
-        "width": 1024,
-        "height": 784,
-        "area": 802816,
+        "width": 368,
+        "height": 296,
+        "area": 108928,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.89,
+      "overall_density": 0.84,
       "recommendation": "ZONE_TOP"
     },
     "1110_time-did-not-stop-at-the-same-time_lineart.png": {
@@ -2582,69 +2547,69 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 736,
-        "height": 784,
-        "area": 577024,
+        "width": 264,
+        "height": 296,
+        "area": 78144,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.65,
+      "overall_density": 0.6,
       "recommendation": "ZONE_TOP"
     },
     "1111_stopped-at-christ-church-ore-hastings_lineart.png": {
       "time": "11:11",
       "zone": {
-        "x": 432,
+        "x": 176,
         "y": 0,
-        "width": 912,
-        "height": 784,
-        "area": 715008,
+        "width": 328,
+        "height": 296,
+        "area": 97088,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.75,
+      "overall_density": 0.71,
       "recommendation": "ZONE_TOP"
     },
     "1114_the-old-town-hall-margate_lineart.png": {
       "time": "11:14",
       "zone": {
-        "x": 480,
+        "x": 192,
         "y": 0,
-        "width": 864,
-        "height": 784,
-        "area": 677376,
-        "density": 1.0
-      },
-      "best_strip": "top",
-      "overall_density": 0.81,
-      "recommendation": "ZONE_TOP"
-    },
-    "1121_spring-hill-library_lineart.png": {
-      "time": "11:21",
-      "zone": {
-        "x": 496,
-        "y": 0,
-        "width": 848,
-        "height": 784,
-        "area": 664832,
+        "width": 312,
+        "height": 296,
+        "area": 92352,
         "density": 1.0
       },
       "best_strip": "top",
       "overall_density": 0.74,
       "recommendation": "ZONE_TOP"
     },
+    "1121_spring-hill-library_lineart.png": {
+      "time": "11:21",
+      "zone": {
+        "x": 200,
+        "y": 0,
+        "width": 304,
+        "height": 296,
+        "area": 89984,
+        "density": 1.0
+      },
+      "best_strip": "top",
+      "overall_density": 0.68,
+      "recommendation": "ZONE_TOP"
+    },
     "1121_stotfold-former-three-counties-lunatic-asylum-church_lineart.png": {
       "time": "11:21",
       "zone": {
-        "x": 392,
+        "x": 160,
         "y": 0,
-        "width": 952,
-        "height": 784,
-        "area": 746368,
+        "width": 344,
+        "height": 296,
+        "area": 101824,
         "density": 1.0
       },
-      "best_strip": "bottom",
-      "overall_density": 0.88,
+      "best_strip": "top",
+      "overall_density": 0.79,
       "recommendation": "ZONE_TOP"
     },
     "1126_clock-at-sainsbury-s-in-dorridge-solihull-is-wrong_lineart.png": {
@@ -2652,13 +2617,13 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 704,
-        "height": 784,
-        "area": 551936,
+        "width": 256,
+        "height": 296,
+        "area": 75776,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.79,
+      "overall_density": 0.72,
       "recommendation": "ZONE_TOP"
     },
     "1131_clock-st-denys-severn-stoke-worcestershire-england_lineart.png": {
@@ -2666,27 +2631,27 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 848,
-        "height": 784,
-        "area": 664832,
+        "width": 312,
+        "height": 296,
+        "area": 92352,
         "density": 1.0
       },
       "best_strip": "bottom",
-      "overall_density": 0.89,
+      "overall_density": 0.84,
       "recommendation": "ZONE_TOP"
     },
     "1134_ottringham-church_lineart.png": {
       "time": "11:34",
       "zone": {
-        "x": 544,
+        "x": 216,
         "y": 0,
-        "width": 800,
-        "height": 784,
-        "area": 627200,
+        "width": 288,
+        "height": 296,
+        "area": 85248,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.77,
+      "overall_density": 0.67,
       "recommendation": "ZONE_TOP"
     },
     "1137_st-mark-s-church-spire-detail-in-wolverhampton_lineart.png": {
@@ -2694,13 +2659,13 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 816,
-        "height": 784,
-        "area": 639744,
+        "width": 296,
+        "height": 296,
+        "area": 87616,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.74,
+      "overall_density": 0.71,
       "recommendation": "ZONE_TOP"
     },
     "1138_st-mark-s-church-clock-in-chapel-ash-wolverhampton_lineart.png": {
@@ -2708,27 +2673,27 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 696,
-        "height": 784,
-        "area": 545664,
+        "width": 256,
+        "height": 296,
+        "area": 75776,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.76,
+      "overall_density": 0.69,
       "recommendation": "ZONE_TOP"
     },
     "1146_stopped-public-clock-in-cymmer_lineart.png": {
       "time": "11:46",
       "zone": {
-        "x": 440,
+        "x": 184,
         "y": 0,
-        "width": 904,
-        "height": 784,
-        "area": 708736,
+        "width": 320,
+        "height": 296,
+        "area": 94720,
         "density": 1.0
       },
-      "best_strip": "bottom",
-      "overall_density": 0.78,
+      "best_strip": "top",
+      "overall_density": 0.7,
       "recommendation": "ZONE_TOP"
     },
     "1149_clock-in-worcester-s-angel-place_lineart.png": {
@@ -2736,27 +2701,27 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 832,
-        "height": 784,
-        "area": 652288,
+        "width": 304,
+        "height": 296,
+        "area": 89984,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.81,
+      "overall_density": 0.76,
       "recommendation": "ZONE_TOP"
     },
     "1150_clock-stourport-yachtclub-stourport-on-severn-worcestershire-england_lineart.png": {
       "time": "11:50",
       "zone": {
         "x": 0,
-        "y": 432,
-        "width": 368,
-        "height": 352,
-        "area": 129536,
+        "y": 176,
+        "width": 128,
+        "height": 120,
+        "area": 15360,
         "density": 1.0
       },
       "best_strip": "bottom",
-      "overall_density": 0.48,
+      "overall_density": 0.36,
       "recommendation": "ZONE_BOTTOM"
     },
     "1150_clock-with-wrong-time-at-10-and-10a-vyse-street-from-warstone-lane-cemetery-jewellery-quarter_lineart.png": {
@@ -2764,41 +2729,41 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 904,
-        "height": 784,
-        "area": 708736,
+        "width": 328,
+        "height": 296,
+        "area": 97088,
         "density": 1.0
       },
       "best_strip": "bottom",
-      "overall_density": 0.85,
+      "overall_density": 0.79,
       "recommendation": "ZONE_TOP"
     },
     "1151_clock-masonic-hall-29-broad-street-bromyard-herefordshire-england_lineart.png": {
       "time": "11:51",
       "zone": {
-        "x": 808,
+        "x": 320,
         "y": 0,
-        "width": 536,
-        "height": 784,
-        "area": 420224,
+        "width": 184,
+        "height": 296,
+        "area": 54464,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.46,
+      "overall_density": 0.39,
       "recommendation": "ZONE_TOP"
     },
     "1155_stopped-above-aleks-jewellers-in-norwich_lineart.png": {
       "time": "11:55",
       "zone": {
-        "x": 400,
+        "x": 168,
         "y": 0,
-        "width": 944,
-        "height": 784,
-        "area": 740096,
+        "width": 336,
+        "height": 296,
+        "area": 99456,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.84,
+      "overall_density": 0.77,
       "recommendation": "ZONE_TOP"
     },
     "1155_stopped-in-birmingham-theatrix-130-colmore-row_lineart.png": {
@@ -2806,13 +2771,13 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 616,
-        "height": 784,
-        "area": 482944,
+        "width": 224,
+        "height": 296,
+        "area": 66304,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.58,
+      "overall_density": 0.51,
       "recommendation": "ZONE_TOP"
     },
     "1156_factory-clock_lineart.png": {
@@ -2820,13 +2785,13 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 928,
-        "height": 784,
-        "area": 727552,
+        "width": 344,
+        "height": 296,
+        "area": 101824,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.86,
+      "overall_density": 0.82,
       "recommendation": "ZONE_TOP"
     },
     "1157_clock-st-john-the-baptist-bewdley-road-kidderminster-worcestershire-england_lineart.png": {
@@ -2834,13 +2799,13 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 440,
-        "height": 768,
-        "area": 337920,
+        "width": 144,
+        "height": 296,
+        "area": 42624,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.67,
+      "overall_density": 0.59,
       "recommendation": "ZONE_TOP"
     },
     "1159_former-technical-college-sunderland-uk_lineart.png": {
@@ -2848,27 +2813,27 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 792,
-        "height": 784,
-        "area": 620928,
+        "width": 288,
+        "height": 296,
+        "area": 85248,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.64,
+      "overall_density": 0.61,
       "recommendation": "ZONE_TOP"
     },
     "1159_shanklin-clock-tower-isle-of-wight_lineart.png": {
       "time": "11:59",
       "zone": {
-        "x": 704,
+        "x": 280,
         "y": 0,
-        "width": 640,
-        "height": 784,
-        "area": 501760,
+        "width": 224,
+        "height": 296,
+        "area": 66304,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.71,
+      "overall_density": 0.61,
       "recommendation": "ZONE_TOP"
     },
     "1200_clock-tower-behind-the-fire-station_lineart.png": {
@@ -2876,13 +2841,13 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 984,
-        "height": 784,
-        "area": 771456,
+        "width": 360,
+        "height": 296,
+        "area": 106560,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.83,
+      "overall_density": 0.77,
       "recommendation": "ZONE_TOP"
     },
     "1200_high-noon-at-weston_lineart.png": {
@@ -2890,13 +2855,13 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 656,
-        "height": 784,
-        "area": 514304,
+        "width": 240,
+        "height": 296,
+        "area": 71040,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.86,
+      "overall_density": 0.76,
       "recommendation": "ZONE_TOP"
     },
     "1201_clock-st-philip-st-james-hallow-worcestershire-england_lineart.png": {
@@ -2904,13 +2869,13 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 568,
-        "height": 784,
-        "area": 445312,
+        "width": 200,
+        "height": 296,
+        "area": 59200,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.65,
+      "overall_density": 0.52,
       "recommendation": "ZONE_TOP"
     },
     "1202_the-old-town-hall-clock-stopped-in-dacorum-hemel-hampstead_lineart.png": {
@@ -2918,13 +2883,13 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 784,
-        "height": 784,
-        "area": 614656,
+        "width": 288,
+        "height": 296,
+        "area": 85248,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.78,
+      "overall_density": 0.73,
       "recommendation": "ZONE_TOP"
     },
     "1203_stopped-at-southward-cathedral_lineart.png": {
@@ -2932,13 +2897,13 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 760,
-        "height": 784,
-        "area": 595840,
+        "width": 272,
+        "height": 296,
+        "area": 80512,
         "density": 1.0
       },
       "best_strip": "middle",
-      "overall_density": 0.68,
+      "overall_density": 0.58,
       "recommendation": "ZONE_TOP"
     },
     "1204_the-old-school-clock-and-bell_lineart.png": {
@@ -2946,13 +2911,13 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 832,
-        "height": 784,
-        "area": 652288,
+        "width": 304,
+        "height": 296,
+        "area": 89984,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.76,
+      "overall_density": 0.71,
       "recommendation": "ZONE_TOP"
     },
     "1210_stopped-in-leeds-uk-st-john-the-evangelist-church-clock_lineart.png": {
@@ -2960,27 +2925,27 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 536,
-        "height": 784,
-        "area": 420224,
+        "width": 192,
+        "height": 296,
+        "area": 56832,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.68,
+      "overall_density": 0.5,
       "recommendation": "ZONE_TOP"
     },
     "1211_glossop-town-hall-stopped-since-2022_lineart.png": {
       "time": "12:11",
       "zone": {
-        "x": 616,
+        "x": 248,
         "y": 0,
-        "width": 728,
-        "height": 784,
-        "area": 570752,
+        "width": 256,
+        "height": 296,
+        "area": 75776,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.92,
+      "overall_density": 0.89,
       "recommendation": "ZONE_TOP"
     },
     "1211_st-john-the-evangelist-church-clock-leeds-uk_lineart.png": {
@@ -2988,13 +2953,13 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 856,
-        "height": 784,
-        "area": 671104,
+        "width": 312,
+        "height": 296,
+        "area": 92352,
         "density": 1.0
       },
       "best_strip": "bottom",
-      "overall_density": 0.8,
+      "overall_density": 0.77,
       "recommendation": "ZONE_TOP"
     },
     "1212_clock-tower-turret-at-royal-house-on-blossomfield-road-solihull_lineart.png": {
@@ -3002,41 +2967,41 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 792,
-        "height": 784,
-        "area": 620928,
+        "width": 288,
+        "height": 296,
+        "area": 85248,
         "density": 1.0
       },
       "best_strip": "bottom",
-      "overall_density": 0.75,
+      "overall_density": 0.67,
       "recommendation": "ZONE_TOP"
     },
     "1218_bury-place-bloomsbury_lineart.png": {
       "time": "12:18",
       "zone": {
-        "x": 456,
+        "x": 184,
         "y": 0,
-        "width": 888,
-        "height": 784,
-        "area": 696192,
+        "width": 320,
+        "height": 296,
+        "area": 94720,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.77,
+      "overall_density": 0.71,
       "recommendation": "ZONE_TOP"
     },
     "1219_the-clock-on-the-pier_lineart.png": {
       "time": "12:19",
       "zone": {
-        "x": 632,
+        "x": 248,
         "y": 0,
-        "width": 712,
-        "height": 784,
-        "area": 558208,
+        "width": 256,
+        "height": 296,
+        "area": 75776,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.79,
+      "overall_density": 0.72,
       "recommendation": "ZONE_TOP"
     },
     "1230_burton-town-hall_lineart.png": {
@@ -3044,13 +3009,13 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 992,
-        "height": 784,
-        "area": 777728,
+        "width": 360,
+        "height": 296,
+        "area": 106560,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.81,
+      "overall_density": 0.78,
       "recommendation": "ZONE_TOP"
     },
     "1231_where-was-this-again_lineart.png": {
@@ -3058,41 +3023,41 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 1056,
-        "height": 784,
-        "area": 827904,
+        "width": 392,
+        "height": 296,
+        "area": 116032,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.95,
+      "overall_density": 0.92,
       "recommendation": "ZONE_TOP"
     },
     "1239_st-peter-s-ipswich_lineart.png": {
       "time": "12:39",
       "zone": {
-        "x": 368,
+        "x": 152,
         "y": 0,
-        "width": 976,
-        "height": 784,
-        "area": 765184,
+        "width": 352,
+        "height": 296,
+        "area": 104192,
         "density": 1.0
       },
-      "best_strip": "bottom",
-      "overall_density": 0.79,
+      "best_strip": "top",
+      "overall_density": 0.72,
       "recommendation": "ZONE_TOP"
     },
     "1239_stopped-in-leadenhall-market_lineart.png": {
       "time": "12:39",
       "zone": {
-        "x": 664,
+        "x": 264,
         "y": 0,
-        "width": 680,
-        "height": 784,
-        "area": 533120,
+        "width": 240,
+        "height": 296,
+        "area": 71040,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.68,
+      "overall_density": 0.61,
       "recommendation": "ZONE_TOP"
     },
     "1242_school-clock-the-school-house-alkmonton-derbyshire_lineart.png": {
@@ -3100,34 +3065,34 @@
       "zone": {
         "x": 0,
         "y": 0,
-        "width": 896,
-        "height": 784,
-        "area": 702464,
+        "width": 328,
+        "height": 296,
+        "area": 97088,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.89,
+      "overall_density": 0.82,
       "recommendation": "ZONE_TOP"
     },
     "1245_stopped-outside-the-pannier-market-holsworthy_lineart.png": {
       "time": "12:45",
       "zone": {
-        "x": 856,
+        "x": 336,
         "y": 0,
-        "width": 488,
-        "height": 784,
-        "area": 382592,
+        "width": 168,
+        "height": 296,
+        "area": 49728,
         "density": 1.0
       },
       "best_strip": "top",
-      "overall_density": 0.58,
+      "overall_density": 0.45,
       "recommendation": "ZONE_TOP"
     }
   },
   "summary": {
     "total_images": 223,
-    "images_with_zones": 222,
-    "images_without_zones": 1,
-    "zone_coverage": "99.6%"
+    "images_with_zones": 217,
+    "images_without_zones": 6,
+    "zone_coverage": "97.3%"
   }
 }

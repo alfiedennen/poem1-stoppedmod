@@ -13,18 +13,24 @@ from pathlib import Path
 from PIL import Image
 import numpy as np
 
-# Analysis parameters - AGGRESSIVE settings to find maximum whitespace
+# Analysis parameters - STRICT settings for clean lineart images
+# New lineart has crisp black lines on pure white - text must NOT intersect black pixels
 CELL_SIZE = 8
-WHITE_THRESHOLD = 128       # For B&W images, anything > 128 is "white"
-BLACK_THRESHOLD = 127       # For B&W images, anything <= 127 is "black"
-HIGH_DENSITY = 0.20         # Only need 20% white to be usable - very tolerant
-BLACK_TOLERANCE = 0.95      # Allow up to 95% black in a cell - almost any white counts
+WHITE_THRESHOLD = 250       # For lineart: only pure white (>=250) is safe for text
+BLACK_THRESHOLD = 200       # For lineart: anything darker than 200 is a line/barrier
+HIGH_DENSITY = 0.98         # Require 98% white - almost pure white zones only
+BLACK_TOLERANCE = 0.02      # Allow only 2% black in a cell - strict barrier detection
+SAFETY_MARGIN = 2           # Extra cells of margin around black pixels
 MIN_ZONE_WIDTH = 120
 MIN_ZONE_HEIGHT = 40
 
 
 def analyze_image_for_text_zone(image_path):
-    """Analyze image and return best text zone."""
+    """Analyze image and return best text zone.
+
+    For lineart images: finds zones that are completely white with NO black pixels.
+    Uses safety margin to keep text away from line edges.
+    """
     img = Image.open(image_path).convert('L')
     pixels = np.array(img)
     height, width = pixels.shape
@@ -32,8 +38,11 @@ def analyze_image_for_text_zone(image_path):
     grid_h = height // CELL_SIZE
     grid_w = width // CELL_SIZE
 
-    # Build density grid - for B&W images, just measure white ratio
+    # Build density grid - for lineart, we need STRICT white detection
+    # A cell is only usable if it has essentially NO black pixels
     density_grid = np.zeros((grid_h, grid_w))
+    barrier_grid = np.zeros((grid_h, grid_w), dtype=bool)  # Track cells with ANY black
+
     for gy in range(grid_h):
         for gx in range(grid_w):
             y1, y2 = gy * CELL_SIZE, (gy + 1) * CELL_SIZE
@@ -43,12 +52,23 @@ def analyze_image_for_text_zone(image_path):
             black_count = np.sum(cell <= BLACK_THRESHOLD)
             total = cell.size
 
-            # For B&W images: allow cells with up to BLACK_TOLERANCE black
-            # This finds areas that have SOME white, even if mostly black
-            if (black_count / total) > BLACK_TOLERANCE:
+            # For lineart: ANY black pixel makes this cell a barrier
+            black_ratio = black_count / total
+            if black_ratio > BLACK_TOLERANCE:
                 density_grid[gy, gx] = 0
+                barrier_grid[gy, gx] = True
             else:
                 density_grid[gy, gx] = white_count / total
+
+    # Apply safety margin - expand barrier zones by SAFETY_MARGIN cells
+    # This keeps text away from the edges of black lines
+    from scipy import ndimage
+    if SAFETY_MARGIN > 0:
+        # Dilate barrier grid to create margin
+        struct = np.ones((SAFETY_MARGIN * 2 + 1, SAFETY_MARGIN * 2 + 1))
+        expanded_barriers = ndimage.binary_dilation(barrier_grid, structure=struct)
+        # Zero out density where barriers expanded
+        density_grid[expanded_barriers] = 0
 
     # Find usable zones - lower threshold to find more area
     high_density_mask = density_grid >= HIGH_DENSITY
@@ -142,8 +162,10 @@ def generate_metadata(img_dir, output_path):
         'images': {}
     }
 
-    # Process threshold images (or dithered as fallback)
-    images = sorted(img_dir.glob('*_threshold.png'))
+    # Process lineart images first, then threshold, then dithered as fallback
+    images = sorted(img_dir.glob('*_lineart.png'))
+    if not images:
+        images = sorted(img_dir.glob('*_threshold.png'))
     if not images:
         images = sorted(img_dir.glob('*_dither.png'))
     print(f"Processing {len(images)} images...")

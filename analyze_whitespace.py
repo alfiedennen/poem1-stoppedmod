@@ -18,12 +18,14 @@ from PIL import Image
 import numpy as np
 from scipy import ndimage
 
-# Thresholds
-PUSH_TO_WHITE_THRESHOLD = 180  # Pixels >= this become white
-BLACK_BARRIER_THRESHOLD = 60   # Pixels <= this are barriers (can't place text)
+# Thresholds - STRICT settings for clean lineart images
+# New lineart has crisp black lines on pure white - text must NOT intersect black pixels
+PUSH_TO_WHITE_THRESHOLD = 250  # For lineart: only pure white (>=250) is safe
+BLACK_BARRIER_THRESHOLD = 200  # For lineart: anything darker than 200 is a barrier
 WHITE_VALUE = 255
 MIN_TEXT_WIDTH = 100   # Minimum usable width for text (pixels)
 MIN_TEXT_HEIGHT = 40   # Minimum usable height for text line
+SAFETY_MARGIN_PX = 16  # Pixel margin around black lines (2 cells * 8px)
 
 
 def find_largest_white_rectangle(binary_map):
@@ -120,21 +122,33 @@ def analyze_image(image_path, push_threshold=PUSH_TO_WHITE_THRESHOLD,
                   barrier_threshold=BLACK_BARRIER_THRESHOLD):
     """
     Analyze a single image for text-suitable whitespace.
+
+    For lineart images: finds zones that are completely white with NO black pixels.
+    Uses safety margin to keep text away from line edges.
     """
     img = Image.open(image_path).convert('L')
     pixels = np.array(img)
 
     width, height = img.size
 
-    # Step 1: Create "pushed" version where light grays become white
+    # Step 1: For lineart, we don't "push" - we need strict white detection
+    # Only pixels >= push_threshold are considered white
     pushed = pixels.copy()
-    pushed[pushed >= push_threshold] = WHITE_VALUE
 
     # Step 2: Create binary map (1 = white/safe, 0 = barrier/unsafe)
-    # White areas where we CAN place text
+    # For lineart: ANY dark pixel is a barrier
     binary_map = np.zeros_like(pushed, dtype=np.uint8)
-    binary_map[pushed >= push_threshold] = 1  # Light areas = safe
-    binary_map[pixels <= barrier_threshold] = 0  # Black barriers = unsafe
+    binary_map[pixels >= push_threshold] = 1  # Pure white = safe
+    binary_map[pixels <= barrier_threshold] = 0  # Any dark pixel = barrier
+
+    # Step 2.5: Apply safety margin - dilate barriers to keep text away from edges
+    if SAFETY_MARGIN_PX > 0:
+        barrier_mask = (pixels <= barrier_threshold)
+        # Dilate barrier mask
+        struct_size = SAFETY_MARGIN_PX * 2 + 1
+        struct = np.ones((struct_size, struct_size))
+        expanded_barriers = ndimage.binary_dilation(barrier_mask, structure=struct)
+        binary_map[expanded_barriers] = 0
 
     # Step 3: Find contiguous white regions
     labeled, num_features = ndimage.label(binary_map)
